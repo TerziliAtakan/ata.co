@@ -903,7 +903,7 @@ async function send(type, data){
   if(data.website) return true; // bot
   delete data.website;
   const payload = {type, lang:LANG, page:location.hash||"#", ...data};
-  if(!S.forms_endpoint){ await new Promise(r=>setTimeout(r,500)); return true; }
+  if(!S.forms_endpoint){ if(PREVIEW){ await new Promise(r=>setTimeout(r,500)); return true; } return "offline"; } // no endpoint yet: never pretend a live form was saved
   try{ await fetch(S.forms_endpoint,{method:"POST",mode:"no-cors",body:new URLSearchParams(payload)}); return true; }catch(e){ return false; }
 }
 document.addEventListener("submit", async e=>{
@@ -911,6 +911,7 @@ document.addEventListener("submit", async e=>{
   const btn=f.querySelector("[type=submit]"), old=btn.innerHTML; btn.disabled=true; btn.textContent=t("f.sending");
   const data=Object.fromEntries(new FormData(f)); if(f.dataset.ref) data.listing=f.dataset.ref;
   const ok = await send(f.dataset.type, data);
+  if(ok==="offline"){ f.outerHTML = `<div class="done"><p class="dsp h4">${t("f.offline")}</p><a class="btn solid" href="${waURL()}" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a></div>`; return; }
   if(!ok){ btn.disabled=false; btn.innerHTML=old; toast(t("f.err")); return; }
   if(f.matches(".js-mini")){
     const msg = f.dataset.type==="handbook" ? (S.handbook_pdf ? `<a href="${esc(S.handbook_pdf)}" target="_blank" rel="noopener">${t("book.done.dl")}</a>` : t("book.done.later")) : t("nl.done");

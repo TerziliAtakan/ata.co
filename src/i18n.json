@@ -1203,5 +1203,10 @@
   "Bilgilerinizin silinmesini veya bültenden çıkmayı istediğinizde aşağıdaki e-posta adresine yazmanız yeterli.",
   "To have your details deleted or to unsubscribe, just email the address below.",
   "Чтобы удалить свои данные или отписаться, напишите на адрес ниже."
+ ],
+ "f.offline": [
+  "Form şu an bakımda. Lütfen bana WhatsApp’tan yazın; hemen dönüş yapayım.",
+  "This form is being set up. Please message me on WhatsApp and I’ll reply right away.",
+  "Форма пока настраивается. Пожалуйста, напишите мне в WhatsApp — я сразу отвечу."
  ]
 }
