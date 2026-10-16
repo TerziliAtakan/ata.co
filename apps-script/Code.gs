@@ -1,45 +1,68 @@
 /**
  * ata.co — form kayıtları
- * Sitedeki tüm formlar (satın al, sat, kirala, partner, ilan sorusu, el kitapçığı, bülten)
- * bu Google E-Tablosuna satır olarak düşer ve size e-posta bildirimi gelir.
+ * Sitedeki tüm formlar (Satın al, Sat, Kirala, Partner olun, İlan sorusu,
+ * Ücretsiz kitapçık, Haberdar olun) bu E-Tablodaki "Kayıtlar" sekmesine satır olarak düşer.
+ * Haberdar olun dışındaki her kayıt için size e-posta bildirimi gelir.
  *
- * Kurulum: E-Tablo → Uzantılar → Apps Script → bu kodu yapıştırın → Dağıt → Yeni dağıtım →
- * Tür: Web uygulaması · Yürüten: Ben · Erişim: Herkes → URL'yi kopyalayıp panelde
- * Site ayarları → "Form adresi" alanına yapıştırın.
+ * Sütunlar: Tarih · İsim · E-posta · Telefon · Durum · Detaylar · Bölüm · Dil
+ *
+ * Kurulum / güncelleme:
+ *   E-Tablo → Uzantılar → Apps Script → bu kodun tamamını yapıştırın → Kaydet →
+ *   Dağıt → Dağıtımları yönet → kalem simgesi → Sürüm: Yeni sürüm → Dağıt
+ *   (Böyle yaparsanız sitedeki form adresi değişmez.)
  */
 const NOTIFY_EMAIL = 'terziliatakan@icloud.com';
-const SHEET_NAME = 'Talepler';
-const TYPES = {
-  buy: 'Satın alma', sell: 'Satış', rent: 'Kiralama', partner: 'Partner',
-  listing: 'İlan sorusu', handbook: 'El kitapçığı', newsletter: 'Bülten'
+const SHEET_NAME = 'Kayıtlar';
+const COLUMNS = ['Tarih', 'İsim', 'E-posta', 'Telefon', 'Durum', 'Detaylar', 'Bölüm', 'Dil'];
+
+// Formun geldiği bölüm (sitedeki adıyla)
+const SECTION = {
+  buy: 'Satın al', sell: 'Sat', rent: 'Kirala', partner: 'Partner olun',
+  listing: 'İlan sorusu', handbook: 'Ücretsiz kitapçık', newsletter: 'Haberdar olun'
 };
-const COLUMNS = ['Tarih', 'Tür', 'Ad', 'İletişim', 'E-posta', 'Telefon', 'İlan', 'Detay', 'Dil', 'Sayfa', 'Durum'];
+// Bölüme göre ilk durum. Takip ettikçe bu sütunu kendiniz güncelleyebilirsiniz.
+function status_(type, p) {
+  if (type === 'newsletter') return 'Bülten abonesi';
+  if (type === 'handbook') return p.delivered === 'evet' ? 'Kitapçık indirildi' : 'Kitapçık gönderilecek';
+  return 'Yeni · aranacak';
+}
+// Detaylar sütununda görünen başlıklar
+const LABELS = {
+  partner_kind: 'Başvuru türü', company: 'Şirket', handbook: 'Kitapçık', listing: 'İlan',
+  direction: 'Talep', budget: 'Bütçe', purpose: 'Amaç', when: 'Zaman', ptype: 'Mülk tipi',
+  location: 'Konum', bedrooms: 'Oda', area: 'Bölge', move_in: 'Taşınma tarihi', message: 'Mesaj'
+};
+const SKIP = ['type', 'name', 'contact', 'email', 'phone', 'lang', 'page', 'website', 'delivered'];
+const LANGS = { tr: 'Türkçe', en: 'İngilizce', ru: 'Rusça' };
 
 function doPost(e) {
   const p = (e && e.parameter) || {};
   if (p.website) return ok_(); // spam tuzağı
 
-  const sheet = sheet_();
-  const known = ['type', 'name', 'contact', 'email', 'phone', 'listing', 'lang', 'page', 'website'];
-  const detail = Object.keys(p).filter(k => known.indexOf(k) < 0 && p[k])
-    .map(k => k + ': ' + p[k]).join('\n');
-  const type = TYPES[p.type] || p.type || '?';
+  // Eski formlardan gelen tek "iletişim" alanını e-posta ya da telefona ayır
+  let email = p.email || '', phone = p.phone || '';
+  if (p.contact) { if (/@/.test(p.contact)) email = email || p.contact; else phone = phone || p.contact; }
 
-  sheet.appendRow([new Date(), type, p.name, p.contact, p.email, p.phone, p.listing, detail, p.lang, p.page, 'Yeni']
-    .map(safe_));
+  // Bilinen alanlar sabit sırayla, bilinmeyenler sonda
+  const keys = Object.keys(LABELS).concat(Object.keys(p).filter(k => !(k in LABELS) && SKIP.indexOf(k) < 0));
+  const detail = keys.filter(k => p[k]).map(k => (LABELS[k] || k) + ': ' + p[k]);
+
+  const section = SECTION[p.type] || p.type || '?';
+  sheet_().appendRow([
+    new Date(), p.name, email, phone, status_(p.type, p), detail.join('\n'),
+    section, LANGS[p.lang] || p.lang || ''
+  ].map(safe_));
 
   if (p.type !== 'newsletter') {
-    const lines = [
-      'Tür: ' + type,
-      p.name ? 'Ad: ' + p.name : '',
-      p.contact ? 'İletişim: ' + p.contact : '',
-      p.email ? 'E-posta: ' + p.email : '',
-      p.phone ? 'Telefon: ' + p.phone : '',
-      p.listing ? 'İlan: ' + p.listing : '',
-      detail,
-      'Dil: ' + (p.lang || ''),
-    ].filter(Boolean);
-    MailApp.sendEmail(NOTIFY_EMAIL, 'ata.co — yeni talep: ' + type + (p.name ? ' · ' + p.name : ''), lines.join('\n'));
+    const body = [
+      'Bölüm: ' + section,
+      p.name ? 'İsim: ' + p.name : '',
+      email ? 'E-posta: ' + email : '',
+      phone ? 'Telefon: ' + phone : '',
+      detail.length ? '\n' + detail.join('\n') : '',
+      '\nDil: ' + (LANGS[p.lang] || p.lang || '')
+    ].filter(Boolean).join('\n');
+    MailApp.sendEmail(NOTIFY_EMAIL, 'ata.co — ' + section + (p.name ? ' · ' + p.name : (email ? ' · ' + email : '')), body);
   }
   return ok_();
 }
@@ -49,8 +72,14 @@ function doGet() { return ok_(); }
 function sheet_() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   let sh = ss.getSheetByName(SHEET_NAME);
-  if (!sh) sh = ss.insertSheet(SHEET_NAME);
-  if (sh.getLastRow() === 0) { sh.appendRow(COLUMNS); sh.setFrozenRows(1); sh.getRange(1, 1, 1, COLUMNS.length).setFontWeight('bold'); }
+  if (!sh) sh = ss.insertSheet(SHEET_NAME, 0);
+  if (sh.getLastRow() === 0) {
+    sh.appendRow(COLUMNS);
+    sh.setFrozenRows(1);
+    sh.getRange(1, 1, 1, COLUMNS.length).setFontWeight('bold');
+    sh.setColumnWidth(6, 320);
+    sh.getRange('F:F').setWrap(true);
+  }
   return sh;
 }
 

@@ -1,18 +1,18 @@
 <!--HEAD-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Playfair+Display:ital,wght@0,400..600;1,400..600&family=Golos+Text:wght@400..700&family=Montserrat:ital,wght@1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..700;1,300..600&display=swap">
 <style>
 /* Layout: one full-screen "slide" per sub-section, horizontal swipe where Ata asked for it; warm white + near black, logo burgundy as the only accent. */
 :root{
   --bg:#F5F3EF; --bg-2:#EAE6DF; --fg:#161513; --muted:#6A655D; --line:rgba(22,21,19,.14);
   --accent:#5E0B10; --panel:#151412; --on-panel:#F1EDE6; --on-panel-muted:rgba(241,237,230,.64); --field:#FFFFFF;
-  --display:"Bodoni Moda","Didot","Bodoni 72","Times New Roman",serif;
-  --sans:"Archivo","Helvetica Neue",Arial,sans-serif;
-  --logo-font:"Montserrat","Archivo",Arial,sans-serif;
+  --display:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --sans:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --logo-font:"Montserrat",Arial,sans-serif;
   --gut:clamp(18px,4.5vw,56px); --max:1320px; --bar:68px;
   --ease:cubic-bezier(.2,.7,.1,1);
-  --mk:url("{{A:mark}}"); --mk-l:url("{{A:mark-light}}");
+  --mk:url("{{A:mark}}"); --mk-d:url("{{A:mark}}"); --mk-l:url("{{A:mark-light}}");
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0F0E0D;--bg-2:#1A1816;--fg:#EEEAE3;--muted:#9D978D;--line:rgba(238,234,227,.14);
@@ -20,7 +20,6 @@
 :root[data-theme="dark"]{
   --bg:#0F0E0D;--bg-2:#1A1816;--fg:#EEEAE3;--muted:#9D978D;--line:rgba(238,234,227,.14);
   --accent:#C9606F;--panel:#1B1917;--on-panel:#EEEAE3;--on-panel-muted:rgba(238,234,227,.62);--field:#171513;--mk:var(--mk-l);color-scheme:dark}
-:root[lang="ru"]{--display:"Playfair Display","Bodoni Moda",Georgia,serif;--sans:"Golos Text","Archivo","Helvetica Neue",Arial,sans-serif}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -217,7 +216,8 @@ p{margin:0}
 /* 3.1 north cyprus poster */
 .nc{padding:0;justify-content:stretch;background:var(--panel);color:var(--on-panel)}
 .poster{position:relative;flex:1;min-height:62svh;overflow:hidden;color:#fff;display:flex;flex-direction:column;justify-content:flex-end}
-.poster .media{position:absolute;inset:0}
+.poster .pbg{position:absolute;left:0;right:0;top:-22%;height:144%;will-change:transform}
+.poster .pbg .media{position:absolute;inset:0}
 .poster::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,9,10,.4),rgba(8,9,10,0) 35%,rgba(8,9,10,.62));z-index:1}
 .poster .wrap{position:relative;z-index:2;padding-bottom:26px}
 .poster .k{color:rgba(255,255,255,.85);margin-bottom:10px}
@@ -264,6 +264,30 @@ p{margin:0}
 .field-row input::placeholder{color:var(--muted);letter-spacing:.14em;font-size:11.5px;text-transform:uppercase}
 .field-row .btn{border:0;min-height:54px;background:var(--fg);color:var(--bg);padding:0 18px}
 .fine{font-size:12.5px;color:var(--muted);margin-top:10px}
+/* 3.3 free handbooks (inside the dark why/services scroller) */
+.soc{display:flex;flex-direction:column}
+.hb-lead{color:var(--on-panel-muted);font-size:15px;max-width:44ch;margin:0 0 16px}
+.books{border:0;margin:0 0 16px;padding:0;display:grid;gap:10px}
+.bk{display:grid;grid-template-columns:44px 1fr 26px;gap:14px;align-items:center;padding:10px 12px;border:1px solid rgba(241,237,230,.18);cursor:pointer;transition:border-color .25s,background .25s}
+.bk:hover{border-color:rgba(241,237,230,.4)}
+.bk input{position:absolute;opacity:0;pointer-events:none}
+.bk:has(input:checked){border-color:rgba(241,237,230,.7);background:rgba(241,237,230,.05)}
+.bk:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.book.mini{width:44px;padding:9%;transform:rotate(-3deg);background:#EFE9E0;color:#151412;box-shadow:6px 8px 16px -8px rgba(0,0,0,.6)}
+.book.mini .bm{width:12px;height:12px;background-image:var(--mk-d)}
+.book.mini .bt{font-size:5.5px;line-height:1.05}
+.book.mini .br{background:#5E0B10}
+.bk-t b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(17px,1.6vw,21px);line-height:1.2}
+.bk-t small{display:block;margin-top:3px;font-size:13px;color:var(--on-panel-muted);line-height:1.35}
+.bk .tick{width:22px;height:22px;border:1px solid rgba(241,237,230,.5);display:grid;place-items:center}
+.bk:has(input:checked) .tick{background:var(--on-panel)}
+.bk:has(input:checked) .tick::after{content:"";width:9px;height:5px;border-left:2px solid #151412;border-bottom:2px solid #151412;transform:translateY(-1px) rotate(-45deg)}
+.on-dark .field-row{border:1px solid rgba(241,237,230,.42);background:transparent;flex-direction:row}
+.on-dark .field-row input{color:var(--on-panel);border:0;background:transparent;width:0;min-height:48px;padding:0 14px}
+.on-dark .field-row input::placeholder{color:var(--on-panel-muted)}
+.on-dark .field-row .btn{background:var(--on-panel);color:#151412;min-height:48px;padding:0 16px;white-space:nowrap}
+.books-form{max-width:560px}
+.slide.on-dark > .strip{border-top:1px solid rgba(241,237,230,.14)}
 /* screens that end in a thin strip (2.3 + partner, 3.3 + newsletter) */
 .slide.has-strip{padding-bottom:0;justify-content:flex-start}
 .slide-body{flex:1;display:flex;flex-direction:column;justify-content:center;padding-bottom:22px;min-height:0}
@@ -292,7 +316,7 @@ p{margin:0}
 footer{background:#F6F4F1;color:#161513;padding-block:clamp(56px,8vw,96px) calc(28px + env(safe-area-inset-bottom,0px));scroll-snap-align:end;color-scheme:light}
 .fgrid{display:grid;grid-template-columns:1fr;gap:36px;justify-items:center;text-align:center}
 .lockup{display:inline-grid;justify-items:center;gap:10px}
-.lockup img{width:clamp(200px,24vw,260px);height:auto;display:block}
+.lockup img{width:clamp(240px,28vw,320px);max-width:100%;height:auto;display:block;image-rendering:auto}
 .fcontact{display:grid;gap:8px;font-size:15px;color:#3F3A35}
 .fcontact a:hover{color:#5E0B10}
 .fbottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:40px;padding-top:20px;border-top:1px solid rgba(22,21,19,.12);font-size:12.5px;color:#6A655D}
@@ -532,7 +556,7 @@ footer{background:#F6F4F1;color:#161513;padding-block:clamp(56px,8vw,96px) calc(
   <!-- 3.1 -->
   <section class="slide nc" aria-labelledby="nc-h">
     <div class="poster">
-      <div class="media" data-media="nc_image" data-scene="range" data-seed="31" data-sea="1" data-ia="aria-label:nc.alt"></div>
+      <div class="pbg" data-parallax><div class="media" data-media="nc_image" data-scene="range" data-seed="31" data-sea="1" data-ia="aria-label:nc.alt"></div></div>
       <span class="ph pv"><b>Poster</b> · Beşparmaklar ve kıyı, sabah, drone</span>
       <div class="wrap"><p class="k" data-i="nc.kicker"></p><h2 class="dsp" id="nc-h" data-i="nc.title"></h2></div>
     </div>
@@ -543,9 +567,25 @@ footer{background:#F6F4F1;color:#161513;padding-block:clamp(56px,8vw,96px) calc(
     </div>
   </section>
 
-  <!-- 3.2 -->
-  <section class="slide on-dark" aria-label="ata.co">
-    <div class="wrap">
+  <!-- 3.2 follow the journey -->
+  <section class="slide" aria-labelledby="soc-h">
+    <div class="wrap soc">
+      <p class="k" data-i="soc.kicker" style="margin-bottom:12px"></p>
+      <h2 class="dsp h4" id="soc-h" data-i="soc.title" style="margin-bottom:18px"></h2>
+      <div class="tiles">
+            <a class="tile zoom ig" href="#" target="_blank" rel="noopener"><div class="media" data-scene="interior" data-seed="41"></div><span class="ph pv">Reel kapağı</span><span data-i="soc.t1"></span></a>
+            <a class="tile zoom ig" href="#" target="_blank" rel="noopener"><div class="media" data-scene="street" data-seed="42"></div><span class="ph pv">Gönderi</span><span data-i="soc.t2"></span></a>
+            <a class="tile zoom ig" href="#" target="_blank" rel="noopener"><div class="media" data-scene="aerial" data-seed="43"></div><span class="ph pv">Gönderi</span><span data-i="soc.t3"></span></a>
+            <a class="tile zoom ig" href="#" target="_blank" rel="noopener"><div class="media" data-scene="portrait" data-seed="44"></div><span class="ph pv">Reel kapağı</span><span data-i="soc.t4"></span></a>
+          </div>
+      <div class="chan" id="chan"></div>
+      <a class="btn solid" href="#blog" style="margin-top:20px;align-self:flex-start"><span data-i="soc.blog"></span> →</a>
+    </div>
+  </section>
+
+  <!-- 3.3 why ata.co · services · free handbooks -->
+  <section class="slide on-dark has-strip" aria-label="ata.co">
+    <div class="slide-body"><div class="wrap">
       <div class="hs panels" data-hs>
         <div class="panel">
           <p class="k" data-i="why.kicker" style="margin-bottom:18px"></p>
@@ -567,37 +607,18 @@ footer{background:#F6F4F1;color:#161513;padding-block:clamp(56px,8vw,96px) calc(
             <li><b data-i="svc.6"></b><span data-i="svc.6.d"></span></li>
           </ul>
         </div>
-      </div>
-      <div class="hs-ctl panel-ctl"><div class="dots"></div><span class="hint"><span class="hint-t"></span> →</span></div>
-    </div>
-  </section>
-
-  <!-- 3.3 -->
-  <section class="slide has-strip" aria-labelledby="soc-h">
-    <div class="slide-body"><div class="wrap">
-      <div class="hs panels" data-hs>
-        <div class="panel">
-          <p class="k" data-i="soc.kicker" style="margin-bottom:12px"></p>
-          <h2 class="dsp h4" id="soc-h" data-i="soc.title" style="margin-bottom:18px"></h2>
-          <div class="tiles">
-            <a class="tile zoom ig" href="#" target="_blank" rel="noopener"><div class="media" data-scene="interior" data-seed="41"></div><span class="ph pv">Reel kapağı</span><span data-i="soc.t1"></span></a>
-            <a class="tile zoom ig" href="#" target="_blank" rel="noopener"><div class="media" data-scene="street" data-seed="42"></div><span class="ph pv">Gönderi</span><span data-i="soc.t2"></span></a>
-            <a class="tile zoom ig" href="#" target="_blank" rel="noopener"><div class="media" data-scene="aerial" data-seed="43"></div><span class="ph pv">Gönderi</span><span data-i="soc.t3"></span></a>
-            <a class="tile zoom ig" href="#" target="_blank" rel="noopener"><div class="media" data-scene="portrait" data-seed="44"></div><span class="ph pv">Reel kapağı</span><span data-i="soc.t4"></span></a>
-          </div>
-          <div class="chan" id="chan"></div>
-          <a class="btn solid" href="#blog" style="margin-top:20px;justify-self:start;align-self:flex-start"><span data-i="soc.blog"></span> →</a>
-        </div>
-        <div class="panel">
-          <div class="book-row">
-            <div class="book" aria-hidden="true"><span class="bm"></span><span class="bt" data-i="book.cover"></span><span class="br"></span></div>
-            <div><p class="k" data-i="book.kicker" style="margin-bottom:8px"></p><h2 class="dsp h4" data-i="book.title"></h2></div>
-          </div>
-          <p class="muted" style="margin:16px 0 14px" data-i="book.lead"></p>
-          <form class="js-mini" data-type="handbook">
+        <div class="panel books-panel">
+          <p class="k" data-i="hb.kicker" style="margin-bottom:10px"></p>
+          <p class="hb-lead" data-i="hb.lead"></p>
+          <form class="js-mini books-form" data-type="handbook">
+            <fieldset class="books"><legend class="sr" data-i="hb.kicker"></legend>
+              <label class="bk"><input type="checkbox" name="handbook" value="Kuzey Kıbrıs Tapu Türleri" checked><span class="book mini" aria-hidden="true"><span class="bm"></span><span class="bt" data-i="hb.tapu.cover"></span><span class="br"></span></span><span class="bk-t"><b data-i="hb.tapu"></b><small data-i="hb.tapu.d"></small></span><span class="tick" aria-hidden="true"></span></label>
+              <label class="bk"><input type="checkbox" name="handbook" value="Kuzey Kıbrıs Yatırım Rehberi" checked><span class="book mini" aria-hidden="true"><span class="bm"></span><span class="bt" data-i="hb.yatirim.cover"></span><span class="br"></span></span><span class="bk-t"><b data-i="hb.yatirim"></b><small data-i="hb.yatirim.d"></small></span><span class="tick" aria-hidden="true"></span></label>
+              <label class="bk"><input type="checkbox" name="handbook" value="Kuzey Kıbrıs’ta 1 Hafta Geçirmek" checked><span class="book mini" aria-hidden="true"><span class="bm"></span><span class="bt" data-i="hb.hafta.cover"></span><span class="br"></span></span><span class="bk-t"><b data-i="hb.hafta"></b><small data-i="hb.hafta.d"></small></span><span class="tick" aria-hidden="true"></span></label>
+            </fieldset>
             <label class="sr" for="bk-email" data-i="form.email"></label>
             <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-            <div class="field-row"><input id="bk-email" name="email" type="email" required autocomplete="email" data-ia="placeholder:form.email"><button class="btn" type="submit" data-i="book.cta"></button></div>
+            <div class="field-row"><input id="bk-email" name="email" type="email" required autocomplete="email" data-ia="placeholder:form.email"><button class="btn" type="submit" data-i="hb.cta"></button></div>
           </form>
         </div>
       </div>
@@ -650,7 +671,7 @@ footer{background:#F6F4F1;color:#161513;padding-block:clamp(56px,8vw,96px) calc(
 <div class="page" data-page="kuzey-kibris" hidden>
   <section class="nc" style="min-height:auto">
     <div class="poster" style="min-height:72svh">
-      <div class="media" data-media="nc_image" data-scene="coast" data-seed="51" data-ia="aria-label:nc.alt"></div>
+      <div class="pbg" data-parallax><div class="media" data-media="nc_image" data-scene="coast" data-seed="51" data-ia="aria-label:nc.alt"></div></div>
       <div class="wrap"><p class="k" data-i="nc.kicker"></p><h1 class="dsp" data-i="nc.title"></h1><p style="margin-top:18px;max-width:40ch;font-family:var(--display);font-size:clamp(18px,1.8vw,24px);line-height:1.4" data-i="ncp.lead"></p></div>
     </div>
   </section>
@@ -670,7 +691,7 @@ footer{background:#F6F4F1;color:#161513;padding-block:clamp(56px,8vw,96px) calc(
     <div><p class="k" data-i="nc.invest" style="margin-bottom:14px"></p><h2 class="dsp h3" data-i="ncp.invest.t"></h2></div>
     <div class="prose"><p data-i="ncp.invest.p"></p>
       <ul class="ticks"><li data-i="ncp.i1"></li><li data-i="ncp.i2"></li><li data-i="ncp.i3"></li><li data-i="ncp.i4"></li><li data-i="ncp.i5"></li><li data-i="ncp.i6"></li></ul>
-      <a class="arrow" href="#el-kitapcigi" style="justify-self:start"><span data-i="book.kicker"></span> <i>→</i></a></div>
+      <a class="arrow" href="#el-kitapcigi" style="justify-self:start"><span data-i="hb.kicker"></span> <i>→</i></a></div>
   </div></section>
   <section class="sec" id="tasin"><div class="wrap ncsec">
     <div><p class="k" data-i="nc.move" style="margin-bottom:14px"></p><h2 class="dsp h3" data-i="ncp.move.t"></h2></div>
@@ -725,7 +746,7 @@ footer{background:#F6F4F1;color:#161513;padding-block:clamp(56px,8vw,96px) calc(
 <footer>
   <div class="wrap">
     <div class="fgrid">
-      <a class="lockup" href="#" translate="no" aria-label="ata.co"><img src="{{A:lockup}}" alt="ata.co — Real Estate &amp; Brokerage" width="480" height="780" loading="lazy"></a>
+      <a class="lockup" href="#" translate="no" aria-label="ata.co"><img src="{{A:lockup}}" alt="ata.co — Real Estate &amp; Brokerage" width="720" height="894" loading="lazy" decoding="async"></a>
       <div class="fcontact"><a class="s-phone-link" href="#"><span class="s-phone"></span></a><span class="s-email"></span><span data-i="foot.addr"></span></div>
     </div>
     <div class="fbottom"><span>© <span id="yr">2026</span> ata.co · Atakan Terzili</span><a href="#gizlilik" data-i="foot.privacy"></a></div>
@@ -872,9 +893,13 @@ function postHTML(p){
 
 /* ============ forms ============ */
 const seg=(name,vals)=>`<div class="seg">${vals.map((v,i)=>`<label><input type="radio" name="${name}" value="${esc(v)}" ${i===0?"checked":""}><span>${esc(v)}</span></label>`).join("")}</div>`;
+const HB_TR={tapu:"Kuzey Kıbrıs Tapu Türleri",yatirim:"Kuzey Kıbrıs Yatırım Rehberi",hafta:"Kuzey Kıbrıs’ta 1 Hafta Geçirmek"}, HB_KEY={tapu:"tapu",yatirim:"yatirim",hafta:"hafta"};
+document.addEventListener("change",e=>{ if(e.target.name==="partner_kind"){ const w=document.getElementById("pt-co-wrap"); if(w) w.hidden = e.target.value!==t("f.pkind.co"); } });
 const hp = `<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">`;
-const base = k=>`<div class="two"><div class="fld"><label for="${k}-name">${t("f.name")}</label><input id="${k}-name" name="name" required autocomplete="name"></div>
-  <div class="fld"><label for="${k}-contact">${t("f.contact")}</label><input id="${k}-contact" name="contact" required autocomplete="tel"></div></div>`;
+const base = k=>`<div class="fld"><label for="${k}-name">${t("f.name")}</label><input id="${k}-name" name="name" required autocomplete="name"></div>
+  <div class="two"><div class="fld"><label for="${k}-phone">${t("f.phone.wa")}</label><input id="${k}-phone" name="phone" type="tel" autocomplete="tel" data-one="1"></div>
+  <div class="fld"><label for="${k}-email">${t("f.email")}</label><input id="${k}-email" name="email" type="email" autocomplete="email" data-one="1"></div></div>
+  <p class="fine" style="margin-top:-8px">${t("f.one.hint")}</p>`;
 const FORMS = {
   buy:()=>`${base("buy")}
     <fieldset class="fld"><legend>${t("f.budget")}</legend>${seg("budget",["£100–250k","£250–500k","£500k–1M","£1M+"])}</fieldset>
@@ -882,18 +907,19 @@ const FORMS = {
     <div class="fld"><label for="buy-when">${t("f.when")}</label><select id="buy-when" name="when"><option>${t("f.when.1")}</option><option>${t("f.when.2")}</option><option>${t("f.when.3")}</option><option>${t("f.when.4")}</option></select></div>
     <div class="fld"><label for="buy-msg">${t("f.msg.opt")}</label><textarea id="buy-msg" name="message" placeholder="${esc(t("f.msg.ph"))}"></textarea></div>`,
   sell:()=>`${base("sell")}
-    <div class="two"><div class="fld"><label for="sell-type">${t("f.ptype")}</label><select id="sell-type" name="type">${["daire","villa","sira-ev","penthouse","bungalov","arsa","ticari"].map(k=>`<option>${typeName(k)}</option>`).join("")}</select></div>
+    <div class="two"><div class="fld"><label for="sell-type">${t("f.ptype")}</label><select id="sell-type" name="ptype">${["daire","villa","sira-ev","penthouse","bungalov","arsa","ticari"].map(k=>`<option>${typeName(k)}</option>`).join("")}</select></div>
     <div class="fld"><label for="sell-loc">${t("f.loc")}</label><input id="sell-loc" name="location" placeholder="${esc(t("f.loc.ph"))}"></div></div>
     <div class="fld"><label for="sell-msg">${t("f.about")}</label><textarea id="sell-msg" name="message" placeholder="${esc(t("f.about.ph"))}"></textarea></div>`,
   rent:()=>`<fieldset class="fld"><legend>${t("f.dir")}</legend>${seg("direction",[t("f.dir.1"),t("f.dir.2")])}</fieldset>${base("rent")}
     <fieldset class="fld"><legend>${t("f.beds")}</legend>${seg("bedrooms",[t("f.studio"),"1","2","3+"])}</fieldset>
     <div class="two"><div class="fld"><label for="rent-area">${t("f.area")}</label><input id="rent-area" name="area" placeholder="${esc(t("f.area.ph"))}"></div>
     <div class="fld"><label for="rent-date">${t("f.movein")}</label><input id="rent-date" name="move_in" type="month"></div></div>`,
-  partner:()=>`<div class="fld"><label for="pt-name">${t("f.name")}</label><input id="pt-name" name="name" required autocomplete="name"></div>
+  partner:()=>`<fieldset class="fld"><legend>${t("f.pkind")}</legend>${seg("partner_kind",[t("f.pkind.co"),t("f.pkind.ind")])}</fieldset>
+    <div class="fld" id="pt-co-wrap"><label for="pt-co">${t("f.company")}</label><input id="pt-co" name="company" autocomplete="organization"></div>
+    <div class="fld"><label for="pt-name">${t("f.name")}</label><input id="pt-name" name="name" required autocomplete="name"></div>
     <div class="two"><div class="fld"><label for="pt-email">${t("f.email")}</label><input id="pt-email" name="email" type="email" required autocomplete="email"></div>
-    <div class="fld"><label for="pt-phone">${t("f.phone")}</label><input id="pt-phone" name="phone" type="tel" required autocomplete="tel"></div></div>`,
-  listing:(T)=>`<div class="fld"><label for="li-name">${t("f.name")}</label><input id="li-name" name="name" required autocomplete="name"></div>
-    <div class="fld"><label for="li-contact">${t("f.contact")}</label><input id="li-contact" name="contact" required></div>
+    <div class="fld"><label for="pt-phone">${t("f.phone.wa")}</label><input id="pt-phone" name="phone" type="tel" required autocomplete="tel"></div></div>`,
+  listing:(T)=>`${base("li")}
     <div class="fld"><label for="li-msg">${t("f.message")}</label><textarea id="li-msg" name="message">${esc(t("d.msg",{x:T}))}</textarea></div>`
 };
 function formHTML(type,extra){ return `<form class="form js-form" data-type="${type}" ${extra?`data-ref="${esc(extra)}"`:""}>${hp}${FORMS[type](extra)}
@@ -908,13 +934,20 @@ async function send(type, data){
 }
 document.addEventListener("submit", async e=>{
   const f=e.target; if(!f.matches(".js-form,.js-mini")) return; e.preventDefault();
+  const ones=[...f.querySelectorAll("[data-one]")]; if(ones.length && ones.every(i=>!i.value.trim())){ toast(t("f.one.err")); ones[0].focus(); return; }
+  if(f.dataset.type==="handbook" && !f.querySelector("[name=handbook]:checked")){ toast(t("hb.pick")); return; }
   const btn=f.querySelector("[type=submit]"), old=btn.innerHTML; btn.disabled=true; btn.textContent=t("f.sending");
-  const data=Object.fromEntries(new FormData(f)); if(f.dataset.ref) data.listing=f.dataset.ref;
+  const fd=new FormData(f), data=Object.fromEntries(fd); if(f.dataset.ref) data.listing=f.dataset.ref;
+  const picked=fd.getAll("handbook"); if(picked.length){ data.handbook=picked.map(k=>HB_TR[k]||k).join(", "); data.delivered=picked.every(k=>S.handbooks&&S.handbooks[k])?"evet":"hayir"; }
   const ok = await send(f.dataset.type, data);
   if(ok==="offline"){ f.outerHTML = `<div class="done"><p class="dsp h4">${t("f.offline")}</p><a class="btn solid" href="${waURL()}" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a></div>`; return; }
   if(!ok){ btn.disabled=false; btn.innerHTML=old; toast(t("f.err")); return; }
   if(f.matches(".js-mini")){
-    const msg = f.dataset.type==="handbook" ? (S.handbook_pdf ? `<a href="${esc(S.handbook_pdf)}" target="_blank" rel="noopener">${t("book.done.dl")}</a>` : t("book.done.later")) : t("nl.done");
+    let msg = t("nl.done");
+    if(f.dataset.type==="handbook"){
+      const ready=picked.filter(k=>S.handbooks&&S.handbooks[k]), later=picked.filter(k=>!(S.handbooks&&S.handbooks[k]));
+      msg = !ready.length ? t("hb.later.all") : (`${t("hb.done")}<br>`+ready.map(k=>`<a href="${esc(S.handbooks[k])}" target="_blank" rel="noopener">${t("hb."+HB_KEY[k])} ↓</a>`).join("<br>")) + (ready.length && later.length?`<span style="display:block;margin-top:8px;font-size:.85em">${t("hb.later")}</span>`:"");
+    }
     f.outerHTML = `<p class="ok-msg">${msg}</p>`; return;
   }
   f.outerHTML = `<div class="done"><span class="k" style="color:var(--accent)">${t("f.ok.k")}</span><p class="dsp h4">${t("f.ok")}</p><a class="arrow" href="${waURL()}" target="_blank" rel="noopener" style="justify-self:start">${t("f.ok.wa")} <i>→</i></a></div>`;
@@ -1017,6 +1050,7 @@ function onScroll(){
   const overImage = pg==="home"||pg==="mulk"||pg==="kuzey-kibris";
   bar.classList.toggle("solid", !overImage || scrollY > innerHeight*0.6);
   if(pg==="home" && !reduce && scrollY<innerHeight*1.2) heroBg.style.transform=`translate3d(0,${scrollY*0.35}px,0)`;
+  if(!reduce) $$(`.page[data-page="${pg}"] [data-parallax]`).forEach(el=>{ const r=el.parentElement.getBoundingClientRect(); if(r.bottom<0||r.top>innerHeight) return; const d=(r.top+r.height/2-innerHeight/2)*-0.15; el.style.transform=`translate3d(0,${d.toFixed(1)}px,0)`; });
 }
 addEventListener("scroll",onScroll,{passive:true});
 const menu=$("#menu");

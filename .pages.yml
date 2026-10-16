@@ -177,5 +177,7 @@ content:
       - { name: youtube, label: YouTube linki, type: string }
       - { name: telegram, label: Telegram linki, type: string }
       - { name: whatsapp_channel, label: WhatsApp kanal linki, type: string }
-      - { name: handbook_pdf, label: Tapu türleri el kitapçığı (PDF), type: file }
+      - { name: handbook_tapu_pdf, label: "El kitapçığı PDF: Kuzey Kıbrıs Tapu Türleri", type: file }
+      - { name: handbook_yatirim_pdf, label: "El kitapçığı PDF: Kuzey Kıbrıs Yatırım Rehberi", type: file }
+      - { name: handbook_hafta_pdf, label: "El kitapçığı PDF: Kuzey Kıbrıs’ta 1 Hafta Geçirmek", type: file }
       - { name: forms_endpoint, label: "Form adresi (Google Apps Script)", type: string }

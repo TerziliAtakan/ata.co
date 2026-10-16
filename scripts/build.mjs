@@ -71,7 +71,8 @@ for (const p of posts) {
 }
 const S = { ...site };
 for (const k of ["hero_image", "portrait_image", "intro_video_cover", "nc_image"]) S[k] = await image(site[k]);
-S.handbook_pdf = site.handbook_pdf ? (/^https?:/.test(site.handbook_pdf) ? site.handbook_pdf : BASE + site.handbook_pdf.replace(/^\/+/, "")) : "";
+const fileURL = (v) => (v ? (/^https?:/.test(v) ? v : BASE + String(v).replace(/^\/+/, "")) : "");
+S.handbooks = { tapu: fileURL(site.handbook_tapu_pdf || site.handbook_pdf), yatirim: fileURL(site.handbook_yatirim_pdf), hafta: fileURL(site.handbook_hafta_pdf) };
 
 /* ---------- assets ---------- */
 const ASSETS = rel("src/assets");

@@ -515,9 +515,9 @@
   "Спасибо. Гид придёт на ваш e-mail, как только будет готов."
  ],
  "nl.title": [
-  "Haberdar olun",
-  "Stay in the loop",
-  "Будьте в курсе"
+  "Ayda 1 defa gelişmelerden haberdar olun.",
+  "Get the latest, once a month.",
+  "Новости раз в месяц."
  ],
  "nl.lead": [
   "Yeni mülkler, piyasa notları ve Kuzey Kıbrıs’tan haberler.",
@@ -1208,5 +1208,120 @@
   "Form şu an bakımda. Lütfen bana WhatsApp’tan yazın; hemen dönüş yapayım.",
   "This form is being set up. Please message me on WhatsApp and I’ll reply right away.",
   "Форма пока настраивается. Пожалуйста, напишите мне в WhatsApp — я сразу отвечу."
+ ],
+ "f.phone.wa": [
+  "Telefon / WhatsApp",
+  "Phone / WhatsApp",
+  "Телефон / WhatsApp"
+ ],
+ "f.one.hint": [
+  "Telefon ya da e-postadan birini yazmanız yeterli.",
+  "Phone or email: one is enough.",
+  "Достаточно телефона или e-mail."
+ ],
+ "f.one.err": [
+  "Size ulaşabilmem için telefon ya da e-posta yazar mısınız?",
+  "Please add a phone number or an email so I can reach you.",
+  "Пожалуйста, укажите телефон или e-mail, чтобы я мог с вами связаться."
+ ],
+ "f.pkind": [
+  "Başvuru türü",
+  "Applying as",
+  "Вы обращаетесь как"
+ ],
+ "f.pkind.co": [
+  "Şirket",
+  "Company",
+  "Компания"
+ ],
+ "f.pkind.ind": [
+  "Bireysel",
+  "Individual",
+  "Частное лицо"
+ ],
+ "f.company": [
+  "Şirket adı",
+  "Company name",
+  "Название компании"
+ ],
+ "hb.kicker": [
+  "Ücretsiz el kitapçıkları",
+  "Free handbooks",
+  "Бесплатные гиды"
+ ],
+ "hb.lead": [
+  "İstediklerinizi seçin, e-postanıza göndereyim.",
+  "Choose the ones you’d like and I’ll email them to you.",
+  "Выберите нужные, и я пришлю их на e-mail."
+ ],
+ "hb.tapu": [
+  "Kuzey Kıbrıs Tapu Türleri",
+  "North Cyprus Title Deed Types",
+  "Типы титулов на Северном Кипре"
+ ],
+ "hb.tapu.d": [
+  "Tapu türleri arasındaki farklar, sade bir dille.",
+  "The differences between title deed types, in plain language.",
+  "Разница между типами титулов простыми словами."
+ ],
+ "hb.tapu.cover": [
+  "Tapu<br><em>Türleri</em>",
+  "Title<br><em>Deeds</em>",
+  "Типы<br><em>титулов</em>"
+ ],
+ "hb.yatirim": [
+  "Kuzey Kıbrıs Yatırım Rehberi",
+  "North Cyprus Investment Guide",
+  "Инвестиционный гид по Северному Кипру"
+ ],
+ "hb.yatirim.d": [
+  "Bölgeler, ödeme planları, masraflar ve sorulacak sorular.",
+  "Areas, payment plans, costs and the questions to ask.",
+  "Районы, рассрочка, расходы и вопросы, которые стоит задать."
+ ],
+ "hb.yatirim.cover": [
+  "Yatırım<br><em>Rehberi</em>",
+  "Investment<br><em>Guide</em>",
+  "Гид<br><em>инвестора</em>"
+ ],
+ "hb.hafta": [
+  "Kuzey Kıbrıs’ta 1 Hafta Geçirmek",
+  "A Week in North Cyprus",
+  "Неделя на Северном Кипре"
+ ],
+ "hb.hafta.d": [
+  "Keşif gezisi için gün gün bir hafta planı.",
+  "A day-by-day plan for a week-long visit.",
+  "План поездки на неделю, день за днём."
+ ],
+ "hb.hafta.cover": [
+  "1 Hafta<br><em>K. Kıbrıs</em>",
+  "A Week in<br><em>N. Cyprus</em>",
+  "Неделя<br><em>на Кипре</em>"
+ ],
+ "hb.cta": [
+  "Gönder →",
+  "Send →",
+  "Получить →"
+ ],
+ "hb.pick": [
+  "En az bir kitapçık seçer misiniz?",
+  "Please choose at least one handbook.",
+  "Пожалуйста, выберите хотя бы один гид."
+ ],
+ "hb.done": [
+  "Teşekkürler. İndirebilirsiniz:",
+  "Thank you. You can download:",
+  "Спасибо. Можно скачать:"
+ ],
+ "hb.later": [
+  "Diğerleri hazır olunca e-postanıza gelecek.",
+  "The others will arrive in your inbox when they’re ready.",
+  "Остальные придут на e-mail, как только будут готовы."
+ ],
+ "hb.later.all": [
+  "Teşekkürler. Seçtiğiniz kitapçıklar e-postanıza gelecek.",
+  "Thank you. Your handbooks will arrive in your inbox.",
+  "Спасибо. Выбранные гиды придут на ваш e-mail."
  ]
 }

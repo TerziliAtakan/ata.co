@@ -18,6 +18,8 @@
   "intro_video_url": "",
   "intro_video_cover": "",
   "nc_image": "",
-  "handbook_pdf": "",
-  "forms_endpoint": "https://script.google.com/macros/s/AKfycby-UHnxpcisFaX3bLNLDvJ23a2Y-twcWrm2hvrujpSDE5_4KAitZEuhxq8md5IZxSdn/exec"
+  "forms_endpoint": "https://script.google.com/macros/s/AKfycby-UHnxpcisFaX3bLNLDvJ23a2Y-twcWrm2hvrujpSDE5_4KAitZEuhxq8md5IZxSdn/exec",
+  "handbook_tapu_pdf": "",
+  "handbook_yatirim_pdf": "",
+  "handbook_hafta_pdf": ""
 }
