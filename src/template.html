@@ -482,6 +482,12 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 .card .pr{color:var(--price);font-size:clamp(28px,3vw,40px)}
 /* partner strip title in capitals */
 .strip:not(.nl-strip) b{text-transform:uppercase;letter-spacing:.01em}
+/* typewriter */
+[data-tw]{position:relative}
+.tw-ghost{visibility:hidden}
+.tw-live{position:absolute;left:0;top:0;right:0}
+.tw-on .tw-live::after{content:"";display:inline-block;width:.08em;min-width:2px;height:.85em;background:currentColor;margin-left:.06em;vertical-align:-.06em;animation:twc .8s steps(1) infinite}
+@keyframes twc{50%{opacity:0}}
 /* headings in bold */
 .dsp,.menu nav a,.me-head .name,.num b,.card .nm,.card .pr,.q .tx b,.path b,.strip b,.trio b,.why-list b,.svc-list b,.chan a,.bk-t b,.tabs button b,.keys dd,.dhero .pr,.prose h2,.prose h3,.book .bt{font-weight:600}
 .dsp em,.strip b em{font-weight:600}
@@ -606,7 +612,7 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
       </div>
     </div></div>
     <!-- 2.4 -->
-    <a class="strip on-dark" href="#partner"><div class="wrap"><div><b data-i="partner.strip"></b><small data-i="partner.strip.d"></small></div><span class="go" aria-hidden="true">→</span></div></a>
+    <a class="strip on-dark" href="#partner"><div class="wrap"><div><b data-tw="partner.strip"></b><small data-i="partner.strip.d"></small></div><span class="go" aria-hidden="true">→</span></div></a>
   </section>
 
   <!-- 3.1 -->
@@ -814,7 +820,7 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 <footer>
   <!-- stay in the loop (always directly above the logo) -->
   <div class="strip on-dark nl-strip" role="region" aria-labelledby="nl-h"><div class="wrap">
-      <div class="nl-txt"><b id="nl-h" data-i="nl.title"></b></div>
+      <div class="nl-txt"><b id="nl-h" data-tw="nl.title"></b></div>
       <form class="js-mini nl-form" data-type="newsletter">
         <label class="sr" for="nl-email" data-i="form.email"></label>
         <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -1145,7 +1151,24 @@ function setLang(l, initial){
   $$("#langList button").forEach(b=>b.setAttribute("aria-current",String(b.dataset.lang===l)));
   try{ localStorage.setItem("ataco-lang",l) }catch(e){}
   if(!PREVIEW && DATA.paths && !initial){ const p=DATA.paths[l]; if(p && location.pathname!==p) history.replaceState(null,"",p+location.hash); }
-  applyStatic(document); applySite(); applyStatic(document); renderFeatured(); route(!initial); refreshHints();
+  applyStatic(document); applySite(); applyStatic(document); renderFeatured(); route(!initial); refreshHints(); typewriter();
+}
+/* typewriter titles (Partner olun, newsletter): type once when they scroll into view */
+function typewriter(){
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window);
+  $$("[data-tw]").forEach(el=>{
+    const full=t(el.dataset.tw); clearTimeout(el._t); if(el._io) el._io.disconnect();
+    el.innerHTML=`<span class="sr">${esc(full)}</span><span class="tw-ghost" aria-hidden="true"></span><span class="tw-live" aria-hidden="true"></span>`;
+    el.querySelector(".tw-ghost").textContent=full;
+    const live=el.querySelector(".tw-live");
+    if(still || el.dataset.twDone){ live.textContent=full; return; }
+    el._io=new IntersectionObserver(es=>{ if(!es[0].isIntersecting) return; el._io.disconnect();
+      const ch=[...full]; let i=0; el.classList.add("tw-on");
+      const step=()=>{ live.textContent=ch.slice(0,++i).join(""); if(i<ch.length) el._t=setTimeout(step,55+Math.random()*45); else { el.dataset.twDone="1"; setTimeout(()=>el.classList.remove("tw-on"),1600); } };
+      el._t=setTimeout(step,250);
+    },{threshold:.6});
+    el._io.observe(el);
+  });
 }
 const langBtn=$("#langBtn"), langList=$("#langList");
 langBtn.onclick=()=>{ const o=langList.hidden; langList.hidden=!o; langBtn.setAttribute("aria-expanded",String(o)); if(o) langList.querySelector('[aria-current="true"]')?.focus(); };
