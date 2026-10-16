@@ -41,7 +41,7 @@ async function image(p) {
       const r = {};
       for (const [k, w] of Object.entries(sizes)) {
         if (k === "l" && (meta.width || 0) < 2000) continue;
-        await sharp(file).rotate().resize({ width: Math.min(w, meta.width || w), withoutEnlargement: true }).webp({ quality: 80 }).toFile(path.join(OUT, "img", `${name}-${w}.webp`));
+        await sharp(file).rotate().resize({ width: Math.min(w, meta.width || w), withoutEnlargement: true }).webp({ quality: 88, smartSubsample: true }).toFile(path.join(OUT, "img", `${name}-${w}.webp`));
         r[k] = `${BASE}img/${name}-${w}.webp`;
       }
       result = r;

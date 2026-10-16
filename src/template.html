@@ -111,7 +111,9 @@ p{margin:0}
 .hero{color:#fff;justify-content:flex-end;overflow:hidden;background:#1d2127;padding-bottom:calc(36px + env(safe-area-inset-bottom,0px))}
 .hero-bg{position:absolute;left:0;right:0;top:-12%;height:124%;will-change:transform}
 .hero-bg .media{position:absolute;inset:0}
+.hero-bg .media img{object-position:50% 42%}
 .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,8,10,.45) 0%,rgba(8,8,10,0) 30%,rgba(8,8,10,.08) 55%,rgba(8,8,10,.78) 100%)}
+@media (min-width:900px){.hero::after{background:linear-gradient(180deg,rgba(8,8,10,.45) 0%,rgba(8,8,10,0) 30%,rgba(8,8,10,.08) 55%,rgba(8,8,10,.78) 100%),linear-gradient(90deg,rgba(8,8,10,.42) 0%,rgba(8,8,10,0) 60%)}}
 .hero .wrap{position:relative;z-index:2}
 .hero .k{color:rgba(255,255,255,.88);font-size:12px;margin-bottom:22px}
 .hero h1{max-width:14ch}
@@ -790,13 +792,13 @@ const host = u => { try{ return new URL(u).hostname.replace(/^www\./,""); }catch
 const typeName = k => I18N["type."+k] ? t("type."+k) : (k||"");
 
 /* ============ media ============ */
-function imgHTML(img, alt, eager){
+function imgHTML(img, alt, eager, full){
   if(!img) return "";
   if(typeof img==="string") return `<img src="${esc(img)}" alt="${esc(alt)}" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
-  return `<img src="${esc(img.m)}" srcset="${esc(img.s)} 800w, ${esc(img.m)} 1600w${img.l?`, ${esc(img.l)} 2400w`:""}" sizes="(max-width:900px) 100vw, 60vw" alt="${esc(alt)}" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
+  return `<img src="${esc(img.m)}" srcset="${esc(img.s)} 800w, ${esc(img.m)} 1600w${img.l?`, ${esc(img.l)} 2400w`:""}" sizes="${full?"100vw":"(max-width:900px) 100vw, 60vw"}" alt="${esc(alt)}" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
 }
-function mediaHTML(img, scene, seed, alt, eager){
-  return img ? imgHTML(img,alt,eager) : `<canvas data-scene="${scene}" data-seed="${seed}" role="img" aria-label="${esc(alt)}"></canvas>`;
+function mediaHTML(img, scene, seed, alt, eager, full){
+  return img ? imgHTML(img,alt,eager,full) : `<canvas data-scene="${scene}" data-seed="${seed}" role="img" aria-label="${esc(alt)}"></canvas>`;
 }
 function fillMedia(root=document){
   $$("[data-media],.media[data-scene]",root).forEach(el=>{
@@ -804,7 +806,7 @@ function fillMedia(root=document){
     const img = el.dataset.media ? S[el.dataset.media] : null;
     const alt = el.getAttribute("aria-label")||"";
     const node = document.createElement("div");
-    node.innerHTML = mediaHTML(img, el.dataset.scene||"coast", el.dataset.seed||1, alt, !!el.dataset.eager);
+    node.innerHTML = mediaHTML(img, el.dataset.scene||"coast", el.dataset.seed||1, alt, !!el.dataset.eager, el.dataset.media==="hero_image"||el.dataset.media==="nc_image");
     const c = node.firstElementChild;
     if(c.tagName==="CANVAS"){ if(el.dataset.figure) c.dataset.figure=el.dataset.figure; if(el.dataset.sea) c.dataset.sea=el.dataset.sea; }
     el.prepend(c); el.removeAttribute("aria-label"); el.dataset.filled="1";
