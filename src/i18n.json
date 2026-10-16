@@ -270,9 +270,9 @@
   "Станьте партнёром"
  ],
  "partner.strip.d": [
-  "Emlak danışmanları, geliştiriciler ve yönlendiren iş ortakları için.",
-  "For agents, developers and referral partners.",
-  "Для агентов, девелоперов и партнёров по рекомендациям."
+  "Emlak danışmanları, geliştiriciler ve referans yönlendirenler için.",
+  "For agents, developers and those who refer clients.",
+  "Для агентов, девелоперов и тех, кто рекомендует клиентов."
  ],
  "partner.title": [
   "ata.co ile <em>çalışalım.</em>",
@@ -380,64 +380,64 @@
   "Услуги"
  ],
  "svc.1": [
-  "Mülk arama",
-  "Property search",
-  "Поиск недвижимости"
+  "Tanışma görüşmesi",
+  "First conversation",
+  "Знакомство"
  ],
  "svc.1.d": [
-  "Hedefinize ve bütçenize uygun kısa bir liste.",
-  "A short list matched to your goals and budget.",
-  "Короткий список под ваши цели и бюджет."
+  "Telefon ya da video arama ile.",
+  "By phone or video call.",
+  "По телефону или видеосвязи."
  ],
  "svc.2": [
-  "Yakından ya da uzaktan gösterim",
-  "Viewings, near or far",
-  "Просмотры лично и онлайн"
+  "Mülk arama",
+  "Property search",
+  "Подбор объектов"
  ],
  "svc.2.d": [
+  "Beklentinize ve bütçenize en uygun teklifler.",
+  "The options that best fit your expectations and budget.",
+  "Варианты, которые лучше всего подходят под ваши ожидания и бюджет."
+ ],
+ "svc.3": [
+  "Yerinde ya da uzaktan gösterim",
+  "Viewings, in person or remote",
+  "Просмотры лично или онлайн"
+ ],
+ "svc.3.d": [
   "Yerinde ya da yurt dışındaysanız canlı video ile.",
   "In person, or live on video if you’re abroad.",
   "Лично или по видеосвязи, если вы за границей."
  ],
- "svc.3": [
+ "svc.4": [
+  "Hukuki danışma",
+  "Legal advice",
+  "Юридическая консультация"
+ ],
+ "svc.4.d": [
+  "KKTC Barosu’na kayıtlı profesyonel bir avukatla süreci birlikte öğreniyoruz.",
+  "We go through the process with a professional lawyer registered with the North Cyprus Bar Association.",
+  "Разбираемся в процессе вместе с профессиональным юристом, членом Коллегии адвокатов Северного Кипра."
+ ],
+ "svc.5": [
   "Satın alma rehberliği",
   "Purchase guidance",
   "Сопровождение покупки"
  ],
- "svc.3.d": [
-  "Rezervasyondan tapuya, avukatla birlikte.",
-  "From reservation to title deed, with a lawyer.",
-  "От бронирования до титула, вместе с юристом."
+ "svc.5.d": [
+  "Rezervasyondan tapuya, her adımda yanınızda.",
+  "From reservation to title deed, with you at every step.",
+  "От бронирования до титула, рядом на каждом шаге."
  ],
- "svc.4": [
+ "svc.6": [
   "Evinizi satmak",
   "Selling your home",
   "Продажа вашего дома"
  ],
- "svc.4.d": [
+ "svc.6.d": [
   "Fiyatlama, çekim ve doğru alıcıya sunum.",
   "Pricing, filming and presenting it to the right buyers.",
   "Оценка, съёмка и презентация нужным покупателям."
- ],
- "svc.5": [
-  "Kiralama",
-  "Rentals",
-  "Аренда"
- ],
- "svc.5.d": [
-  "Kiralık ev bulmak ya da evinize kiracı bulmak.",
-  "Finding a home to rent, or tenants for yours.",
-  "Поиск жилья в аренду или арендаторов для вашего."
- ],
- "svc.6": [
-  "Taşınma ve sonrası",
-  "Relocation and after",
-  "Переезд и после"
- ],
- "svc.6.d": [
-  "Oturum, okul, sigorta, araç: avukatımla birlikte yol gösteriyorum.",
-  "Residency, schools, insurance, a car: I guide you with my lawyer.",
-  "ВНЖ, школа, страховка, автомобиль: помогаю вместе с юристом."
  ],
  "soc.kicker": [
   "Yolculuğu takip edin",
@@ -1323,5 +1323,30 @@
   "Teşekkürler. Seçtiğiniz kitapçıklar e-postanıza gelecek.",
   "Thank you. Your handbooks will arrive in your inbox.",
   "Спасибо. Выбранные гиды придут на ваш e-mail."
+ ],
+ "svc.7": [
+  "Kiralama",
+  "Rentals",
+  "Аренда"
+ ],
+ "svc.7.d": [
+  "Kiralık ev bulmak ya da evinize kiracı bulmak.",
+  "Finding a home to rent, or tenants for yours.",
+  "Поиск жилья в аренду или арендаторов для вашего."
+ ],
+ "svc.8": [
+  "Taşınma ve sonrası",
+  "Relocation and after",
+  "Переезд и после"
+ ],
+ "svc.8.d": [
+  "Oturum, okul, sigorta, araç: avukatımla birlikte yol gösteriyorum.",
+  "Residency, schools, insurance, a car: I guide you with my lawyer.",
+  "ВНЖ, школа, страховка, автомобиль: помогаю вместе с юристом."
+ ],
+ "menu.social": [
+  "Sosyal Medya",
+  "Social Media",
+  "Соцсети"
  ]
 }
