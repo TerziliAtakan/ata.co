@@ -1,0 +1,14 @@
+{
+  "hash": "sample",
+  "source": "tr",
+  "en": {
+    "title": "The Investor’s Opportunity",
+    "summary": "Payment plan through to delivery.",
+    "description_html": "<p>SAMPLE LISTING. This text will be replaced by the real description added in the admin panel.</p>"
+  },
+  "ru": {
+    "title": "Для инвестора",
+    "summary": "Рассрочка до сдачи объекта.",
+    "description_html": "<p>ПРИМЕР ОБЪЯВЛЕНИЯ. Этот текст заменится реальным описанием из панели управления.</p>"
+  }
+}

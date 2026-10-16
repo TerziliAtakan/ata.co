@@ -1,0 +1,1207 @@
+{
+ "meta.title": [
+  "ata.co — Kuzey Kıbrıs’ta Gayrimenkul · Atakan Terzili",
+  "ata.co — North Cyprus Real Estate · Atakan Terzili",
+  "ata.co — Недвижимость Северного Кипра · Атакан Терзили"
+ ],
+ "meta.desc": [
+  "Atakan Terzili ile Kuzey Kıbrıs’ta satılık ve kiralık mülkler: İskele, Long Beach, Bafra, Girne ve Esentepe. Projeden, ikinci el, kiralık ve arsa. Kişisel, yerel danışmanlık.",
+  "North Cyprus property with Atakan Terzili: homes for sale and rent in Iskele, Long Beach, Bafra, Kyrenia and Esentepe. Off-plan, re-sale, rentals and land. Personal, local advice.",
+  "Недвижимость Северного Кипра с Атаканом Терзили: продажа и аренда в Искеле, Лонг-Бич, Бафре, Кирении и Эсентепе. Новостройки, вторичный рынок, аренда и земля."
+ ],
+ "nav.menu": [
+  "Menü",
+  "Menu",
+  "Меню"
+ ],
+ "nav.lang": [
+  "Dil seçin",
+  "Choose language",
+  "Выберите язык"
+ ],
+ "nav.home": [
+  "ata.co ana sayfa",
+  "ata.co home",
+  "ata.co — главная"
+ ],
+ "menu.home": [
+  "Ana sayfa",
+  "Home",
+  "Главная"
+ ],
+ "menu.properties": [
+  "Mülkler",
+  "Properties",
+  "Объекты"
+ ],
+ "menu.blog": [
+  "Bloglar",
+  "Blog",
+  "Блог"
+ ],
+ "menu.nc": [
+  "Kuzey Kıbrıs",
+  "North Cyprus",
+  "Северный Кипр"
+ ],
+ "menu.contact": [
+  "İletişim",
+  "Contact",
+  "Контакты"
+ ],
+ "menu.partner": [
+  "Partner olun",
+  "Become a partner",
+  "Стать партнёром"
+ ],
+ "menu.close": [
+  "Menüyü kapat",
+  "Close menu",
+  "Закрыть меню"
+ ],
+ "hero.kicker": [
+  "Atakan Terzili — Kuzey Kıbrıs",
+  "Atakan Terzili — North Cyprus",
+  "Атакан Терзили — Северный Кипр"
+ ],
+ "hero.title": [
+  "Mülk, dört duvardan fazlasıdır, <em>bir yaşam biçimi.</em>",
+  "Property is more than four walls. <em>It’s a way of life.</em>",
+  "Недвижимость — больше, чем четыре стены. <em>Это образ жизни.</em>"
+ ],
+ "hero.scroll": [
+  "Kaydırın",
+  "Scroll",
+  "Листайте"
+ ],
+ "hero.alt": [
+  "Atakan Terzili, Kuzey Kıbrıs",
+  "Atakan Terzili, North Cyprus",
+  "Атакан Терзили, Северный Кипр"
+ ],
+ "me.kicker": [
+  "Beni tanıyın",
+  "Get to know me",
+  "Давайте знакомиться"
+ ],
+ "me.role": [
+  "Gayrimenkul danışmanı · ata.co kurucusu",
+  "Real estate consultant · Founder of ata.co",
+  "Консультант по недвижимости · основатель ata.co"
+ ],
+ "me.video": [
+  "Tanıtım videosunu izleyin",
+  "Watch the introduction",
+  "Смотреть видео-знакомство"
+ ],
+ "me.video.soon": [
+  "Tanıtım videosu yakında",
+  "Introduction video coming soon",
+  "Видео-знакомство скоро"
+ ],
+ "me.title": [
+  "Emlaktan <em>fazlası.</em>",
+  "More than <em>real estate.</em>",
+  "Больше, чем <em>недвижимость.</em>"
+ ],
+ "me.p": [
+  "Kuzey Kıbrıs benim için bir pazardan fazlası; tanıdığım, anladığım ve evim dediğim bir yer. Gayrimenkule yaklaşımım basit: önce insanı anlamak, sonra doğru mülkü bulmak.",
+  "North Cyprus is more than a market to me. It’s a place I know, understand and call home. My approach is simple: understand the person first, then find the right property.",
+  "Северный Кипр для меня больше, чем рынок. Это место, которое я знаю, понимаю и называю домом. Мой подход прост: сначала понять человека, затем найти подходящий объект."
+ ],
+ "me.portrait": [
+  "Atakan Terzili portresi",
+  "Portrait of Atakan Terzili",
+  "Портрет Атакана Терзили"
+ ],
+ "num.kicker": [
+  "Rakamlarla",
+  "In numbers",
+  "В цифрах"
+ ],
+ "num.title": [
+  "Ölçülebilir <em>deneyim.</em>",
+  "Experience you can <em>measure.</em>",
+  "Опыт, который можно <em>измерить.</em>"
+ ],
+ "num.years": [
+  "yıl Kuzey Kıbrıs’ta",
+  "years in North Cyprus",
+  "лет на Северном Кипре"
+ ],
+ "num.clients": [
+  "müşteri",
+  "clients",
+  "клиентов"
+ ],
+ "num.props": [
+  "satılan / kiralanan mülk",
+  "properties sold / let",
+  "проданных / сданных объектов"
+ ],
+ "feat.kicker": [
+  "Seçilmiş mülkler",
+  "Selected properties",
+  "Избранные объекты"
+ ],
+ "feat.title": [
+  "Şu an <em>öne çıkanlar.</em>",
+  "Featured <em>right now.</em>",
+  "Сейчас <em>в фокусе.</em>"
+ ],
+ "feat.all": [
+  "Tüm mülkler",
+  "All properties",
+  "Все объекты"
+ ],
+ "feat.empty": [
+  "Yeni ilanlar çok yakında. Ne aradığınızı söyleyin, size uygun olanları göndereyim.",
+  "New listings are coming soon. Tell me what you’re looking for and I’ll send you a match.",
+  "Новые объекты скоро появятся. Расскажите, что вы ищете, и я пришлю подходящие варианты."
+ ],
+ "swipe": [
+  "Kaydırın",
+  "Swipe",
+  "Листайте"
+ ],
+ "prev": [
+  "Önceki",
+  "Previous",
+  "Назад"
+ ],
+ "next": [
+  "Sonraki",
+  "Next",
+  "Далее"
+ ],
+ "need.kicker": [
+  "İhtiyacınızla başlayın",
+  "Start with what you need",
+  "Начните с того, что вам нужно"
+ ],
+ "cat.projeden": [
+  "Projeden",
+  "Off-plan",
+  "Новостройки"
+ ],
+ "cat.ikinci-el": [
+  "İkinci el",
+  "Re-sale",
+  "Вторичный рынок"
+ ],
+ "cat.kiralik": [
+  "Kiralık",
+  "Rental",
+  "Аренда"
+ ],
+ "cat.arsa": [
+  "Arsa",
+  "Land",
+  "Земля"
+ ],
+ "cat.projeden.d": [
+  "Yeni projeler, erken giriş.",
+  "New developments, early entry.",
+  "Новые проекты на раннем этапе."
+ ],
+ "cat.ikinci-el.d": [
+  "Hazır, taşınmaya hazır evler.",
+  "Finished homes, ready to move in.",
+  "Готовое жильё для переезда."
+ ],
+ "cat.kiralik.d": [
+  "Adada uzun dönem yaşam için.",
+  "Long-term homes on the island.",
+  "Долгосрочная аренда на острове."
+ ],
+ "cat.arsa.d": [
+  "İnşa ve yatırım için.",
+  "For building or holding.",
+  "Для строительства и инвестиций."
+ ],
+ "work.kicker": [
+  "Talep",
+  "Inquire",
+  "Запрос"
+ ],
+ "work.title": [
+  "Nasıl birlikte <em>çalışabiliriz?</em>",
+  "How can we <em>work together?</em>",
+  "Как мы можем <em>работать вместе?</em>"
+ ],
+ "work.buy": [
+  "Satın al",
+  "Buy",
+  "Купить"
+ ],
+ "work.buy.d": [
+  "Mülk arıyorum.",
+  "I’m looking for a property.",
+  "Я ищу недвижимость."
+ ],
+ "work.sell": [
+  "Sat",
+  "Sell",
+  "Продать"
+ ],
+ "work.sell.d": [
+  "Mülkümü satmak istiyorum.",
+  "I want to sell my property.",
+  "Я хочу продать недвижимость."
+ ],
+ "work.rent": [
+  "Kirala",
+  "Rent",
+  "Аренда"
+ ],
+ "work.rent.d": [
+  "Kiralık arıyorum ya da mülkümü kiraya vermek istiyorum.",
+  "I’m looking for a rental, or I want to rent out my property.",
+  "Ищу жильё в аренду или хочу сдать своё."
+ ],
+ "work.start": [
+  "Başla",
+  "Start",
+  "Начать"
+ ],
+ "partner.strip": [
+  "Partner olun",
+  "Become a partner",
+  "Станьте партнёром"
+ ],
+ "partner.strip.d": [
+  "Emlak danışmanları, geliştiriciler ve yönlendiren iş ortakları için.",
+  "For agents, developers and referral partners.",
+  "Для агентов, девелоперов и партнёров по рекомендациям."
+ ],
+ "partner.title": [
+  "ata.co ile <em>çalışalım.</em>",
+  "Let’s <em>work together.</em>",
+  "Давайте <em>работать вместе.</em>"
+ ],
+ "partner.lead": [
+  "Bilgilerinizi bırakın, sizi arayayım.",
+  "Leave your details and I’ll call you.",
+  "Оставьте контакты, и я вам позвоню."
+ ],
+ "nc.kicker": [
+  "Mülkten fazlası.",
+  "More than property.",
+  "Больше, чем недвижимость."
+ ],
+ "nc.title": [
+  "Kuzey <em>Kıbrıs</em>",
+  "North <em>Cyprus</em>",
+  "Северный <em>Кипр</em>"
+ ],
+ "nc.alt": [
+  "Kuzey Kıbrıs sahili ve dağları",
+  "North Cyprus coast and mountains",
+  "Побережье и горы Северного Кипра"
+ ],
+ "nc.explore": [
+  "Keşfet",
+  "Explore",
+  "Открыть"
+ ],
+ "nc.explore.d": [
+  "Adayı tanıyın.",
+  "Discover the island.",
+  "Узнайте остров."
+ ],
+ "nc.invest": [
+  "Yatırım yap",
+  "Invest",
+  "Инвестировать"
+ ],
+ "nc.invest.d": [
+  "Fırsatı anlayın.",
+  "Understand the opportunity.",
+  "Поймите возможности."
+ ],
+ "nc.move": [
+  "Taşın",
+  "Relocate",
+  "Переехать"
+ ],
+ "nc.move.d": [
+  "Burada bir hayat kurun.",
+  "Build a life here.",
+  "Начните здесь новую жизнь."
+ ],
+ "why.kicker": [
+  "Neden ata.co",
+  "Why ata.co",
+  "Почему ata.co"
+ ],
+ "why.1": [
+  "Yerel bilgi",
+  "Local knowledge",
+  "Знание места"
+ ],
+ "why.1.d": [
+  "Kuzey Kıbrıs’ı içeriden tanımak.",
+  "North Cyprus from the inside out.",
+  "Северный Кипр изнутри."
+ ],
+ "why.2": [
+  "Kişisel hizmet",
+  "Personal service",
+  "Личный подход"
+ ],
+ "why.2.d": [
+  "Birebir rehberlik.",
+  "One-to-one guidance.",
+  "Индивидуальное сопровождение."
+ ],
+ "why.3": [
+  "Seçilmiş fırsatlar",
+  "Selected opportunities",
+  "Отобранные предложения"
+ ],
+ "why.3.d": [
+  "Nicelikten önce nitelik.",
+  "Quality over quantity.",
+  "Качество важнее количества."
+ ],
+ "why.4": [
+  "Uzun soluklu ilişkiler",
+  "Long-term relationships",
+  "Долгосрочные отношения"
+ ],
+ "why.4.d": [
+  "İşlemin ötesinde, her ihtiyaçta.",
+  "Beyond the transaction, in every need.",
+  "За пределами сделки, в любом вопросе."
+ ],
+ "svc.kicker": [
+  "Hizmetler",
+  "Services",
+  "Услуги"
+ ],
+ "svc.1": [
+  "Mülk arama",
+  "Property search",
+  "Поиск недвижимости"
+ ],
+ "svc.1.d": [
+  "Hedefinize ve bütçenize uygun kısa bir liste.",
+  "A short list matched to your goals and budget.",
+  "Короткий список под ваши цели и бюджет."
+ ],
+ "svc.2": [
+  "Yakından ya da uzaktan gösterim",
+  "Viewings, near or far",
+  "Просмотры лично и онлайн"
+ ],
+ "svc.2.d": [
+  "Yerinde ya da yurt dışındaysanız canlı video ile.",
+  "In person, or live on video if you’re abroad.",
+  "Лично или по видеосвязи, если вы за границей."
+ ],
+ "svc.3": [
+  "Satın alma rehberliği",
+  "Purchase guidance",
+  "Сопровождение покупки"
+ ],
+ "svc.3.d": [
+  "Rezervasyondan tapuya, avukatla birlikte.",
+  "From reservation to title deed, with a lawyer.",
+  "От бронирования до титула, вместе с юристом."
+ ],
+ "svc.4": [
+  "Evinizi satmak",
+  "Selling your home",
+  "Продажа вашего дома"
+ ],
+ "svc.4.d": [
+  "Fiyatlama, çekim ve doğru alıcıya sunum.",
+  "Pricing, filming and presenting it to the right buyers.",
+  "Оценка, съёмка и презентация нужным покупателям."
+ ],
+ "svc.5": [
+  "Kiralama",
+  "Rentals",
+  "Аренда"
+ ],
+ "svc.5.d": [
+  "Kiralık ev bulmak ya da evinize kiracı bulmak.",
+  "Finding a home to rent, or tenants for yours.",
+  "Поиск жилья в аренду или арендаторов для вашего."
+ ],
+ "svc.6": [
+  "Taşınma ve sonrası",
+  "Relocation and after",
+  "Переезд и после"
+ ],
+ "svc.6.d": [
+  "Oturum, okul, sigorta, araç: avukatımla birlikte yol gösteriyorum.",
+  "Residency, schools, insurance, a car: I guide you with my lawyer.",
+  "ВНЖ, школа, страховка, автомобиль: помогаю вместе с юристом."
+ ],
+ "soc.kicker": [
+  "Yolculuğu takip edin",
+  "Follow the journey",
+  "Следите за путешествием"
+ ],
+ "soc.title": [
+  "Mülkler, yaşam, piyasa ve <em>kamera arkası.</em>",
+  "Property, lifestyle, market and <em>behind the scenes.</em>",
+  "Объекты, жизнь, рынок и <em>закулисье.</em>"
+ ],
+ "soc.blog": [
+  "Blog yazılarını okuyun",
+  "Read the blog",
+  "Читать блог"
+ ],
+ "soc.t1": [
+  "Mülk",
+  "Property",
+  "Объекты"
+ ],
+ "soc.t2": [
+  "Yaşam",
+  "Lifestyle",
+  "Образ жизни"
+ ],
+ "soc.t3": [
+  "Piyasa",
+  "Market",
+  "Рынок"
+ ],
+ "soc.t4": [
+  "Kamera arkası",
+  "Behind the scenes",
+  "Закулисье"
+ ],
+ "soc.more": [
+  "El kitapçığı ve bülten",
+  "Handbook and newsletter",
+  "Гид и рассылка"
+ ],
+ "book.kicker": [
+  "Ücretsiz el kitapçığı",
+  "Free handbook",
+  "Бесплатный гид"
+ ],
+ "book.title": [
+  "Kuzey Kıbrıs <em>Tapu Türleri</em>",
+  "North Cyprus <em>Title Deed Types</em>",
+  "<em>Типы титулов</em> Северного Кипра"
+ ],
+ "book.cover": [
+  "Kuzey Kıbrıs<br><em>Tapu Türleri</em>",
+  "North Cyprus<br><em>Title Deeds</em>",
+  "Типы титулов<br><em>Северного Кипра</em>"
+ ],
+ "book.lead": [
+  "Tapu türleri arasındaki farklar, sade bir dille. E-postanızı bırakın, kitapçığı göndereyim.",
+  "The differences between title deed types, in plain language. Leave your email and I’ll send it.",
+  "Разница между типами титулов простыми словами. Оставьте e-mail, и я пришлю гид."
+ ],
+ "book.cta": [
+  "Kitapçığı gönder →",
+  "Send me the handbook →",
+  "Получить гид →"
+ ],
+ "book.done.dl": [
+  "Teşekkürler. Kitapçığı indirin →",
+  "Thank you. Download the handbook →",
+  "Спасибо. Скачать гид →"
+ ],
+ "book.done.later": [
+  "Teşekkürler. Kitapçık hazır olduğunda e-postanıza gelecek.",
+  "Thank you. The handbook will arrive in your inbox when it’s ready.",
+  "Спасибо. Гид придёт на ваш e-mail, как только будет готов."
+ ],
+ "nl.title": [
+  "Haberdar olun",
+  "Stay in the loop",
+  "Будьте в курсе"
+ ],
+ "nl.lead": [
+  "Yeni mülkler, piyasa notları ve Kuzey Kıbrıs’tan haberler.",
+  "New listings, market notes and North Cyprus news.",
+  "Новые объекты, заметки о рынке и новости Северного Кипра."
+ ],
+ "nl.cta": [
+  "Abone ol →",
+  "Subscribe →",
+  "Подписаться →"
+ ],
+ "nl.done": [
+  "Abone oldunuz. Teşekkürler.",
+  "You’re subscribed. Thank you.",
+  "Вы подписаны. Спасибо."
+ ],
+ "form.email": [
+  "E-posta adresiniz",
+  "Your email",
+  "Ваш e-mail"
+ ],
+ "foot.addr": [
+  "Long Beach / İskele, KKTC",
+  "Long Beach / Iskele, North Cyprus",
+  "Лонг-Бич / Искеле, Северный Кипр"
+ ],
+ "foot.privacy": [
+  "Gizlilik",
+  "Privacy",
+  "Конфиденциальность"
+ ],
+ "foot.tag": [
+  "Gayrimenkul & Aracılık",
+  "Real Estate & Brokerage",
+  "Недвижимость и брокеридж"
+ ],
+ "props.kicker": [
+  "Mülkler",
+  "Properties",
+  "Объекты"
+ ],
+ "props.title": [
+  "Kuzey Kıbrıs’ta <em>seçilmiş mülkler.</em>",
+  "Selected North Cyprus <em>properties.</em>",
+  "Избранная недвижимость <em>Северного Кипра.</em>"
+ ],
+ "props.lead": [
+  "Özenle seçilmiş kısa bir liste. Aradığınızı göremezseniz söyleyin.",
+  "A short list, chosen with care. If you don’t see the right one, tell me.",
+  "Небольшой, тщательно отобранный список. Не нашли подходящее? Напишите мне."
+ ],
+ "filter.all": [
+  "Tümü",
+  "All",
+  "Все"
+ ],
+ "props.empty": [
+  "Bu kategoride şu an ilan yok.",
+  "Nothing listed in this category right now.",
+  "Сейчас в этой категории нет объектов."
+ ],
+ "props.ask": [
+  "Ne aradığınızı söyleyin",
+  "Tell me what you need",
+  "Расскажите, что вам нужно"
+ ],
+ "status.satildi": [
+  "Satıldı",
+  "Sold",
+  "Продано"
+ ],
+ "status.kiralandi": [
+  "Kiralandı",
+  "Let",
+  "Сдано"
+ ],
+ "lbl.rooms": [
+  "Oda",
+  "Rooms",
+  "Комнаты"
+ ],
+ "lbl.size": [
+  "Alan",
+  "Size",
+  "Площадь"
+ ],
+ "lbl.baths": [
+  "Banyo",
+  "Bathrooms",
+  "Ванные"
+ ],
+ "lbl.type": [
+  "Tip",
+  "Type",
+  "Тип"
+ ],
+ "price.req": [
+  "Fiyat için sorun",
+  "Price on request",
+  "Цена по запросу"
+ ],
+ "price.month": [
+  "/ ay",
+  "/ month",
+  "/ мес."
+ ],
+ "price.week": [
+  "/ hafta",
+  "/ week",
+  "/ нед."
+ ],
+ "type.daire": [
+  "Daire",
+  "Apartment",
+  "Апартаменты"
+ ],
+ "type.villa": [
+  "Villa",
+  "Villa",
+  "Вилла"
+ ],
+ "type.sira-ev": [
+  "Sıra ev",
+  "Townhouse",
+  "Таунхаус"
+ ],
+ "type.penthouse": [
+  "Penthouse",
+  "Penthouse",
+  "Пентхаус"
+ ],
+ "type.bungalov": [
+  "Bungalov",
+  "Bungalow",
+  "Бунгало"
+ ],
+ "type.arsa": [
+  "Arsa",
+  "Land",
+  "Земля"
+ ],
+ "type.ticari": [
+  "Ticari",
+  "Commercial",
+  "Коммерческая"
+ ],
+ "d.back": [
+  "Tüm mülkler",
+  "All properties",
+  "Все объекты"
+ ],
+ "d.desc": [
+  "Açıklama",
+  "Description",
+  "Описание"
+ ],
+ "d.photos": [
+  "Fotoğraflar",
+  "Photos",
+  "Фото"
+ ],
+ "d.video": [
+  "Videoyu izleyin",
+  "Watch the video",
+  "Смотреть видео"
+ ],
+ "d.wa": [
+  "WhatsApp’tan sorun",
+  "Ask on WhatsApp",
+  "Спросить в WhatsApp"
+ ],
+ "d.ask": [
+  "Bu mülk hakkında sorun",
+  "Ask about this property",
+  "Спросить об этом объекте"
+ ],
+ "d.related": [
+  "Benzer mülkler",
+  "Similar properties",
+  "Похожие объекты"
+ ],
+ "d.portal": [
+  "101evler’de görüntüle",
+  "View on 101evler",
+  "Смотреть на 101evler"
+ ],
+ "d.loc": [
+  "Tam konum talep üzerine paylaşılır.",
+  "Exact location shared on request.",
+  "Точное местоположение по запросу."
+ ],
+ "d.msg": [
+  "“{x}” hakkında bilgi almak istiyorum.",
+  "I’d like more information about “{x}”.",
+  "Хочу узнать больше об объекте «{x}»."
+ ],
+ "d.close": [
+  "Kapat",
+  "Close",
+  "Закрыть"
+ ],
+ "d.photo": [
+  "Fotoğraf",
+  "Photo",
+  "Фото"
+ ],
+ "wa.general": [
+  "Merhaba Atakan, ata.co üzerinden ulaşıyorum.",
+  "Hi Atakan, I found you through ata.co.",
+  "Здравствуйте, Атакан! Я нашёл(ла) вас через ata.co."
+ ],
+ "wa.listing": [
+  "Merhaba Atakan, ata.co’daki “{x}” ilanıyla ilgileniyorum.",
+  "Hi Atakan, I’m interested in “{x}” on ata.co.",
+  "Здравствуйте, Атакан! Меня интересует объект «{x}» на ata.co."
+ ],
+ "blog.kicker": [
+  "Blog",
+  "Blog",
+  "Блог"
+ ],
+ "blog.title": [
+  "Notlar ve <em>rehberler.</em>",
+  "Notes and <em>guides.</em>",
+  "Заметки и <em>гиды.</em>"
+ ],
+ "blog.lead": [
+  "Kuzey Kıbrıs’ta mülk, yatırım ve yaşam üzerine.",
+  "On property, investing and life in North Cyprus.",
+  "О недвижимости, инвестициях и жизни на Северном Кипре."
+ ],
+ "blog.read": [
+  "Yazıyı okuyun",
+  "Read the article",
+  "Читать статью"
+ ],
+ "blog.empty": [
+  "İlk yazı çok yakında.",
+  "The first article is coming soon.",
+  "Первая статья скоро появится."
+ ],
+ "blog.back": [
+  "Tüm yazılar",
+  "All articles",
+  "Все статьи"
+ ],
+ "blog.mt": [
+  "Bu yazı Türkçeden otomatik olarak çevrilmiştir.",
+  "This article was machine-translated from Turkish.",
+  "Эта статья автоматически переведена с турецкого."
+ ],
+ "blog.share": [
+  "WhatsApp’ta paylaş",
+  "Share on WhatsApp",
+  "Поделиться в WhatsApp"
+ ],
+ "blog.q": [
+  "Bu konuda sorunuz mu var?",
+  "Have a question about this?",
+  "Есть вопрос по этой теме?"
+ ],
+ "contact.kicker": [
+  "İletişim",
+  "Contact",
+  "Контакты"
+ ],
+ "contact.title": [
+  "Sırada ne olduğunu <em>konuşalım.</em>",
+  "Let’s talk about <em>what’s next.</em>",
+  "Давайте обсудим <em>следующий шаг.</em>"
+ ],
+ "contact.fast": [
+  "En hızlı yanıt",
+  "Fastest reply",
+  "Самый быстрый ответ"
+ ],
+ "contact.fast.t": [
+  "Bana WhatsApp’tan yazın.",
+  "Message me on WhatsApp.",
+  "Напишите мне в WhatsApp."
+ ],
+ "contact.fast.b": [
+  "WhatsApp’ı aç",
+  "Open WhatsApp",
+  "Открыть WhatsApp"
+ ],
+ "contact.phone": [
+  "Telefon / WhatsApp",
+  "Phone / WhatsApp",
+  "Телефон / WhatsApp"
+ ],
+ "contact.email": [
+  "E-posta",
+  "Email",
+  "E-mail"
+ ],
+ "contact.addr": [
+  "Adres",
+  "Address",
+  "Адрес"
+ ],
+ "tab.buy.s": [
+  "Mülk arıyorum",
+  "Looking for a property",
+  "Ищу недвижимость"
+ ],
+ "tab.sell.s": [
+  "Mülkümü satıyorum",
+  "Selling my property",
+  "Продаю недвижимость"
+ ],
+ "tab.rent.s": [
+  "Kiralık arıyorum ya da kiraya veriyorum",
+  "Renting, or renting out",
+  "Снять или сдать жильё"
+ ],
+ "f.name": [
+  "Ad soyad",
+  "Name",
+  "Имя"
+ ],
+ "f.contact": [
+  "WhatsApp veya e-posta",
+  "WhatsApp or email",
+  "WhatsApp или e-mail"
+ ],
+ "f.phone": [
+  "Telefon",
+  "Phone",
+  "Телефон"
+ ],
+ "f.email": [
+  "E-posta",
+  "Email",
+  "E-mail"
+ ],
+ "f.budget": [
+  "Bütçe",
+  "Budget",
+  "Бюджет"
+ ],
+ "f.purpose": [
+  "Amaç",
+  "Purpose",
+  "Цель"
+ ],
+ "f.live": [
+  "Yaşamak için",
+  "To live",
+  "Для жизни"
+ ],
+ "f.invest": [
+  "Yatırım için",
+  "To invest",
+  "Для инвестиций"
+ ],
+ "f.both": [
+  "İkisi de",
+  "Both",
+  "И то, и другое"
+ ],
+ "f.when": [
+  "Ne zaman almayı planlıyorsunuz?",
+  "When are you planning to buy?",
+  "Когда планируете покупку?"
+ ],
+ "f.when.1": [
+  "3 ay içinde",
+  "Within 3 months",
+  "В ближайшие 3 месяца"
+ ],
+ "f.when.2": [
+  "3–6 ay",
+  "3–6 months",
+  "3–6 месяцев"
+ ],
+ "f.when.3": [
+  "6–12 ay",
+  "6–12 months",
+  "6–12 месяцев"
+ ],
+ "f.when.4": [
+  "Sadece araştırıyorum",
+  "Just exploring",
+  "Пока присматриваюсь"
+ ],
+ "f.msg.opt": [
+  "Eklemek istedikleriniz (isteğe bağlı)",
+  "Anything else? (optional)",
+  "Что-то ещё? (необязательно)"
+ ],
+ "f.msg.ph": [
+  "Bölge, oda sayısı, deniz manzarası…",
+  "Area, bedrooms, sea view…",
+  "Район, спальни, вид на море…"
+ ],
+ "f.ptype": [
+  "Mülk tipi",
+  "Property type",
+  "Тип объекта"
+ ],
+ "f.loc": [
+  "Konum",
+  "Location",
+  "Локация"
+ ],
+ "f.loc.ph": [
+  "örn. İskele",
+  "e.g. Iskele",
+  "например, Искеле"
+ ],
+ "f.about": [
+  "Biraz anlatın (isteğe bağlı)",
+  "Tell me about it (optional)",
+  "Расскажите подробнее (необязательно)"
+ ],
+ "f.about.ph": [
+  "Büyüklük, oda sayısı, tapu, ne zaman satmak istediğiniz",
+  "Size, bedrooms, title deed, when you’d like to sell",
+  "Площадь, спальни, титул, когда хотите продать"
+ ],
+ "f.dir": [
+  "Talebim",
+  "I want to",
+  "Я хочу"
+ ],
+ "f.dir.1": [
+  "Kiralık arıyorum",
+  "Rent a home",
+  "Снять жильё"
+ ],
+ "f.dir.2": [
+  "Mülkümü kiraya vermek",
+  "Rent out my property",
+  "Сдать своё жильё"
+ ],
+ "f.beds": [
+  "Yatak odası",
+  "Bedrooms",
+  "Спальни"
+ ],
+ "f.studio": [
+  "Stüdyo",
+  "Studio",
+  "Студия"
+ ],
+ "f.area": [
+  "Tercih ettiğiniz bölge",
+  "Preferred area",
+  "Желаемый район"
+ ],
+ "f.area.ph": [
+  "örn. Long Beach",
+  "e.g. Long Beach",
+  "например, Лонг-Бич"
+ ],
+ "f.movein": [
+  "Taşınma tarihi",
+  "Move-in date",
+  "Дата заезда"
+ ],
+ "f.message": [
+  "Mesaj",
+  "Message",
+  "Сообщение"
+ ],
+ "f.send": [
+  "Gönder →",
+  "Send →",
+  "Отправить →"
+ ],
+ "f.sending": [
+  "Gönderiliyor…",
+  "Sending…",
+  "Отправка…"
+ ],
+ "f.ok": [
+  "Teşekkürler. En kısa sürede dönüş yapacağım.",
+  "Thank you. I’ll be in touch soon.",
+  "Спасибо. Скоро свяжусь с вами."
+ ],
+ "f.ok.k": [
+  "Alındı",
+  "Received",
+  "Получено"
+ ],
+ "f.ok.wa": [
+  "WhatsApp’ı mı tercih edersiniz?",
+  "Prefer WhatsApp?",
+  "Удобнее в WhatsApp?"
+ ],
+ "f.err": [
+  "Mesaj gönderilemedi. Lütfen WhatsApp’tan yazın.",
+  "Your message couldn’t be sent. Please message me on WhatsApp.",
+  "Не удалось отправить. Пожалуйста, напишите в WhatsApp."
+ ],
+ "f.consent": [
+  "Bilgileriniz yalnızca size dönüş yapmak için kullanılır.",
+  "Your details are used only to get back to you.",
+  "Ваши данные используются только для ответа вам."
+ ],
+ "f.reply": [
+  "Kişisel olarak, genellikle aynı gün yanıtlarım.",
+  "I reply personally, usually the same day.",
+  "Отвечаю лично, обычно в тот же день."
+ ],
+ "ncp.lead": [
+  "Mülkün ardındaki ada: nasıl yaşadığı ve orayı ev bilmenin nasıl bir şey olduğu.",
+  "The island behind the property: how it lives, and what it’s like to call it home.",
+  "Остров за объектом: как он живёт и каково называть его домом."
+ ],
+ "ncp.explore.t": [
+  "Adayı tanıyın.",
+  "Get to know the island.",
+  "Узнайте остров."
+ ],
+ "ncp.explore.p": [
+  "Doğu kıyısının uzun kumsallarından Girne’nin limanına, dağ köylerinden Gazimağusa’nın surlarına. Her bölgenin temposu ve kitlesi farklı.",
+  "From the long beaches of the east coast to Kyrenia’s harbour, from mountain villages to the walls of Famagusta. Every area has its own pace and its own people.",
+  "От длинных пляжей восточного побережья до гавани Кирении, от горных деревень до стен Фамагусты. У каждого района свой ритм и свои люди."
+ ],
+ "ncp.invest.t": [
+  "Yatırım kararı sorularla başlar.",
+  "An investment decision starts with questions.",
+  "Инвестиция начинается с вопросов."
+ ],
+ "ncp.invest.p": [
+  "Manşet rakamlar yayınlamıyor, getiri vaat etmiyorum. Her alıcının durumu farklı; bunları birebir konuşuyoruz:",
+  "I don’t publish headline numbers or promise returns. Every buyer’s situation is different, so we go through these one to one:",
+  "Я не публикую громких цифр и не обещаю доходность. Ситуация каждого покупателя индивидуальна, поэтому мы разбираем это лично:"
+ ],
+ "ncp.i1": [
+  "Tapu türleri ve tapunun hazır olup olmadığı",
+  "Title deed types, and whether the deed is ready",
+  "Типы титулов и готовность титула"
+ ],
+ "ncp.i2": [
+  "Projeden mi, ikinci el mi",
+  "Off-plan or re-sale",
+  "Новостройка или вторичка"
+ ],
+ "ncp.i3": [
+  "Ödeme planları",
+  "Payment plans",
+  "Планы рассрочки"
+ ],
+ "ncp.i4": [
+  "Satın alma masrafları ve vergiler",
+  "Purchase costs and taxes",
+  "Расходы и налоги при покупке"
+ ],
+ "ncp.i5": [
+  "Bölgelere göre kira talebi",
+  "Rental demand by area",
+  "Спрос на аренду по районам"
+ ],
+ "ncp.i6": [
+  "Avukatla çalışmak",
+  "Working with a lawyer",
+  "Работа с юристом"
+ ],
+ "ncp.move.t": [
+  "Taşınmak, bir evden fazlasını gerektirir.",
+  "Relocating takes more than a home.",
+  "Переезд — это больше, чем дом."
+ ],
+ "ncp.move.p": [
+  "Avukatımla birlikte bu adımlarda yol gösteriyorum:",
+  "With my lawyer, I guide you through these steps:",
+  "Вместе с юристом я помогаю пройти эти шаги:"
+ ],
+ "ncp.m1": [
+  "Mülk üzerinden oturum izni",
+  "Residency through property",
+  "ВНЖ через недвижимость"
+ ],
+ "ncp.m2": [
+  "Okul kaydı",
+  "School enrolment",
+  "Запись в школу"
+ ],
+ "ncp.m3": [
+  "Sigorta",
+  "Insurance",
+  "Страхование"
+ ],
+ "ncp.m4": [
+  "Araç alımı",
+  "Buying a car",
+  "Покупка автомобиля"
+ ],
+ "ncp.areas": [
+  "Bölgeler",
+  "Areas",
+  "Районы"
+ ],
+ "area.iskele": [
+  "İskele",
+  "Iskele",
+  "Искеле"
+ ],
+ "area.iskele.d": [
+  "Doğu kıyısı, Long Beach. İşimin çoğu burada.",
+  "East coast, Long Beach. Where most of my work is.",
+  "Восточное побережье, Лонг-Бич. Здесь основная часть моей работы."
+ ],
+ "area.bafra": [
+  "Bafra",
+  "Bafra",
+  "Бафра"
+ ],
+ "area.bafra.d": [
+  "İskele’nin güneyinde, daha sakin doğu kıyısı.",
+  "The quieter east coast, south of Iskele.",
+  "Более спокойное побережье к югу от Искеле."
+ ],
+ "area.girne": [
+  "Girne",
+  "Kyrenia",
+  "Кирения"
+ ],
+ "area.girne.d": [
+  "Kuzey kıyısındaki tarihi liman şehri.",
+  "The historic harbour town on the north coast.",
+  "Исторический портовый город на севере."
+ ],
+ "area.esentepe": [
+  "Esentepe",
+  "Esentepe",
+  "Эсентепе"
+ ],
+ "area.esentepe.d": [
+  "Girne’nin doğusunda, dağla deniz arasında.",
+  "East of Kyrenia, between mountains and sea.",
+  "К востоку от Кирении, между горами и морем."
+ ],
+ "area.magusa": [
+  "Gazimağusa",
+  "Famagusta",
+  "Фамагуста"
+ ],
+ "area.magusa.d": [
+  "Surlarla çevrili eski şehir ve üniversite kenti.",
+  "Walled old city and university town.",
+  "Старый город в стенах и университетский центр."
+ ],
+ "area.lefkosa": [
+  "Lefkoşa",
+  "Nicosia",
+  "Никосия"
+ ],
+ "area.lefkosa.d": [
+  "İç kesimdeki başkent.",
+  "The capital, inland.",
+  "Столица, в глубине острова."
+ ],
+ "ncp.cta.t": [
+  "Kuzey Kıbrıs’ı mı <em>düşünüyorsunuz?</em>",
+  "Thinking about <em>North Cyprus?</em>",
+  "Думаете о <em>Северном Кипре?</em>"
+ ],
+ "ncp.cta.p": [
+  "Bir sohbetle başlayın.",
+  "Start with a conversation.",
+  "Начните с разговора."
+ ],
+ "legal.title": [
+  "Gizlilik",
+  "Privacy",
+  "Конфиденциальность"
+ ],
+ "legal.p1": [
+  "Bu sitedeki formlarla paylaştığınız ad, telefon, e-posta ve mesaj bilgileri yalnızca size dönüş yapmak, talebinizle ilgili mülkleri göndermek ve abone olduysanız bülten iletmek için kullanılır.",
+  "The name, phone, email and message you share through the forms on this site are used only to get back to you, send you properties related to your request and, if you subscribed, send the newsletter.",
+  "Имя, телефон, e-mail и сообщение, которые вы оставляете в формах на сайте, используются только для ответа вам, подбора объектов по вашему запросу и, если вы подписались, для рассылки."
+ ],
+ "legal.p2": [
+  "Bilgileriniz üçüncü kişilerle satılmaz veya paylaşılmaz. Kayıtlar Atakan Terzili tarafından tutulan bir müşteri listesinde saklanır.",
+  "Your details are never sold or shared with third parties. Records are kept in a client list maintained by Atakan Terzili.",
+  "Ваши данные не продаются и не передаются третьим лицам. Записи хранятся в клиентском списке, который ведёт Атакан Терзили."
+ ],
+ "legal.p3": [
+  "Bilgilerinizin silinmesini veya bültenden çıkmayı istediğinizde aşağıdaki e-posta adresine yazmanız yeterli.",
+  "To have your details deleted or to unsubscribe, just email the address below.",
+  "Чтобы удалить свои данные или отписаться, напишите на адрес ниже."
+ ]
+}

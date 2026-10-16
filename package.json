@@ -1,0 +1,13 @@
+{
+  "name": "ataco-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/build.mjs --preview",
+    "translate": "node scripts/translate.mjs"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.33.5"
+  }
+}

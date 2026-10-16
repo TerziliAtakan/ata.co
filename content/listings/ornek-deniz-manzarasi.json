@@ -1,0 +1,22 @@
+{
+  "sample": true,
+  "title": "Deniz Manzarası",
+  "status": "aktif",
+  "featured": true,
+  "order": 1,
+  "category": "ikinci-el",
+  "type": "daire",
+  "location": "İskele · Long Beach",
+  "rooms": "2+1",
+  "size_m2": 95,
+  "bathrooms": 2,
+  "price": 0,
+  "currency": "GBP",
+  "price_on_request": true,
+  "rent_period": "",
+  "summary": "Tüm ana odalardan deniz manzarası.",
+  "description": "ÖRNEK İLAN. Bu metin yönetim panelinden eklenen gerçek ilan açıklamasıyla değişecek.",
+  "photos": [],
+  "video_url": "",
+  "portal_url": ""
+}

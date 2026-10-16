@@ -1,0 +1,14 @@
+{
+  "hash": "sample",
+  "source": "tr",
+  "en": {
+    "title": "The Family Home",
+    "summary": "Room to grow, minutes from town.",
+    "description_html": "<p>SAMPLE LISTING. This text will be replaced by the real description added in the admin panel.</p>"
+  },
+  "ru": {
+    "title": "Семейный дом",
+    "summary": "Простор для семьи, в нескольких минутах от города.",
+    "description_html": "<p>ПРИМЕР ОБЪЯВЛЕНИЯ. Этот текст заменится реальным описанием из панели управления.</p>"
+  }
+}

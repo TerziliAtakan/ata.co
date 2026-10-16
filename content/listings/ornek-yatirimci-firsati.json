@@ -1,0 +1,22 @@
+{
+  "sample": true,
+  "title": "Yatırımcı Fırsatı",
+  "status": "aktif",
+  "featured": true,
+  "order": 2,
+  "category": "projeden",
+  "type": "daire",
+  "location": "Bafra",
+  "rooms": "1+1",
+  "size_m2": 60,
+  "bathrooms": 1,
+  "price": 0,
+  "currency": "GBP",
+  "price_on_request": true,
+  "rent_period": "",
+  "summary": "Teslimata kadar ödeme planı.",
+  "description": "ÖRNEK İLAN. Bu metin yönetim panelinden eklenen gerçek ilan açıklamasıyla değişecek.",
+  "photos": [],
+  "video_url": "",
+  "portal_url": ""
+}

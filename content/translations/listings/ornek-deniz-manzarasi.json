@@ -1,0 +1,14 @@
+{
+  "hash": "sample",
+  "source": "tr",
+  "en": {
+    "title": "The Sea View",
+    "summary": "Sea views from every principal room.",
+    "description_html": "<p>SAMPLE LISTING. This text will be replaced by the real description added in the admin panel.</p>"
+  },
+  "ru": {
+    "title": "Вид на море",
+    "summary": "Вид на море из всех основных комнат.",
+    "description_html": "<p>ПРИМЕР ОБЪЯВЛЕНИЯ. Этот текст заменится реальным описанием из панели управления.</p>"
+  }
+}

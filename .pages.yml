@@ -1,0 +1,181 @@
+# Pages CMS yönetim paneli ayarları (app.pagescms.org)
+media:
+  input: uploads
+  output: /uploads
+
+content:
+  - name: listings
+    label: İlanlar
+    type: collection
+    path: content/listings
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: title
+      fields: [title, status, category, location, featured]
+      sort: [order, title]
+    fields:
+      - name: title
+        label: İlan adı
+        type: string
+        required: true
+        description: "Akılda kalan kısa bir isim. Örn: Deniz Manzarası, Yatırımcı Fırsatı"
+      - name: status
+        label: Durum
+        type: select
+        default: aktif
+        options:
+          values:
+            - { value: aktif, label: "Aktif (sitede satışta/kirada)" }
+            - { value: satildi, label: "Satıldı (etiketle kalsın)" }
+            - { value: kiralandi, label: "Kiralandı (etiketle kalsın)" }
+      - name: featured
+        label: Ana sayfada öne çıkar
+        type: boolean
+        description: "Ana sayfadaki kaydırmalı 3 mülk. En fazla 3 ilanı işaretleyin."
+      - name: order
+        label: Sıra
+        type: number
+        description: "Küçük sayı önce görünür (1, 2, 3…)."
+      - name: category
+        label: Kategori
+        type: select
+        required: true
+        options:
+          values:
+            - { value: projeden, label: Projeden }
+            - { value: ikinci-el, label: İkinci el }
+            - { value: kiralik, label: Kiralık }
+            - { value: arsa, label: Arsa }
+      - name: type
+        label: Mülk tipi
+        type: select
+        options:
+          values:
+            - { value: daire, label: Daire }
+            - { value: villa, label: Villa }
+            - { value: sira-ev, label: Sıra ev }
+            - { value: penthouse, label: Penthouse }
+            - { value: bungalov, label: Bungalov }
+            - { value: arsa, label: Arsa }
+            - { value: ticari, label: Ticari }
+      - name: location
+        label: Konum
+        type: string
+        required: true
+        description: "Örn: İskele · Long Beach"
+      - name: rooms
+        label: Oda sayısı
+        type: string
+        description: "Örn: 2+1"
+      - name: size_m2
+        label: Alan (m²)
+        type: number
+      - name: bathrooms
+        label: Banyo sayısı
+        type: number
+      - name: price
+        label: Fiyat
+        type: number
+        description: "Sadece rakam. Örn: 185000"
+      - name: currency
+        label: Para birimi
+        type: select
+        default: GBP
+        options:
+          values:
+            - { value: GBP, label: "£ Sterlin" }
+            - { value: EUR, label: "€ Euro" }
+            - { value: USD, label: "$ Dolar" }
+            - { value: TRY, label: "₺ Türk lirası" }
+      - name: price_on_request
+        label: Fiyatı gösterme ("Fiyat için sorun")
+        type: boolean
+      - name: rent_period
+        label: Kira dönemi (sadece kiralık)
+        type: select
+        options:
+          values:
+            - { value: ay, label: Aylık }
+            - { value: hafta, label: Haftalık }
+      - name: summary
+        label: Tek cümlelik öne çıkan özellik
+        type: string
+        description: "İlanın akılda kalan tek özelliği. Örn: Tüm ana odalardan deniz manzarası."
+      - name: description
+        label: Açıklama
+        type: rich-text
+        description: "Türkçe yazın. İngilizce ve Rusça otomatik çevrilir."
+      - name: photos
+        label: Fotoğraflar
+        type: image
+        list: true
+        description: "İlk fotoğraf kapak olur. Telefondan doğrudan yükleyebilirsiniz."
+      - name: video_url
+        label: Video linki
+        type: string
+        description: "YouTube, Instagram veya TikTok linki"
+      - name: portal_url
+        label: 101evler linki (isteğe bağlı)
+        type: string
+
+  - name: blog
+    label: Blog
+    type: collection
+    path: content/blog
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      primary: title
+      fields: [title, date, draft]
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Başlık
+        type: string
+        required: true
+      - name: date
+        label: Tarih
+        type: date
+        required: true
+      - name: draft
+        label: Taslak (sitede gösterme)
+        type: boolean
+      - name: cover
+        label: Kapak görseli
+        type: image
+      - name: excerpt
+        label: Kısa özet (1–2 cümle)
+        type: text
+      - name: body
+        label: Yazı
+        type: rich-text
+        description: "Türkçe yazın. Yayınlayınca İngilizce ve Rusça versiyonlar otomatik oluşur."
+
+  - name: site
+    label: Site ayarları
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: domain, label: "Alan adı (örn. ornek.com)", type: string }
+      - { name: phone_display, label: Telefon (görünen), type: string }
+      - { name: whatsapp, label: "WhatsApp numarası (sadece rakam, ülke koduyla)", type: string }
+      - { name: email, label: E-posta, type: string }
+      - { name: address, label: Adres, type: string }
+      - { name: years, label: "Rakam: yıl", type: string }
+      - { name: clients, label: "Rakam: müşteri", type: string }
+      - { name: properties_closed, label: "Rakam: satılan/kiralanan", type: string }
+      - { name: hero_image, label: Giriş fotoğrafı, type: image }
+      - { name: portrait_image, label: Portre fotoğrafı, type: image }
+      - { name: intro_video_url, label: Tanıtım videosu linki, type: string }
+      - { name: intro_video_cover, label: Tanıtım videosu kapak görseli, type: image }
+      - { name: nc_image, label: Kuzey Kıbrıs poster görseli, type: image }
+      - { name: instagram, label: Instagram linki, type: string }
+      - { name: facebook, label: Facebook linki, type: string }
+      - { name: tiktok, label: TikTok linki, type: string }
+      - { name: youtube, label: YouTube linki, type: string }
+      - { name: telegram, label: Telegram linki, type: string }
+      - { name: whatsapp_channel, label: WhatsApp kanal linki, type: string }
+      - { name: handbook_pdf, label: Tapu türleri el kitapçığı (PDF), type: file }
+      - { name: forms_endpoint, label: "Form adresi (Google Apps Script)", type: string }

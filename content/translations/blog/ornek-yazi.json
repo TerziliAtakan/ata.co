@@ -1,0 +1,14 @@
+{
+  "hash": "sample",
+  "source": "tr",
+  "en": {
+    "title": "Sample blog post",
+    "excerpt": "This is a sample post. Once you add your first real post in the admin panel, this one disappears from the site.",
+    "body_html": "<p>This is a <strong>sample</strong> post and only appears in the preview.</p>\n<h2>How to write one</h2>\n<p>Open <em>Blog</em> in the admin panel and add a new post. Write in Turkish and publish. The English and Russian versions are created automatically.</p>"
+  },
+  "ru": {
+    "title": "Пример статьи",
+    "excerpt": "Это пример статьи. Когда вы добавите первую настоящую статью в панели управления, этот пример исчезнет с сайта.",
+    "body_html": "<p>Это <strong>пример</strong> статьи, он виден только в предпросмотре.</p>\n<h2>Как написать статью</h2>\n<p>Откройте раздел <em>Блог</em> в панели управления и добавьте статью. Пишите на турецком и публикуйте. Английская и русская версии создаются автоматически.</p>"
+  }
+}
