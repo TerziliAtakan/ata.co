@@ -53,7 +53,10 @@ content:
         options:
           values:
             - { value: daire, label: Daire }
+            - { value: rezidans, label: Rezidans }
+            - { value: loft, label: Loft }
             - { value: villa, label: Villa }
+            - { value: mustakil, label: Müstakil ev }
             - { value: sira-ev, label: Sıra ev }
             - { value: penthouse, label: Penthouse }
             - { value: bungalov, label: Bungalov }

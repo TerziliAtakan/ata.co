@@ -446,6 +446,36 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;z-index:95;background:var(--fg);color:var(--bg);padding:13px 18px;font-size:14px;max-width:calc(100% - 32px);transition:all .35s var(--ease);pointer-events:none}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+/* 1.2 portrait: starts blurred, sharpens as the section arrives; opens the about page */
+.pic-link{display:block;cursor:pointer}
+.me .pic-link>img,.me .pic-link>canvas{filter:blur(var(--pb,0px));transform:scale(1.03)}
+.me .pic-link:hover>img{transform:scale(1.06)}
+.me-head .pic-link{width:110px;aspect-ratio:4/5;flex:none}
+.more-link{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin-top:6px;border-bottom:1px solid currentColor;justify-self:start;padding-bottom:3px}
+.more-tag{position:absolute;right:12px;bottom:12px;z-index:2;background:rgba(20,19,17,.72);color:#fff;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;padding:9px 12px;backdrop-filter:blur(6px)}
+.pic-link>img,.about-pic>img{object-position:50% 22%}
+/* about page */
+.about-grid{display:grid;gap:32px}
+.about-pic{aspect-ratio:4/5;max-width:440px}
+.about-txt .phil{font-family:var(--display);font-size:clamp(19px,1.8vw,24px);line-height:1.45;max-width:36ch}
+.about-blocks{display:grid;gap:28px;margin-top:36px}
+.about-blocks .ab{border-top:1px solid var(--line);padding-top:20px;display:grid;gap:10px}
+.about-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+@media (min-width:900px){.about-grid{grid-template-columns:.9fr 1.1fr;align-items:start;gap:clamp(40px,6vw,90px)}}
+/* 1.3 numbers split the screen in three */
+.nums-slide .wrap{flex:1;display:flex;flex-direction:column;width:100%}
+.nums-slide .nums{flex:1;grid-template-rows:repeat(3,1fr)}
+.nums-slide .num{align-items:center;align-content:center}
+@media (min-width:900px){.nums-slide .nums{grid-template-rows:1fr;grid-template-columns:repeat(3,1fr)}.nums-slide .num{align-content:center}}
+/* property cards */
+:root{--price:#1E6B4A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--price:#6CC79A}}
+:root[data-theme="dark"]{--price:#6CC79A}
+.card .loc{color:var(--accent);font-weight:600}
+.card .typ{font-size:14px;letter-spacing:.04em;color:var(--muted);margin-top:-4px}
+.card .pr{color:var(--price);font-size:clamp(28px,3vw,40px)}
+/* partner strip title in capitals */
+.strip:not(.nl-strip) b{text-transform:uppercase;letter-spacing:.01em}
 /* headings in bold */
 .dsp,.menu nav a,.me-head .name,.num b,.card .nm,.card .pr,.q .tx b,.path b,.strip b,.trio b,.why-list b,.svc-list b,.chan a,.bk-t b,.tabs button b,.keys dd,.dhero .pr,.prose h2,.prose h3,.book .bt{font-weight:600}
 .dsp em,.strip b em{font-weight:600}
@@ -509,10 +539,10 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
   <section class="slide me" id="me" aria-labelledby="me-h">
     <div class="wrap grid">
       <div class="me-head">
-        <div class="media" data-media="portrait_image" data-scene="portrait" data-seed="3" data-ia="aria-label:me.portrait"></div>
-        <div class="who"><p class="k" data-i="me.kicker"></p><p class="name">Atakan Terzili</p><p class="muted" style="font-size:14px" data-i="me.role"></p></div>
+        <a class="media pic-link" href="#hakkimda" data-media="portrait_image" data-scene="portrait" data-seed="3" data-ia="aria-label:me.portrait"></a>
+        <div class="who"><p class="k" data-i="me.kicker"></p><p class="name">Atakan Terzili</p><p class="muted" style="font-size:14px" data-i="me.role"></p><a class="more-link" href="#hakkimda"><span data-i="me.more"></span> →</a></div>
       </div>
-      <div class="media big-pic" data-media="portrait_image" data-scene="portrait" data-seed="3" data-ia="aria-label:me.portrait"><span class="ph pv"><b>Portre</b> · dikey, doğal ışık</span></div>
+      <a class="media big-pic pic-link" href="#hakkimda" data-media="portrait_image" data-scene="portrait" data-seed="3" data-ia="aria-label:me.portrait"><span class="more-tag"><span data-i="me.more"></span> →</span></a>
       <a class="media vid zoom" id="introVid" href="#" target="_blank" rel="noopener" data-media="intro_video_cover" data-scene="meet" data-seed="4">
         <span class="play"><span><svg aria-hidden="true"><use href="#i-play"/></svg></span></span>
         <span class="vlbl" id="introLbl" data-i="me.video"></span>
@@ -526,7 +556,7 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
   </section>
 
   <!-- 1.3 -->
-  <section class="slide band" aria-labelledby="num-h">
+  <section class="slide band nums-slide" aria-labelledby="num-h">
     <div class="wrap">
       <div class="shead"><div><p class="k" data-i="num.kicker"></p><h2 class="dsp h3" id="num-h" data-i="num.title"></h2></div></div>
       <div class="nums">
@@ -747,6 +777,22 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 </div>
 
 <!-- ======================= PRIVACY ======================= -->
+<div class="page" data-page="hakkimda" hidden>
+  <section class="wrap page-top about">
+    <div class="about-grid">
+      <div class="media about-pic" data-media="portrait_image" data-scene="portrait" data-seed="3" data-ia="aria-label:me.portrait"></div>
+      <div class="about-txt">
+        <p class="k" data-i="me.kicker"></p>
+        <h1 class="dsp h2">Atakan Terzili</h1>
+        <p class="muted" data-i="me.role" style="margin-top:6px"></p>
+        <p class="phil" data-i="me.p" style="margin-top:22px"></p>
+        <div class="about-blocks" id="aboutBlocks"></div>
+        <div class="about-cta"><a class="btn solid wa" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a><a class="btn ghost" href="#iletisim" data-i="menu.contact"></a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
 <div class="page" data-page="gizlilik" hidden>
   <section class="wrap page-top" style="padding-bottom:120px">
     <p class="k">ata.co</p><h1 class="dsp h2" data-i="legal.title"></h1>
@@ -843,6 +889,7 @@ function cardHTML(l,eager){
     <div class="media">${mediaHTML(l.photos[0],l.scene,l.seed,T+", "+place(l.location),eager)}${statusBadge(l)}<span class="cat-tag">${t("cat."+l.category)}</span>${l.photos.length?"":`<span class="ph pv">Fotoğraf panelden</span>`}</div>
     <span class="nm">${esc(T)}</span>
     <span class="loc">${esc(place(l.location))}</span>
+    ${l.type?`<span class="typ">${esc(typeName(l.type))}</span>`:""}
     <span class="facts">${facts(l)}</span>
     <span class="pr">${esc(price(l))}</span></a>`;
 }
@@ -853,7 +900,20 @@ function renderFeatured(){
   const host=$("#featured");
   if(!f.length){ host.innerHTML=`<div class="empty-box"><p class="dsp h4">${t("feat.empty")}</p><a class="btn solid wa" href="${waURL()}" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a></div>`; return; }
   host.innerHTML=`<div class="hs" data-hs>${f.map(l=>cardHTML(l)).join("")}</div><div class="hs-ctl"><div class="dots"></div><span class="hint">${t("swipe")} →</span></div>`;
-  initHS(host); fillMedia(host);
+  initHS(host); fillMedia(host); autoHS($("[data-hs]",host));
+}
+/* featured: advance every 5 s while visible; any touch, swipe or key pauses it for 10 s */
+function autoHS(hs){
+  if(!hs || hs.dataset.auto || matchMedia("(prefers-reduced-motion: reduce)").matches) return; hs.dataset.auto="1";
+  const items=[...hs.children]; let pauseUntil=0;
+  ["pointerdown","touchstart","wheel","keydown"].forEach(ev=>hs.addEventListener(ev,()=>pauseUntil=Date.now()+10000,{passive:true}));
+  setInterval(()=>{
+    if(Date.now()<pauseUntil || document.hidden || hs.scrollWidth<=hs.clientWidth+4) return;
+    const r=hs.getBoundingClientRect(); if(r.bottom<60 || r.top>innerHeight-60) return;
+    const w=items[0].getBoundingClientRect().width+parseFloat(getComputedStyle(hs).columnGap||0);
+    let i=Math.round(hs.scrollLeft/w)+1; if(i>=items.length || hs.scrollLeft+hs.clientWidth>=hs.scrollWidth-4) i=0;
+    hs.scrollTo({left:items[i].offsetLeft-hs.offsetLeft-parseFloat(getComputedStyle(hs).paddingLeft),behavior:"smooth"});
+  },5000);
 }
 function renderList(cat){
   $$("#chips .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.f===cat)));
@@ -929,7 +989,7 @@ const FORMS = {
     <div class="fld"><label for="buy-when">${t("f.when")}</label><select id="buy-when" name="when"><option>${t("f.when.1")}</option><option>${t("f.when.2")}</option><option>${t("f.when.3")}</option><option>${t("f.when.4")}</option></select></div>
     <div class="fld"><label for="buy-msg">${t("f.msg.opt")}</label><textarea id="buy-msg" name="message" placeholder="${esc(t("f.msg.ph"))}"></textarea></div>`,
   sell:()=>`${base("sell")}
-    <div class="two"><div class="fld"><label for="sell-type">${t("f.ptype")}</label><select id="sell-type" name="ptype">${["daire","villa","sira-ev","penthouse","bungalov","arsa","ticari"].map(k=>`<option>${typeName(k)}</option>`).join("")}</select></div>
+    <div class="two"><div class="fld"><label for="sell-type">${t("f.ptype")}</label><select id="sell-type" name="ptype">${["daire","rezidans","loft","villa","mustakil","sira-ev","penthouse","bungalov","arsa","ticari"].map(k=>`<option>${typeName(k)}</option>`).join("")}</select></div>
     <div class="fld"><label for="sell-loc">${t("f.loc")}</label><input id="sell-loc" name="location" placeholder="${esc(t("f.loc.ph"))}"></div></div>
     <div class="fld"><label for="sell-msg">${t("f.about")}</label><textarea id="sell-msg" name="message" placeholder="${esc(t("f.about.ph"))}"></textarea></div>`,
   rent:()=>`<fieldset class="fld"><legend>${t("f.dir")}</legend>${seg("direction",[t("f.dir.1"),t("f.dir.2")])}</fieldset>${base("rent")}
@@ -1000,14 +1060,31 @@ function closeLB(){ $("#lb").hidden=true; document.body.style.overflow=""; }
 $("#lb").addEventListener("click",e=>{ if(e.target.closest(".x")||e.target.id==="lb") closeLB(); else if(e.target.closest(".pv")){LBi=(LBi-1+LB.length)%LB.length;showLB()} else if(e.target.closest(".nx")){LBi=(LBi+1)%LB.length;showLB()} });
 addEventListener("keydown",e=>{ if($("#lb").hidden) return; if(e.key==="Escape")closeLB(); if(e.key==="ArrowRight"){LBi=(LBi+1)%LB.length;showLB()} if(e.key==="ArrowLeft"){LBi=(LBi-1+LB.length)%LB.length;showLB()} });
 
+/* ============ numbers count up from 0 when the section comes into view ============ */
+function countUp(){
+  const els=$$(".nums b[data-v]"); if(!els.length) return;
+  const split=v=>{ const m=String(v||"").match(/^(\D*)(\d+)(.*)$/); return m?[m[1],+m[2],m[3]]:null; };
+  const still=matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window);
+  els.forEach(e=>{ const p=split(e.dataset.v); e.textContent = (!p||still) ? e.dataset.v : p[0]+"0"+p[2]; });
+  if(still) return;
+  const io=new IntersectionObserver(es=>{ if(!es.some(x=>x.isIntersecting)) return; io.disconnect();
+    const t0=performance.now(), D=1600;
+    const tick=now=>{ const k=Math.min(1,(now-t0)/D), e3=1-Math.pow(1-k,3);
+      els.forEach(e=>{ const p=split(e.dataset.v); if(p) e.textContent=p[0]+Math.round(p[1]*e3)+p[2]; });
+      if(k<1) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  },{threshold:.45});
+  io.observe($(".nums"));
+}
 /* ============ site fields ============ */
 function applySite(){
   $$(".s-phone").forEach(e=>e.textContent=S.phone_display); $$(".s-email").forEach(e=>e.textContent=S.email);
   $$(".s-phone-link").forEach(a=>a.href="tel:+"+S.whatsapp);
-  $$(".s-years").forEach(e=>e.textContent=S.years); $$(".s-clients").forEach(e=>e.textContent=S.clients); $$(".s-closed").forEach(e=>e.textContent=S.properties_closed);
+  $$(".s-years").forEach(e=>e.dataset.v=S.years); $$(".s-clients").forEach(e=>e.dataset.v=S.clients); $$(".s-closed").forEach(e=>e.dataset.v=S.properties_closed);
+  countUp();
   $$("a.wa").forEach(a=>a.href=waURL()); $$("a.ig").forEach(a=>a.href=S.instagram||"#");
   const v=$("#introVid"); if(S.intro_video_url){ v.href=S.intro_video_url; } else { v.removeAttribute("href"); v.removeAttribute("target"); $("#introLbl").dataset.i="me.video.soon"; $(".play",v).hidden=true; }
-  const ch=[["Instagram",S.instagram],["WhatsApp",waURL()],["YouTube",S.youtube],["TikTok",S.tiktok],["Facebook",S.facebook],["Telegram",S.telegram]].filter(x=>x[1]);
+  const ch=[["Facebook",S.facebook],["Instagram",S.instagram],["WhatsApp",waURL()],["Telegram",S.telegram]].filter(x=>x[1]);
   $("#chan").innerHTML = ch.map(([n,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${n}</a>`).join("");
   $("#yr").textContent = new Date().getFullYear();
   if(!PREVIEW) $$(".pv").forEach(e=>e.remove());
@@ -1027,7 +1104,7 @@ function route(keep){
   else if(h.startsWith("blog-")){ page="yazi"; arg=h.slice(5); }
   else if(h==="kuzey-kibris"||h.startsWith("kuzey-kibris-")){ page="kuzey-kibris"; arg=h.slice(13); }
   else if(h==="iletisim"||h.startsWith("iletisim-")){ page="iletisim"; arg=h.slice(9)||"buy"; }
-  else if(h==="partner"||h==="gizlilik"){ page=h; }
+  else if(h==="partner"||h==="gizlilik"||h==="hakkimda"){ page=h; }
   let title=null;
   if(page==="mulk"){ const l=LIST.find(x=>x.slug===arg); if(!l){page="mulkler";arg="all";} else { $("#detail").innerHTML=detailHTML(l); $("#listingForm").innerHTML=formHTML("listing",loc(l,"title")); title=`${loc(l,"title")} · ${place(l.location)} — ata.co`;
       $$("#detail [data-lb]").forEach(b=>b.onclick=()=>openLB(l.photos,+b.dataset.lb)); fillMedia($("#detail")); } }
@@ -1036,10 +1113,11 @@ function route(keep){
   if(page==="blog") renderPosts();
   if(page==="iletisim") renderForm(["buy","sell","rent"].includes(arg)?arg:"buy");
   if(page==="partner" && !$("#partnerHost form,#partnerHost .done")) $("#partnerHost").innerHTML=formHTML("partner");
+  if(page==="hakkimda") $("#aboutBlocks").innerHTML = ["bio","vision","mission"].filter(k=>t("about."+k).trim() && t("about."+k)!=="about."+k).map(k=>`<div class="ab"><h2 class="dsp h4">${t("about."+k+".t")}</h2><div class="prose">${t("about."+k)}</div></div>`).join("");
   $$(".page").forEach(el=>el.hidden=el.dataset.page!==page);
   $$("[data-nav]").forEach(a=>{ const on=a.dataset.nav===page||(page==="mulk"&&a.dataset.nav==="mulkler")||(page==="yazi"&&a.dataset.nav==="blog"); on?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current"); });
   document.documentElement.classList.toggle("snap", page==="home" && innerWidth<900);
-  const nav={home:null,mulkler:"menu.properties",blog:"menu.blog","kuzey-kibris":"menu.nc",iletisim:"menu.contact",partner:"menu.partner",gizlilik:"foot.privacy"}[page];
+  const nav={hakkimda:"about.title",home:null,mulkler:"menu.properties",blog:"menu.blog","kuzey-kibris":"menu.nc",iletisim:"menu.contact",partner:"menu.partner",gizlilik:"foot.privacy"}[page];
   document.title = title || (nav ? `${t(nav)} — ata.co` : t("meta.title"));
   closeMenu(); applyStatic($(`.page[data-page="${page}"]`)); fillMedia($(`.page[data-page="${page}"]`));
   if(!keep){
@@ -1073,6 +1151,7 @@ function onScroll(){
   const overImage = pg==="home"||pg==="mulk"||pg==="kuzey-kibris";
   bar.classList.toggle("solid", !overImage || scrollY > innerHeight*0.6);
   if(pg==="home" && !reduce && scrollY<innerHeight*1.2) heroBg.style.transform=`translate3d(0,${scrollY*0.35}px,0)`;
+  if(pg==="home" && !reduce){ const me=$("#me"), r=me.getBoundingClientRect(); const prog=Math.min(1,Math.max(0,(innerHeight-r.top)/(innerHeight*.85))); me.style.setProperty("--pb",((1-prog)*18).toFixed(1)+"px"); }
   if(!reduce) $$(`.page[data-page="${pg}"] [data-parallax]`).forEach(el=>{ const r=el.parentElement.getBoundingClientRect(); if(r.bottom<0||r.top>innerHeight) return; const d=(r.top+r.height/2-innerHeight/2)*-0.15; el.style.transform=`translate3d(0,${d.toFixed(1)}px,0)`; });
 }
 addEventListener("scroll",onScroll,{passive:true});

@@ -60,9 +60,9 @@
   "Закрыть меню"
  ],
  "hero.kicker": [
-  "Atakan Terzili — Kuzey Kıbrıs",
-  "Atakan Terzili — North Cyprus",
-  "Атакан Терзили — Северный Кипр"
+  "Atakan Terzili — Kuzey Kıbrıs’ta Mülk · Yaşam · Destinasyonlar",
+  "Atakan Terzili — North Cyprus: Property · Living · Destinations",
+  "Атакан Терзили — Северный Кипр: недвижимость · жизнь · места"
  ],
  "hero.title": [
   "Mülk, dört duvardan fazlasıdır, <em>bir yaşam biçimi.</em>",
@@ -85,9 +85,9 @@
   "Давайте знакомиться"
  ],
  "me.role": [
-  "Gayrimenkul danışmanı · ata.co kurucusu",
-  "Real estate consultant · Founder of ata.co",
-  "Консультант по недвижимости · основатель ata.co"
+  "Gayrimenkul danışmanı",
+  "Real estate consultant",
+  "Консультант по недвижимости"
  ],
  "me.video": [
   "Tanıtım videosunu izleyin",
@@ -380,9 +380,9 @@
   "Услуги"
  ],
  "svc.1": [
-  "Tanışma görüşmesi",
-  "First conversation",
-  "Знакомство"
+  "Danışmanlık görüşmesi.",
+  "Consultation call.",
+  "Консультация."
  ],
  "svc.1.d": [
   "Telefon ya da video arama ile.",
@@ -390,9 +390,9 @@
   "По телефону или видеосвязи."
  ],
  "svc.2": [
-  "Mülk arama",
-  "Property search",
-  "Подбор объектов"
+  "Mülk arama ve teklif oluşturma.",
+  "Property search and offers.",
+  "Подбор объектов и предложения."
  ],
  "svc.2.d": [
   "Beklentinize ve bütçenize en uygun teklifler.",
@@ -400,9 +400,9 @@
   "Варианты, которые лучше всего подходят под ваши ожидания и бюджет."
  ],
  "svc.3": [
-  "Yerinde ya da uzaktan gösterim",
-  "Viewings, in person or remote",
-  "Просмотры лично или онлайн"
+  "Yerinde ya da uzaktan gösterim.",
+  "Viewings, in person or remote.",
+  "Просмотры лично или онлайн."
  ],
  "svc.3.d": [
   "Yerinde ya da yurt dışındaysanız canlı video ile.",
@@ -410,29 +410,29 @@
   "Лично или по видеосвязи, если вы за границей."
  ],
  "svc.4": [
-  "Hukuki danışma",
-  "Legal advice",
-  "Юридическая консультация"
+  "Hukuki danışma.",
+  "Legal advice.",
+  "Юридическая консультация."
  ],
  "svc.4.d": [
-  "KKTC Barosu’na kayıtlı profesyonel bir avukatla süreci birlikte öğreniyoruz.",
-  "We go through the process with a professional lawyer registered with the North Cyprus Bar Association.",
-  "Разбираемся в процессе вместе с профессиональным юристом, членом Коллегии адвокатов Северного Кипра."
+  "KKTC Barosu’na kayıtlı profesyonel bir avukatla süreci belirliyoruz.",
+  "We set out the process with a professional lawyer registered with the North Cyprus Bar Association.",
+  "Определяем порядок сделки вместе с профессиональным юристом, членом Коллегии адвокатов Северного Кипра."
  ],
  "svc.5": [
-  "Satın alma rehberliği",
-  "Purchase guidance",
-  "Сопровождение покупки"
+  "Satın alma rehberliği.",
+  "Purchase guidance.",
+  "Сопровождение покупки."
  ],
  "svc.5.d": [
-  "Rezervasyondan tapuya, her adımda yanınızda.",
-  "From reservation to title deed, with you at every step.",
-  "От бронирования до титула, рядом на каждом шаге."
+  "Rezervasyondan tapuya, her adımda süreci profesyonel bir şekilde yönetiyoruz.",
+  "From reservation to title deed, we manage every step professionally.",
+  "От бронирования до титула мы профессионально ведём каждый шаг."
  ],
  "svc.6": [
-  "Evinizi satmak",
-  "Selling your home",
-  "Продажа вашего дома"
+  "Evinizi satmak.",
+  "Selling your home.",
+  "Продажа вашего дома."
  ],
  "svc.6.d": [
   "Fiyatlama, çekim ve doğru alıcıya sunum.",
@@ -1325,9 +1325,9 @@
   "Спасибо. Выбранные гиды придут на ваш e-mail."
  ],
  "svc.7": [
-  "Kiralama",
-  "Rentals",
-  "Аренда"
+  "Kiralama.",
+  "Rentals.",
+  "Аренда."
  ],
  "svc.7.d": [
   "Kiralık ev bulmak ya da evinize kiracı bulmak.",
@@ -1335,9 +1335,9 @@
   "Поиск жилья в аренду или арендаторов для вашего."
  ],
  "svc.8": [
-  "Taşınma ve sonrası",
-  "Relocation and after",
-  "Переезд и после"
+  "Taşınma ve sonrası.",
+  "Relocation and after.",
+  "Переезд и после."
  ],
  "svc.8.d": [
   "Oturum, okul, sigorta, araç: avukatımla birlikte yol gösteriyorum.",
@@ -1348,5 +1348,60 @@
   "Sosyal Medya",
   "Social Media",
   "Соцсети"
+ ],
+ "me.more": [
+  "Daha fazla",
+  "More about me",
+  "Подробнее"
+ ],
+ "about.title": [
+  "Hakkımda",
+  "About me",
+  "Обо мне"
+ ],
+ "about.bio.t": [
+  "Hikâyem",
+  "My story",
+  "Моя история"
+ ],
+ "about.vision.t": [
+  "Vizyonum",
+  "My vision",
+  "Моё видение"
+ ],
+ "about.mission.t": [
+  "Misyonum",
+  "My mission",
+  "Моя миссия"
+ ],
+ "about.bio": [
+  "",
+  "",
+  ""
+ ],
+ "about.vision": [
+  "",
+  "",
+  ""
+ ],
+ "about.mission": [
+  "",
+  "",
+  ""
+ ],
+ "type.loft": [
+  "Loft",
+  "Loft",
+  "Лофт"
+ ],
+ "type.rezidans": [
+  "Rezidans",
+  "Residence",
+  "Резиденция"
+ ],
+ "type.mustakil": [
+  "Müstakil ev",
+  "Detached house",
+  "Отдельный дом"
  ]
 }
