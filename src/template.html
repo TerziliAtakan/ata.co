@@ -328,9 +328,11 @@ p{margin:0}
 /* the footer keeps the logo artwork's own off-white in both themes so the burgundy mark reads exactly as designed */
 footer{background:#F6F4F1;color:#161513;scroll-snap-align:end;color-scheme:light;display:flex;flex-direction:column}
 footer .fwrap{padding-block:clamp(48px,7vw,88px) calc(28px + env(safe-area-inset-bottom,0px));width:100%}
-footer > .nl-strip{background:var(--panel);color:var(--on-panel);color-scheme:dark}
+footer > .nl-strip{background:#5E0B10;color:#F6F1EA;color-scheme:dark}
+footer > .nl-strip .field-row{border-color:rgba(246,241,234,.55)}
+footer > .nl-strip .field-row input::placeholder{color:rgba(246,241,234,.7)}
 /* on phones the strip + logo form the last full screen */
-html.snap footer{min-height:100svh;min-height:100vh;scroll-snap-align:start;padding-top:calc(var(--bar) + env(safe-area-inset-top,0px));background:linear-gradient(var(--panel),var(--panel)) top/100% calc(var(--bar) + env(safe-area-inset-top,0px)) no-repeat,#F6F4F1}
+html.snap footer{min-height:100svh;min-height:100vh;scroll-snap-align:start;padding-top:calc(var(--bar) + env(safe-area-inset-top,0px));background:linear-gradient(#5E0B10,#5E0B10) top/100% calc(var(--bar) + env(safe-area-inset-top,0px)) no-repeat,#F6F4F1}
 html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-content:center}
 .fgrid{display:grid;grid-template-columns:1fr;gap:36px;justify-items:center;text-align:center}
 .lockup{display:inline-grid;justify-items:center;gap:10px}
@@ -820,7 +822,7 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 <footer>
   <!-- stay in the loop (always directly above the logo) -->
   <div class="strip on-dark nl-strip" role="region" aria-labelledby="nl-h"><div class="wrap">
-      <div class="nl-txt"><b id="nl-h" data-tw="nl.title"></b></div>
+      <div class="nl-txt"><b id="nl-h" data-tw="nl.title" data-tw-speed="1.5"></b></div>
       <form class="js-mini nl-form" data-type="newsletter">
         <label class="sr" for="nl-email" data-i="form.email"></label>
         <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -1164,7 +1166,7 @@ function typewriter(){
     if(still || el.dataset.twDone){ live.textContent=full; return; }
     el._io=new IntersectionObserver(es=>{ if(!es[0].isIntersecting) return; el._io.disconnect();
       const ch=[...full]; let i=0; el.classList.add("tw-on");
-      const step=()=>{ live.textContent=ch.slice(0,++i).join(""); if(i<ch.length) el._t=setTimeout(step,55+Math.random()*45); else { el.dataset.twDone="1"; setTimeout(()=>el.classList.remove("tw-on"),1600); } };
+      const step=()=>{ live.textContent=ch.slice(0,++i).join(""); if(i<ch.length) el._t=setTimeout(step,(55+Math.random()*45)/(+el.dataset.twSpeed||1)); else { el.dataset.twDone="1"; setTimeout(()=>el.classList.remove("tw-on"),1600); } };
       el._t=setTimeout(step,250);
     },{threshold:.6});
     el._io.observe(el);
@@ -1200,10 +1202,15 @@ addEventListener("resize",()=>document.documentElement.classList.toggle("snap", 
 
 /* ============ boot ============ */
 (function(){
+  if("scrollRestoration" in history) history.scrollRestoration="manual";
+  if(location.hash==="#me") history.replaceState(null,"",location.pathname+location.search);
   let l = DATA.lang && DATA.fixedLang ? DATA.lang : null;
   if(!l){ try{ l=localStorage.getItem("ataco-lang") }catch(e){} }
   if(!l){ const n=(navigator.language||"tr").slice(0,2).toLowerCase(); l = PREVIEW ? "tr" : (LANGS.includes(n)?n:"tr"); }
   if(DATA.fixedLang) l = DATA.lang;
   setLang(l,true); initHS(); fillMedia(document);
+  if(!location.hash) window.scrollTo(0,0);
+  /* the scroll cue moves down without leaving #me in the address bar */
+  const cue=$(".hero .cue"); if(cue) cue.addEventListener("click",e=>{ e.preventDefault(); $("#me").scrollIntoView({behavior:"smooth"}); });
 })();
 </script>
