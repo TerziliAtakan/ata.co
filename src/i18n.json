@@ -2,1379 +2,2207 @@
  "meta.title": [
   "ata.co — Kuzey Kıbrıs’ta Gayrimenkul · Atakan Terzili",
   "ata.co — North Cyprus Real Estate · Atakan Terzili",
-  "ata.co — Недвижимость Северного Кипра · Атакан Терзили"
+  "ata.co — Недвижимость Северного Кипра · Атакан Терзили",
+  "ata.co — Immobilien in Nordzypern · Atakan Terzili",
+  "ata.co — Inmobiliaria en el norte de Chipre · Atakan Terzili",
+  "ata.co — عقارات شمال قبرص · أتاكان ترزيلي"
  ],
  "meta.desc": [
   "Atakan Terzili ile Kuzey Kıbrıs’ta satılık ve kiralık mülkler: İskele, Long Beach, Bafra, Girne ve Esentepe. Projeden, ikinci el, kiralık ve arsa. Kişisel, yerel danışmanlık.",
   "North Cyprus property with Atakan Terzili: homes for sale and rent in Iskele, Long Beach, Bafra, Kyrenia and Esentepe. Off-plan, re-sale, rentals and land. Personal, local advice.",
-  "Недвижимость Северного Кипра с Атаканом Терзили: продажа и аренда в Искеле, Лонг-Бич, Бафре, Кирении и Эсентепе. Новостройки, вторичный рынок, аренда и земля."
+  "Недвижимость Северного Кипра с Атаканом Терзили: продажа и аренда в Искеле, Лонг-Бич, Бафре, Кирении и Эсентепе. Новостройки, вторичный рынок, аренда и земля.",
+  "Immobilien in Nordzypern mit Atakan Terzili: Häuser und Wohnungen zum Kauf und zur Miete in Iskele, Long Beach, Bafra, Kyrenia und Esentepe. Neubau, Bestand, Miete und Grundstücke. Persönliche Beratung vor Ort.",
+  "Propiedades en el norte de Chipre con Atakan Terzili: viviendas en venta y alquiler en Iskele, Long Beach, Bafra, Kyrenia y Esentepe. Obra nueva, segunda mano, alquiler y terrenos. Asesoramiento personal y local.",
+  "عقارات شمال قبرص مع أتاكان ترزيلي: منازل للبيع والإيجار في إسكلة ولونغ بيتش وبافرا وكيرينيا وإسنتبه. مشاريع قيد الإنشاء، عقارات جاهزة، إيجار وأراضٍ. استشارة شخصية ومحلية."
  ],
  "nav.menu": [
   "Menü",
   "Menu",
-  "Меню"
+  "Меню",
+  "Menü",
+  "Menú",
+  "القائمة"
  ],
  "nav.lang": [
   "Dil seçin",
   "Choose language",
-  "Выберите язык"
+  "Выберите язык",
+  "Sprache wählen",
+  "Elegir idioma",
+  "اختر اللغة"
  ],
  "nav.home": [
   "ata.co ana sayfa",
   "ata.co home",
-  "ata.co — главная"
+  "ata.co — главная",
+  "ata.co Startseite",
+  "Inicio de ata.co",
+  "الصفحة الرئيسية ata.co"
  ],
  "menu.home": [
   "Ana sayfa",
   "Home",
-  "Главная"
+  "Главная",
+  "Startseite",
+  "Inicio",
+  "الرئيسية"
  ],
  "menu.properties": [
   "Mülkler",
   "Properties",
-  "Объекты"
+  "Объекты",
+  "Immobilien",
+  "Propiedades",
+  "العقارات"
  ],
  "menu.blog": [
   "Bloglar",
   "Blog",
-  "Блог"
+  "Блог",
+  "Blog",
+  "Blog",
+  "المدونة"
  ],
  "menu.nc": [
   "Kuzey Kıbrıs",
   "North Cyprus",
-  "Северный Кипр"
+  "Северный Кипр",
+  "Nordzypern",
+  "Norte de Chipre",
+  "شمال قبرص"
  ],
  "menu.contact": [
   "İletişim",
   "Contact",
-  "Контакты"
+  "Контакты",
+  "Kontakt",
+  "Contacto",
+  "تواصل"
  ],
  "menu.partner": [
   "Partner olun",
   "Become a partner",
-  "Стать партнёром"
+  "Стать партнёром",
+  "Partner werden",
+  "Hazte socio",
+  "كن شريكاً"
  ],
  "menu.close": [
   "Menüyü kapat",
   "Close menu",
-  "Закрыть меню"
+  "Закрыть меню",
+  "Menü schließen",
+  "Cerrar menú",
+  "إغلاق القائمة"
  ],
  "hero.kicker": [
   "Atakan Terzili — Kuzey Kıbrıs’ta · Mülk · Yaşam · Destinasyonlar",
   "Atakan Terzili — North Cyprus · Property · Living · Destinations",
-  "Атакан Терзили — Северный Кипр · Недвижимость · Жизнь · Места"
+  "Атакан Терзили — Северный Кипр · Недвижимость · Жизнь · Места",
+  "Atakan Terzili — Nordzypern · Immobilien · Leben · Reiseziele",
+  "Atakan Terzili — Norte de Chipre · Propiedad · Vida · Destinos",
+  "أتاكان ترزيلي — شمال قبرص · عقارات · حياة · وجهات"
  ],
  "hero.title": [
   "Mülk, dört duvardan fazlasıdır, <em>bir yaşam biçimi.</em>",
   "Property is more than four walls. <em>It’s a way of life.</em>",
-  "Недвижимость — больше, чем четыре стены. <em>Это образ жизни.</em>"
+  "Недвижимость — больше, чем четыре стены. <em>Это образ жизни.</em>",
+  "Eine Immobilie ist mehr als vier Wände. <em>Sie ist eine Lebensweise.</em>",
+  "Una propiedad es más que cuatro paredes. <em>Es una forma de vivir.</em>",
+  "العقار أكثر من أربعة جدران. <em>إنه أسلوب حياة.</em>"
  ],
  "hero.scroll": [
   "Kaydırın",
   "Scroll",
-  "Листайте"
+  "Листайте",
+  "Scrollen",
+  "Desliza",
+  "مرّر"
  ],
  "hero.alt": [
   "Atakan Terzili, Kuzey Kıbrıs",
   "Atakan Terzili, North Cyprus",
-  "Атакан Терзили, Северный Кипр"
+  "Атакан Терзили, Северный Кипр",
+  "Atakan Terzili, Nordzypern",
+  "Atakan Terzili, norte de Chipre",
+  "أتاكان ترزيلي، شمال قبرص"
  ],
  "me.kicker": [
   "Beni tanıyın",
   "Get to know me",
-  "Давайте знакомиться"
+  "Давайте знакомиться",
+  "Lernen Sie mich kennen",
+  "Conóceme",
+  "تعرّف عليّ"
  ],
  "me.role": [
   "Gayrimenkul danışmanı",
   "Real estate consultant",
-  "Консультант по недвижимости"
+  "Консультант по недвижимости",
+  "Immobilienberater",
+  "Asesor inmobiliario",
+  "مستشار عقاري"
  ],
  "me.video": [
   "Tanıtım videosunu izleyin",
   "Watch the introduction",
-  "Смотреть видео-знакомство"
+  "Смотреть видео-знакомство",
+  "Vorstellungsvideo ansehen",
+  "Ver el vídeo de presentación",
+  "شاهد فيديو التعريف"
  ],
  "me.video.soon": [
   "Tanıtım videosu yakında",
   "Introduction video coming soon",
-  "Видео-знакомство скоро"
+  "Видео-знакомство скоро",
+  "Vorstellungsvideo folgt in Kürze",
+  "Vídeo de presentación muy pronto",
+  "فيديو التعريف قريباً"
  ],
  "me.title": [
   "Emlaktan <em>fazlası.</em>",
   "More than <em>real estate.</em>",
-  "Больше, чем <em>недвижимость.</em>"
+  "Больше, чем <em>недвижимость.</em>",
+  "Mehr als <em>Immobilien.</em>",
+  "Más que <em>inmobiliaria.</em>",
+  "أكثر من <em>مجرد عقارات.</em>"
  ],
  "me.p": [
   "Kuzey Kıbrıs benim için bir pazardan fazlası; tanıdığım, anladığım ve evim dediğim bir yer. Gayrimenkule yaklaşımım basit: önce insanı anlamak, sonra doğru mülkü bulmak.",
   "North Cyprus is more than a market to me. It’s a place I know, understand and call home. My approach is simple: understand the person first, then find the right property.",
-  "Северный Кипр для меня больше, чем рынок. Это место, которое я знаю, понимаю и называю домом. Мой подход прост: сначала понять человека, затем найти подходящий объект."
+  "Северный Кипр для меня больше, чем рынок. Это место, которое я знаю, понимаю и называю домом. Мой подход прост: сначала понять человека, затем найти подходящий объект.",
+  "Nordzypern ist für mich mehr als ein Markt. Es ist ein Ort, den ich kenne, verstehe und mein Zuhause nenne. Mein Ansatz ist einfach: zuerst den Menschen verstehen, dann die richtige Immobilie finden.",
+  "Para mí, el norte de Chipre es más que un mercado. Es un lugar que conozco, entiendo y al que llamo hogar. Mi enfoque es sencillo: primero entender a la persona y después encontrar la propiedad adecuada.",
+  "شمال قبرص بالنسبة لي أكثر من سوق. إنه مكان أعرفه وأفهمه وأعتبره وطني. منهجي بسيط: أفهم الشخص أولاً، ثم أجد العقار المناسب."
  ],
  "me.portrait": [
   "Atakan Terzili portresi",
   "Portrait of Atakan Terzili",
-  "Портрет Атакана Терзили"
+  "Портрет Атакана Терзили",
+  "Porträt von Atakan Terzili",
+  "Retrato de Atakan Terzili",
+  "صورة أتاكان ترزيلي"
  ],
  "num.kicker": [
   "Rakamlarla",
   "In numbers",
-  "В цифрах"
+  "В цифрах",
+  "In Zahlen",
+  "En cifras",
+  "بالأرقام"
  ],
  "num.title": [
   "Ölçülebilir <em>deneyim.</em>",
   "Experience you can <em>measure.</em>",
-  "Опыт, который можно <em>измерить.</em>"
+  "Опыт, который можно <em>измерить.</em>",
+  "Erfahrung, die man <em>messen kann.</em>",
+  "Experiencia que se puede <em>medir.</em>",
+  "خبرة يمكن <em>قياسها.</em>"
  ],
  "num.years": [
   "yıl Kuzey Kıbrıs’ta",
   "years in North Cyprus",
-  "лет на Северном Кипре"
+  "лет на Северном Кипре",
+  "Jahre in Nordzypern",
+  "años en el norte de Chipre",
+  "سنوات في شمال قبرص"
  ],
  "num.clients": [
   "müşteri",
   "clients",
-  "клиентов"
+  "клиентов",
+  "Kunden",
+  "clientes",
+  "عميل"
  ],
  "num.props": [
   "satılan / kiralanan mülk",
   "properties sold / let",
-  "проданных / сданных объектов"
+  "проданных / сданных объектов",
+  "verkaufte / vermietete Immobilien",
+  "propiedades vendidas / alquiladas",
+  "عقار مباع / مؤجر"
  ],
  "feat.kicker": [
   "Seçilmiş mülkler",
   "Selected properties",
-  "Избранные объекты"
+  "Избранные объекты",
+  "Ausgewählte Immobilien",
+  "Propiedades seleccionadas",
+  "عقارات مختارة"
  ],
  "feat.title": [
   "Şu an <em>öne çıkanlar.</em>",
   "Featured <em>right now.</em>",
-  "Сейчас <em>в фокусе.</em>"
+  "Сейчас <em>в фокусе.</em>",
+  "Aktuell <em>im Fokus.</em>",
+  "Destacadas <em>ahora.</em>",
+  "مميزة <em>الآن.</em>"
  ],
  "feat.all": [
   "Tüm mülkler",
   "All properties",
-  "Все объекты"
+  "Все объекты",
+  "Alle Immobilien",
+  "Todas las propiedades",
+  "كل العقارات"
  ],
  "feat.empty": [
   "Yeni ilanlar çok yakında. Ne aradığınızı söyleyin, size uygun olanları göndereyim.",
   "New listings are coming soon. Tell me what you’re looking for and I’ll send you a match.",
-  "Новые объекты скоро появятся. Расскажите, что вы ищете, и я пришлю подходящие варианты."
+  "Новые объекты скоро появятся. Расскажите, что вы ищете, и я пришлю подходящие варианты.",
+  "Neue Angebote folgen in Kürze. Sagen Sie mir, was Sie suchen, und ich schicke Ihnen Passendes.",
+  "Pronto habrá nuevos anuncios. Cuéntame qué buscas y te enviaré opciones a tu medida.",
+  "إعلانات جديدة قريباً. أخبرني بما تبحث عنه وسأرسل لك ما يناسبك."
  ],
  "swipe": [
   "Kaydırın",
   "Swipe",
-  "Листайте"
+  "Листайте",
+  "Wischen",
+  "Desliza",
+  "اسحب"
  ],
  "prev": [
   "Önceki",
   "Previous",
-  "Назад"
+  "Назад",
+  "Zurück",
+  "Anterior",
+  "السابق"
  ],
  "next": [
   "Sonraki",
   "Next",
-  "Далее"
+  "Далее",
+  "Weiter",
+  "Siguiente",
+  "التالي"
  ],
  "need.kicker": [
   "İhtiyacınızla başlayın",
   "Start with what you need",
-  "Начните с того, что вам нужно"
+  "Начните с того, что вам нужно",
+  "Beginnen Sie mit Ihrem Bedarf",
+  "Empieza por lo que necesitas",
+  "ابدأ بما تحتاجه"
  ],
  "cat.projeden": [
   "Projeden",
   "Off-plan",
-  "Новостройки"
+  "Новостройки",
+  "Neubauprojekte",
+  "Obra nueva",
+  "قيد الإنشاء"
  ],
  "cat.ikinci-el": [
   "İkinci el",
   "Re-sale",
-  "Вторичный рынок"
+  "Вторичный рынок",
+  "Bestand",
+  "Segunda mano",
+  "جاهز"
  ],
  "cat.kiralik": [
   "Kiralık",
   "Rental",
-  "Аренда"
+  "Аренда",
+  "Miete",
+  "Alquiler",
+  "للإيجار"
  ],
  "cat.arsa": [
   "Arsa",
   "Land",
-  "Земля"
+  "Земля",
+  "Grundstücke",
+  "Terrenos",
+  "أراضٍ"
  ],
  "cat.projeden.d": [
   "Yeni projeler, erken giriş.",
   "New developments, early entry.",
-  "Новые проекты на раннем этапе."
+  "Новые проекты на раннем этапе.",
+  "Neue Projekte, früher Einstieg.",
+  "Nuevas promociones, entrada temprana.",
+  "مشاريع جديدة، دخول مبكر."
  ],
  "cat.ikinci-el.d": [
   "Hazır, taşınmaya hazır evler.",
   "Finished homes, ready to move in.",
-  "Готовое жильё для переезда."
+  "Готовое жильё для переезда.",
+  "Fertige Häuser, sofort bezugsbereit.",
+  "Viviendas terminadas, listas para entrar.",
+  "منازل جاهزة للسكن فوراً."
  ],
  "cat.kiralik.d": [
   "Adada uzun dönem yaşam için.",
   "Long-term homes on the island.",
-  "Долгосрочная аренда на острове."
+  "Долгосрочная аренда на острове.",
+  "Langfristig wohnen auf der Insel.",
+  "Viviendas de larga estancia en la isla.",
+  "سكن طويل الأمد على الجزيرة."
  ],
  "cat.arsa.d": [
   "İnşa ve yatırım için.",
   "For building or holding.",
-  "Для строительства и инвестиций."
+  "Для строительства и инвестиций.",
+  "Zum Bauen oder als Anlage.",
+  "Para construir o invertir.",
+  "للبناء أو الاستثمار."
  ],
  "work.kicker": [
   "Talep",
   "Inquire",
-  "Запрос"
+  "Запрос",
+  "Anfrage",
+  "Solicitud",
+  "طلب"
  ],
  "work.title": [
   "Nasıl birlikte <em>çalışabiliriz?</em>",
   "How can we <em>work together?</em>",
-  "Как мы можем <em>работать вместе?</em>"
+  "Как мы можем <em>работать вместе?</em>",
+  "Wie können wir <em>zusammenarbeiten?</em>",
+  "¿Cómo podemos <em>trabajar juntos?</em>",
+  "كيف يمكننا <em>العمل معاً؟</em>"
  ],
  "work.buy": [
   "Satın al",
   "Buy",
-  "Купить"
+  "Купить",
+  "Kaufen",
+  "Comprar",
+  "شراء"
  ],
  "work.buy.d": [
   "Mülk arıyorum.",
   "I’m looking for a property.",
-  "Я ищу недвижимость."
+  "Я ищу недвижимость.",
+  "Ich suche eine Immobilie.",
+  "Busco una propiedad.",
+  "أبحث عن عقار."
  ],
  "work.sell": [
   "Sat",
   "Sell",
-  "Продать"
+  "Продать",
+  "Verkaufen",
+  "Vender",
+  "بيع"
  ],
  "work.sell.d": [
   "Mülkümü satmak istiyorum.",
   "I want to sell my property.",
-  "Я хочу продать недвижимость."
+  "Я хочу продать недвижимость.",
+  "Ich möchte meine Immobilie verkaufen.",
+  "Quiero vender mi propiedad.",
+  "أريد بيع عقاري."
  ],
  "work.rent": [
   "Kirala",
   "Rent",
-  "Аренда"
+  "Аренда",
+  "Mieten",
+  "Alquilar",
+  "إيجار"
  ],
  "work.rent.d": [
   "Kiralık arıyorum ya da mülkümü kiraya vermek istiyorum.",
   "I’m looking for a rental, or I want to rent out my property.",
-  "Ищу жильё в аренду или хочу сдать своё."
+  "Ищу жильё в аренду или хочу сдать своё.",
+  "Ich suche eine Mietwohnung oder möchte meine Immobilie vermieten.",
+  "Busco un alquiler o quiero alquilar mi propiedad.",
+  "أبحث عن سكن للإيجار أو أريد تأجير عقاري."
  ],
  "work.start": [
   "Başla",
   "Start",
-  "Начать"
+  "Начать",
+  "Los geht’s",
+  "Empezar",
+  "ابدأ"
  ],
  "partner.strip": [
   "Partner olun",
   "Become a partner",
-  "Станьте партнёром"
+  "Станьте партнёром",
+  "Partner werden",
+  "Hazte socio",
+  "كن شريكاً"
  ],
  "partner.strip.d": [
   "Emlak danışmanları, geliştiriciler ve referans yönlendirenler için.",
   "For agents, developers and those who refer clients.",
-  "Для агентов, девелоперов и тех, кто рекомендует клиентов."
+  "Для агентов, девелоперов и тех, кто рекомендует клиентов.",
+  "Für Makler, Bauträger und alle, die Kunden empfehlen.",
+  "Para agentes, promotores y quienes recomiendan clientes.",
+  "للوسطاء والمطوّرين ومن يُحيلون العملاء."
  ],
  "partner.title": [
   "ata.co ile <em>çalışalım.</em>",
   "Let’s <em>work together.</em>",
-  "Давайте <em>работать вместе.</em>"
+  "Давайте <em>работать вместе.</em>",
+  "Lassen Sie uns <em>zusammenarbeiten.</em>",
+  "<em>Trabajemos juntos.</em>",
+  "لنعمل <em>معاً.</em>"
  ],
  "partner.lead": [
   "Bilgilerinizi bırakın, sizi arayayım.",
   "Leave your details and I’ll call you.",
-  "Оставьте контакты, и я вам позвоню."
+  "Оставьте контакты, и я вам позвоню.",
+  "Hinterlassen Sie Ihre Daten, und ich rufe Sie an.",
+  "Déjame tus datos y te llamaré.",
+  "اترك بياناتك وسأتصل بك."
  ],
  "nc.kicker": [
   "Mülkten fazlası.",
   "More than property.",
-  "Больше, чем недвижимость."
+  "Больше, чем недвижимость.",
+  "Mehr als Immobilien.",
+  "Más que propiedades.",
+  "أكثر من عقارات."
  ],
  "nc.title": [
   "Kuzey <em>Kıbrıs</em>",
   "North <em>Cyprus</em>",
-  "Северный <em>Кипр</em>"
+  "Северный <em>Кипр</em>",
+  "Nord<em>zypern</em>",
+  "Norte de <em>Chipre</em>",
+  "شمال <em>قبرص</em>"
  ],
  "nc.alt": [
   "Kuzey Kıbrıs sahili ve dağları",
   "North Cyprus coast and mountains",
-  "Побережье и горы Северного Кипра"
+  "Побережье и горы Северного Кипра",
+  "Küste und Berge Nordzyperns",
+  "Costa y montañas del norte de Chipre",
+  "ساحل وجبال شمال قبرص"
  ],
  "nc.explore": [
   "Keşfet",
   "Explore",
-  "Открыть"
+  "Открыть",
+  "Entdecken",
+  "Explorar",
+  "استكشف"
  ],
  "nc.explore.d": [
   "Adayı tanıyın.",
   "Discover the island.",
-  "Узнайте остров."
+  "Узнайте остров.",
+  "Lernen Sie die Insel kennen.",
+  "Descubre la isla.",
+  "اكتشف الجزيرة."
  ],
  "nc.invest": [
   "Yatırım yap",
   "Invest",
-  "Инвестировать"
+  "Инвестировать",
+  "Anlegen",
+  "Invertir",
+  "استثمر"
  ],
  "nc.invest.d": [
   "Fırsatı anlayın.",
   "Understand the opportunity.",
-  "Поймите возможности."
+  "Поймите возможности.",
+  "Die Chance verstehen.",
+  "Entiende la oportunidad.",
+  "افهم الفرصة."
  ],
  "nc.move": [
   "Taşın",
   "Relocate",
-  "Переехать"
+  "Переехать",
+  "Umziehen",
+  "Mudarse",
+  "انتقل"
  ],
  "nc.move.d": [
   "Burada bir hayat kurun.",
   "Build a life here.",
-  "Начните здесь новую жизнь."
+  "Начните здесь новую жизнь.",
+  "Hier ein Leben aufbauen.",
+  "Construye una vida aquí.",
+  "ابنِ حياتك هنا."
  ],
  "why.kicker": [
   "Neden ata.co",
   "Why ata.co",
-  "Почему ata.co"
+  "Почему ata.co",
+  "Warum ata.co",
+  "Por qué ata.co",
+  "لماذا ata.co"
  ],
  "why.1": [
   "Yerel bilgi",
   "Local knowledge",
-  "Знание места"
+  "Знание места",
+  "Lokales Wissen",
+  "Conocimiento local",
+  "معرفة محلية"
  ],
  "why.1.d": [
   "Kuzey Kıbrıs’ı içeriden tanımak.",
   "North Cyprus from the inside out.",
-  "Северный Кипр изнутри."
+  "Северный Кипр изнутри.",
+  "Nordzypern von innen heraus.",
+  "El norte de Chipre desde dentro.",
+  "شمال قبرص من الداخل."
  ],
  "why.2": [
   "Kişisel hizmet",
   "Personal service",
-  "Личный подход"
+  "Личный подход",
+  "Persönlicher Service",
+  "Servicio personal",
+  "خدمة شخصية"
  ],
  "why.2.d": [
   "Birebir rehberlik.",
   "One-to-one guidance.",
-  "Индивидуальное сопровождение."
+  "Индивидуальное сопровождение.",
+  "Begleitung im Einzelgespräch.",
+  "Acompañamiento uno a uno.",
+  "إرشاد فردي."
  ],
  "why.3": [
   "Seçilmiş fırsatlar",
   "Selected opportunities",
-  "Отобранные предложения"
+  "Отобранные предложения",
+  "Ausgewählte Angebote",
+  "Oportunidades seleccionadas",
+  "فرص مختارة"
  ],
  "why.3.d": [
   "Nicelikten önce nitelik.",
   "Quality over quantity.",
-  "Качество важнее количества."
+  "Качество важнее количества.",
+  "Qualität vor Quantität.",
+  "Calidad antes que cantidad.",
+  "الجودة قبل الكمية."
  ],
  "why.4": [
   "Uzun soluklu ilişkiler",
   "Long-term relationships",
-  "Долгосрочные отношения"
+  "Долгосрочные отношения",
+  "Langfristige Beziehungen",
+  "Relaciones a largo plazo",
+  "علاقات طويلة الأمد"
  ],
  "why.4.d": [
   "İşlemin ötesinde, her ihtiyaçta.",
   "Beyond the transaction, in every need.",
-  "За пределами сделки, в любом вопросе."
+  "За пределами сделки, в любом вопросе.",
+  "Über den Kauf hinaus, bei jedem Anliegen.",
+  "Más allá de la compra, en cada necesidad.",
+  "بعد الصفقة أيضاً، في كل حاجة."
  ],
  "svc.kicker": [
   "Hizmetler",
   "Services",
-  "Услуги"
+  "Услуги",
+  "Leistungen",
+  "Servicios",
+  "الخدمات"
  ],
  "svc.1": [
   "Danışmanlık görüşmesi.",
   "Consultation.",
-  "Консультация."
+  "Консультация.",
+  "Beratungsgespräch.",
+  "Consulta.",
+  "جلسة استشارية."
  ],
  "svc.1.d": [
   "Ofiste yüz yüze ya da telefon araması ile.",
   "Face to face at the office, or by phone.",
-  "Лично в офисе или по телефону."
+  "Лично в офисе или по телефону.",
+  "Persönlich im Büro oder telefonisch.",
+  "En persona en la oficina o por teléfono.",
+  "وجهاً لوجه في المكتب أو عبر الهاتف."
  ],
  "svc.2": [
   "Mülk arama ve teklif oluşturma.",
   "Property search and offers.",
-  "Подбор объектов и предложения."
+  "Подбор объектов и предложения.",
+  "Immobiliensuche und Angebote.",
+  "Búsqueda de propiedades y ofertas.",
+  "البحث عن العقار وإعداد العروض."
  ],
  "svc.2.d": [
   "Beklentinize ve bütçenize en uygun teklifler.",
   "The offers that best fit your expectations and budget.",
-  "Предложения, которые лучше всего подходят под ваши ожидания и бюджет."
+  "Предложения, которые лучше всего подходят под ваши ожидания и бюджет.",
+  "Die Angebote, die am besten zu Ihren Erwartungen und Ihrem Budget passen.",
+  "Las ofertas que mejor se ajustan a tus expectativas y presupuesto.",
+  "العروض الأنسب لتوقعاتك وميزانيتك."
  ],
  "svc.3": [
   "Yerinde ya da uzaktan gösterim.",
   "Viewings, in person or remote.",
-  "Просмотры лично или онлайн."
+  "Просмотры лично или онлайн.",
+  "Besichtigungen vor Ort oder per Video.",
+  "Visitas presenciales o a distancia.",
+  "معاينة في الموقع أو عن بُعد."
  ],
  "svc.3.d": [
   "Daire, proje, bölge; yerinde ya da video arama ile.",
   "Apartment, project, area: on site or by video call.",
-  "Квартира, проект, район: на месте или по видеосвязи."
+  "Квартира, проект, район: на месте или по видеосвязи.",
+  "Wohnung, Projekt, Gegend: vor Ort oder per Videoanruf.",
+  "Piso, promoción, zona: en persona o por videollamada.",
+  "شقة، مشروع، منطقة: في الموقع أو عبر مكالمة فيديو."
  ],
  "svc.4": [
   "Hukuk danışmanlığı.",
   "Legal advice.",
-  "Юридическая консультация."
+  "Юридическая консультация.",
+  "Rechtsberatung.",
+  "Asesoría legal.",
+  "استشارة قانونية."
  ],
  "svc.4.d": [
   "KKTC Barosu’na kayıtlı profesyonel bir avukat ile.",
   "With a professional lawyer registered with the North Cyprus Bar Association.",
-  "С профессиональным юристом, членом Коллегии адвокатов Северного Кипра."
+  "С профессиональным юристом, членом Коллегии адвокатов Северного Кипра.",
+  "Mit einem bei der Anwaltskammer Nordzyperns zugelassenen Anwalt.",
+  "Con un abogado profesional colegiado en el Colegio de Abogados del norte de Chipre.",
+  "مع محامٍ محترف مسجّل في نقابة محامي شمال قبرص."
  ],
  "svc.5": [
   "Satın alma rehberliği.",
   "Purchase guidance.",
-  "Сопровождение покупки."
+  "Сопровождение покупки.",
+  "Kaufbegleitung.",
+  "Acompañamiento en la compra.",
+  "الإرشاد في الشراء."
  ],
  "svc.5.d": [
   "Rezervasyondan tapuya kadar, her adımda profesyonel süreç yönetimi.",
   "From reservation to title deed, professional management at every step.",
-  "От бронирования до титула: профессиональное ведение каждого шага."
+  "От бронирования до титула: профессиональное ведение каждого шага.",
+  "Von der Reservierung bis zur Eigentumsurkunde, professionell in jedem Schritt.",
+  "De la reserva a la escritura, gestión profesional en cada paso.",
+  "من الحجز حتى سند الملكية، إدارة احترافية في كل خطوة."
  ],
  "svc.6": [
   "Evinizi satmak.",
   "Selling your home.",
-  "Продажа вашего дома."
+  "Продажа вашего дома.",
+  "Ihr Zuhause verkaufen.",
+  "Vender tu casa.",
+  "بيع منزلك."
  ],
  "svc.6.d": [
   "Doğru fiyatlama, profesyonel çekim ve sosyal içeriklerle gerçek alıcıya sunum.",
   "Accurate pricing, professional filming and social content that reaches real buyers.",
-  "Точная оценка, профессиональная съёмка и контент в соцсетях для реальных покупателей."
+  "Точная оценка, профессиональная съёмка и контент в соцсетях для реальных покупателей.",
+  "Richtige Preisgestaltung, professionelle Aufnahmen und Social-Media-Inhalte, die echte Käufer erreichen.",
+  "Precio correcto, grabación profesional y contenido en redes que llega a compradores reales.",
+  "تسعير صحيح وتصوير احترافي ومحتوى على وسائل التواصل يصل إلى مشترين حقيقيين."
  ],
  "soc.kicker": [
   "Yolculuğu takip edin",
   "Follow the journey",
-  "Следите за путешествием"
+  "Следите за путешествием",
+  "Folgen Sie der Reise",
+  "Sigue el viaje",
+  "تابع الرحلة"
  ],
  "soc.title": [
   "Mülkler, yaşam, piyasa ve <em>kamera arkası.</em>",
   "Property, lifestyle, market and <em>behind the scenes.</em>",
-  "Объекты, жизнь, рынок и <em>закулисье.</em>"
+  "Объекты, жизнь, рынок и <em>закулисье.</em>",
+  "Immobilien, Lifestyle, Markt und <em>hinter den Kulissen.</em>",
+  "Propiedad, estilo de vida, mercado y <em>entre bastidores.</em>",
+  "عقارات، أسلوب حياة، سوق و<em>ما وراء الكواليس.</em>"
  ],
  "soc.blog": [
   "Blog yazılarını okuyun",
   "Read the blog",
-  "Читать блог"
+  "Читать блог",
+  "Zum Blog",
+  "Leer el blog",
+  "اقرأ المدونة"
  ],
  "soc.t1": [
   "Mülk",
   "Property",
-  "Объекты"
+  "Объекты",
+  "Immobilien",
+  "Propiedad",
+  "عقارات"
  ],
  "soc.t2": [
   "Yaşam",
   "Lifestyle",
-  "Образ жизни"
+  "Образ жизни",
+  "Lifestyle",
+  "Estilo de vida",
+  "أسلوب حياة"
  ],
  "soc.t3": [
   "Piyasa",
   "Market",
-  "Рынок"
+  "Рынок",
+  "Markt",
+  "Mercado",
+  "السوق"
  ],
  "soc.t4": [
   "Kamera arkası",
   "Behind the scenes",
-  "Закулисье"
+  "Закулисье",
+  "Hinter den Kulissen",
+  "Entre bastidores",
+  "خلف الكواليس"
  ],
  "soc.more": [
   "El kitapçığı ve bülten",
   "Handbook and newsletter",
-  "Гид и рассылка"
+  "Гид и рассылка",
+  "Ratgeber und Newsletter",
+  "Guía y boletín",
+  "الدليل والنشرة"
  ],
  "book.kicker": [
   "Ücretsiz el kitapçığı",
   "Free handbook",
-  "Бесплатный гид"
+  "Бесплатный гид",
+  "Kostenloser Ratgeber",
+  "Guía gratuita",
+  "دليل مجاني"
  ],
  "book.title": [
   "Kuzey Kıbrıs <em>Tapu Türleri</em>",
   "North Cyprus <em>Title Deed Types</em>",
-  "<em>Типы титулов</em> Северного Кипра"
+  "<em>Типы титулов</em> Северного Кипра",
+  "Nordzypern: <em>Arten von Eigentumsurkunden</em>",
+  "Norte de Chipre: <em>tipos de escrituras</em>",
+  "شمال قبرص: <em>أنواع سندات الملكية</em>"
  ],
  "book.cover": [
   "Kuzey Kıbrıs<br><em>Tapu Türleri</em>",
   "North Cyprus<br><em>Title Deeds</em>",
-  "Типы титулов<br><em>Северного Кипра</em>"
+  "Типы титулов<br><em>Северного Кипра</em>",
+  "Nordzypern<br><em>Urkunden</em>",
+  "Norte de Chipre<br><em>Escrituras</em>",
+  "شمال قبرص<br><em>سندات الملكية</em>"
  ],
  "book.lead": [
   "Tapu türleri arasındaki farklar, sade bir dille. E-postanızı bırakın, kitapçığı göndereyim.",
   "The differences between title deed types, in plain language. Leave your email and I’ll send it.",
-  "Разница между типами титулов простыми словами. Оставьте e-mail, и я пришлю гид."
+  "Разница между типами титулов простыми словами. Оставьте e-mail, и я пришлю гид.",
+  "Die Unterschiede zwischen den Urkundenarten, verständlich erklärt. Hinterlassen Sie Ihre E-Mail, und ich schicke ihn Ihnen.",
+  "Las diferencias entre los tipos de escritura, en lenguaje sencillo. Déjame tu email y te la envío.",
+  "الفروق بين أنواع سندات الملكية بلغة بسيطة. اترك بريدك وسأرسله إليك."
  ],
  "book.cta": [
   "Kitapçığı gönder →",
   "Send me the handbook →",
-  "Получить гид →"
+  "Получить гид →",
+  "Ratgeber zusenden →",
+  "Envíame la guía →",
+  "أرسل لي الدليل ←"
  ],
  "book.done.dl": [
   "Teşekkürler. Kitapçığı indirin →",
   "Thank you. Download the handbook →",
-  "Спасибо. Скачать гид →"
+  "Спасибо. Скачать гид →",
+  "Danke. Ratgeber herunterladen →",
+  "Gracias. Descarga la guía →",
+  "شكراً. حمّل الدليل ←"
  ],
  "book.done.later": [
   "Teşekkürler. Kitapçık hazır olduğunda e-postanıza gelecek.",
   "Thank you. The handbook will arrive in your inbox when it’s ready.",
-  "Спасибо. Гид придёт на ваш e-mail, как только будет готов."
+  "Спасибо. Гид придёт на ваш e-mail, как только будет готов.",
+  "Danke. Der Ratgeber kommt in Ihr Postfach, sobald er fertig ist.",
+  "Gracias. La guía llegará a tu bandeja de entrada cuando esté lista.",
+  "شكراً. سيصلك الدليل إلى بريدك عندما يكون جاهزاً."
  ],
  "nl.title": [
   "“Ayda 1 defa gelişmelerden haberdar olun”",
   "“Stay updated once a month”",
-  "«Новости раз в месяц»"
+  "«Новости раз в месяц»",
+  "„Einmal im Monat auf dem Laufenden bleiben“",
+  "«Mantente al día una vez al mes»",
+  "«ابقَ على اطلاع مرة واحدة في الشهر»"
  ],
  "nl.lead": [
   "Yeni mülkler, piyasa notları ve Kuzey Kıbrıs’tan haberler.",
   "New listings, market notes and North Cyprus news.",
-  "Новые объекты, заметки о рынке и новости Северного Кипра."
+  "Новые объекты, заметки о рынке и новости Северного Кипра.",
+  "Neue Angebote, Marktnotizen und Neuigkeiten aus Nordzypern.",
+  "Nuevos anuncios, notas de mercado y noticias del norte de Chipre.",
+  "إعلانات جديدة وملاحظات عن السوق وأخبار شمال قبرص."
  ],
  "nl.cta": [
   "Abone ol →",
   "Subscribe →",
-  "Подписаться →"
+  "Подписаться →",
+  "Abonnieren →",
+  "Suscribirme →",
+  "اشترك ←"
  ],
  "nl.done": [
   "Abone oldunuz. Teşekkürler.",
   "You’re subscribed. Thank you.",
-  "Вы подписаны. Спасибо."
+  "Вы подписаны. Спасибо.",
+  "Sie sind angemeldet. Danke.",
+  "Ya estás suscrito. Gracias.",
+  "تم اشتراكك. شكراً."
  ],
  "form.email": [
   "E-posta adresiniz",
   "Your email",
-  "Ваш e-mail"
+  "Ваш e-mail",
+  "Ihre E-Mail",
+  "Tu email",
+  "بريدك الإلكتروني"
  ],
  "foot.addr": [
   "Long Beach / İskele, KKTC",
   "Long Beach / Iskele, North Cyprus",
-  "Лонг-Бич / Искеле, Северный Кипр"
+  "Лонг-Бич / Искеле, Северный Кипр",
+  "Long Beach / Iskele, Nordzypern",
+  "Long Beach / Iskele, norte de Chipre",
+  "لونغ بيتش / إسكلة، شمال قبرص"
  ],
  "foot.privacy": [
   "Gizlilik",
   "Privacy",
-  "Конфиденциальность"
+  "Конфиденциальность",
+  "Datenschutz",
+  "Privacidad",
+  "الخصوصية"
  ],
  "foot.tag": [
   "Gayrimenkul & Aracılık",
   "Real Estate & Brokerage",
-  "Недвижимость и брокеридж"
+  "Недвижимость и брокеридж",
+  "Immobilien & Vermittlung",
+  "Inmobiliaria e intermediación",
+  "عقارات ووساطة"
  ],
  "props.kicker": [
   "Mülkler",
   "Properties",
-  "Объекты"
+  "Объекты",
+  "Immobilien",
+  "Propiedades",
+  "العقارات"
  ],
  "props.title": [
   "Kuzey Kıbrıs’ta <em>seçilmiş mülkler.</em>",
   "Selected North Cyprus <em>properties.</em>",
-  "Избранная недвижимость <em>Северного Кипра.</em>"
+  "Избранная недвижимость <em>Северного Кипра.</em>",
+  "Ausgewählte <em>Immobilien</em> in Nordzypern.",
+  "Propiedades seleccionadas en el norte de <em>Chipre.</em>",
+  "عقارات مختارة في <em>شمال قبرص.</em>"
  ],
  "props.lead": [
   "Özenle seçilmiş kısa bir liste. Aradığınızı göremezseniz söyleyin.",
   "A short list, chosen with care. If you don’t see the right one, tell me.",
-  "Небольшой, тщательно отобранный список. Не нашли подходящее? Напишите мне."
+  "Небольшой, тщательно отобранный список. Не нашли подходящее? Напишите мне.",
+  "Eine kurze, sorgfältig gewählte Liste. Ist nicht das Richtige dabei, sagen Sie es mir.",
+  "Una lista breve, elegida con cuidado. Si no ves la adecuada, dímelo.",
+  "قائمة قصيرة مختارة بعناية. إن لم تجد ما يناسبك، أخبرني."
  ],
  "filter.all": [
   "Tümü",
   "All",
-  "Все"
+  "Все",
+  "Alle",
+  "Todas",
+  "الكل"
  ],
  "props.empty": [
   "Bu kategoride şu an ilan yok.",
   "Nothing listed in this category right now.",
-  "Сейчас в этой категории нет объектов."
+  "Сейчас в этой категории нет объектов.",
+  "In dieser Kategorie gibt es derzeit keine Angebote.",
+  "Ahora mismo no hay nada en esta categoría.",
+  "لا يوجد شيء في هذه الفئة حالياً."
  ],
  "props.ask": [
   "Ne aradığınızı söyleyin",
   "Tell me what you need",
-  "Расскажите, что вам нужно"
+  "Расскажите, что вам нужно",
+  "Sagen Sie mir, was Sie brauchen",
+  "Cuéntame qué necesitas",
+  "أخبرني بما تحتاجه"
  ],
  "status.satildi": [
   "Satıldı",
   "Sold",
-  "Продано"
+  "Продано",
+  "Verkauft",
+  "Vendida",
+  "مباع"
  ],
  "status.kiralandi": [
   "Kiralandı",
   "Let",
-  "Сдано"
+  "Сдано",
+  "Vermietet",
+  "Alquilada",
+  "مؤجر"
  ],
  "lbl.rooms": [
   "Oda",
   "Rooms",
-  "Комнаты"
+  "Комнаты",
+  "Zimmer",
+  "Habitaciones",
+  "الغرف"
  ],
  "lbl.size": [
   "Alan",
   "Size",
-  "Площадь"
+  "Площадь",
+  "Fläche",
+  "Superficie",
+  "المساحة"
  ],
  "lbl.baths": [
   "Banyo",
   "Bathrooms",
-  "Ванные"
+  "Ванные",
+  "Bäder",
+  "Baños",
+  "الحمامات"
  ],
  "lbl.type": [
   "Tip",
   "Type",
-  "Тип"
+  "Тип",
+  "Typ",
+  "Tipo",
+  "النوع"
  ],
  "price.req": [
   "Fiyat için sorun",
   "Price on request",
-  "Цена по запросу"
+  "Цена по запросу",
+  "Preis auf Anfrage",
+  "Precio a consultar",
+  "السعر عند الطلب"
  ],
  "price.month": [
   "/ ay",
   "/ month",
-  "/ мес."
+  "/ мес.",
+  "/ Monat",
+  "/ mes",
+  "/ شهرياً"
  ],
  "price.week": [
   "/ hafta",
   "/ week",
-  "/ нед."
+  "/ нед.",
+  "/ Woche",
+  "/ semana",
+  "/ أسبوعياً"
  ],
  "type.daire": [
   "Daire",
   "Apartment",
-  "Апартаменты"
+  "Апартаменты",
+  "Wohnung",
+  "Piso",
+  "شقة"
  ],
  "type.villa": [
   "Villa",
   "Villa",
-  "Вилла"
+  "Вилла",
+  "Villa",
+  "Villa",
+  "فيلا"
  ],
  "type.sira-ev": [
   "Sıra ev",
   "Townhouse",
-  "Таунхаус"
+  "Таунхаус",
+  "Reihenhaus",
+  "Adosado",
+  "منزل متلاصق"
  ],
  "type.penthouse": [
   "Penthouse",
   "Penthouse",
-  "Пентхаус"
+  "Пентхаус",
+  "Penthouse",
+  "Ático",
+  "بنتهاوس"
  ],
  "type.bungalov": [
   "Bungalov",
   "Bungalow",
-  "Бунгало"
+  "Бунгало",
+  "Bungalow",
+  "Bungaló",
+  "بنغل"
  ],
  "type.arsa": [
   "Arsa",
   "Land",
-  "Земля"
+  "Земля",
+  "Grundstück",
+  "Terreno",
+  "أرض"
  ],
  "type.ticari": [
   "Ticari",
   "Commercial",
-  "Коммерческая"
+  "Коммерческая",
+  "Gewerbe",
+  "Comercial",
+  "تجاري"
  ],
  "d.back": [
   "Tüm mülkler",
   "All properties",
-  "Все объекты"
+  "Все объекты",
+  "Alle Immobilien",
+  "Todas las propiedades",
+  "كل العقارات"
  ],
  "d.desc": [
   "Açıklama",
   "Description",
-  "Описание"
+  "Описание",
+  "Beschreibung",
+  "Descripción",
+  "الوصف"
  ],
  "d.photos": [
   "Fotoğraflar",
   "Photos",
-  "Фото"
+  "Фото",
+  "Fotos",
+  "Fotos",
+  "الصور"
  ],
  "d.video": [
   "Videoyu izleyin",
   "Watch the video",
-  "Смотреть видео"
+  "Смотреть видео",
+  "Video ansehen",
+  "Ver el vídeo",
+  "شاهد الفيديو"
  ],
  "d.wa": [
   "WhatsApp’tan sorun",
   "Ask on WhatsApp",
-  "Спросить в WhatsApp"
+  "Спросить в WhatsApp",
+  "Per WhatsApp fragen",
+  "Preguntar por WhatsApp",
+  "اسأل عبر واتساب"
  ],
  "d.ask": [
   "Bu mülk hakkında sorun",
   "Ask about this property",
-  "Спросить об этом объекте"
+  "Спросить об этом объекте",
+  "Zu dieser Immobilie anfragen",
+  "Preguntar por esta propiedad",
+  "استفسر عن هذا العقار"
  ],
  "d.related": [
   "Benzer mülkler",
   "Similar properties",
-  "Похожие объекты"
+  "Похожие объекты",
+  "Ähnliche Immobilien",
+  "Propiedades similares",
+  "عقارات مشابهة"
  ],
  "d.portal": [
   "101evler’de görüntüle",
   "View on 101evler",
-  "Смотреть на 101evler"
+  "Смотреть на 101evler",
+  "Auf 101evler ansehen",
+  "Ver en 101evler",
+  "عرض على 101evler"
  ],
  "d.loc": [
   "Tam konum talep üzerine paylaşılır.",
   "Exact location shared on request.",
-  "Точное местоположение по запросу."
+  "Точное местоположение по запросу.",
+  "Genauer Standort auf Anfrage.",
+  "Ubicación exacta a petición.",
+  "الموقع الدقيق عند الطلب."
  ],
  "d.msg": [
   "“{x}” hakkında bilgi almak istiyorum.",
   "I’d like more information about “{x}”.",
-  "Хочу узнать больше об объекте «{x}»."
+  "Хочу узнать больше об объекте «{x}».",
+  "Ich hätte gern mehr Informationen zu „{x}“.",
+  "Me gustaría más información sobre «{x}».",
+  "أرغب في مزيد من المعلومات عن «{x}»."
  ],
  "d.close": [
   "Kapat",
   "Close",
-  "Закрыть"
+  "Закрыть",
+  "Schließen",
+  "Cerrar",
+  "إغلاق"
  ],
  "d.photo": [
   "Fotoğraf",
   "Photo",
-  "Фото"
+  "Фото",
+  "Foto",
+  "Foto",
+  "صورة"
  ],
  "wa.general": [
   "Merhaba Atakan, ata.co üzerinden ulaşıyorum.",
   "Hi Atakan, I found you through ata.co.",
-  "Здравствуйте, Атакан! Я нашёл(ла) вас через ata.co."
+  "Здравствуйте, Атакан! Я нашёл(ла) вас через ata.co.",
+  "Hallo Atakan, ich habe Sie über ata.co gefunden.",
+  "Hola Atakan, te encontré a través de ata.co.",
+  "مرحباً أتاكان، وجدتك عبر ata.co."
  ],
  "wa.listing": [
   "Merhaba Atakan, ata.co’daki “{x}” ilanıyla ilgileniyorum.",
   "Hi Atakan, I’m interested in “{x}” on ata.co.",
-  "Здравствуйте, Атакан! Меня интересует объект «{x}» на ata.co."
+  "Здравствуйте, Атакан! Меня интересует объект «{x}» на ata.co.",
+  "Hallo Atakan, ich interessiere mich für „{x}“ auf ata.co.",
+  "Hola Atakan, me interesa «{x}» en ata.co.",
+  "مرحباً أتاكان، أنا مهتم بـ«{x}» على ata.co."
  ],
  "blog.kicker": [
   "Blog",
   "Blog",
-  "Блог"
+  "Блог",
+  "Blog",
+  "Blog",
+  "المدونة"
  ],
  "blog.title": [
   "Notlar ve <em>rehberler.</em>",
   "Notes and <em>guides.</em>",
-  "Заметки и <em>гиды.</em>"
+  "Заметки и <em>гиды.</em>",
+  "Notizen und <em>Ratgeber.</em>",
+  "Notas y <em>guías.</em>",
+  "ملاحظات و<em>أدلة.</em>"
  ],
  "blog.lead": [
   "Kuzey Kıbrıs’ta mülk, yatırım ve yaşam üzerine.",
   "On property, investing and life in North Cyprus.",
-  "О недвижимости, инвестициях и жизни на Северном Кипре."
+  "О недвижимости, инвестициях и жизни на Северном Кипре.",
+  "Über Immobilien, Investitionen und das Leben in Nordzypern.",
+  "Sobre propiedad, inversión y vida en el norte de Chipre.",
+  "عن العقارات والاستثمار والحياة في شمال قبرص."
  ],
  "blog.read": [
   "Yazıyı okuyun",
   "Read the article",
-  "Читать статью"
+  "Читать статью",
+  "Artikel lesen",
+  "Leer el artículo",
+  "اقرأ المقال"
  ],
  "blog.empty": [
   "İlk yazı çok yakında.",
   "The first article is coming soon.",
-  "Первая статья скоро появится."
+  "Первая статья скоро появится.",
+  "Der erste Artikel erscheint in Kürze.",
+  "El primer artículo llegará pronto.",
+  "المقال الأول قريباً."
  ],
  "blog.back": [
   "Tüm yazılar",
   "All articles",
-  "Все статьи"
+  "Все статьи",
+  "Alle Artikel",
+  "Todos los artículos",
+  "كل المقالات"
  ],
  "blog.mt": [
   "Bu yazı Türkçeden otomatik olarak çevrilmiştir.",
   "This article was machine-translated from Turkish.",
-  "Эта статья автоматически переведена с турецкого."
+  "Эта статья автоматически переведена с турецкого.",
+  "Dieser Artikel wurde maschinell aus dem Türkischen übersetzt.",
+  "Este artículo se ha traducido automáticamente del turco.",
+  "تُرجم هذا المقال آلياً من التركية."
  ],
  "blog.share": [
   "WhatsApp’ta paylaş",
   "Share on WhatsApp",
-  "Поделиться в WhatsApp"
+  "Поделиться в WhatsApp",
+  "Per WhatsApp teilen",
+  "Compartir por WhatsApp",
+  "شارك عبر واتساب"
  ],
  "blog.q": [
   "Bu konuda sorunuz mu var?",
   "Have a question about this?",
-  "Есть вопрос по этой теме?"
+  "Есть вопрос по этой теме?",
+  "Haben Sie eine Frage dazu?",
+  "¿Tienes alguna pregunta sobre esto?",
+  "هل لديك سؤال حول هذا؟"
  ],
  "contact.kicker": [
   "İletişim",
   "Contact",
-  "Контакты"
+  "Контакты",
+  "Kontakt",
+  "Contacto",
+  "تواصل"
  ],
  "contact.title": [
   "Sırada ne olduğunu <em>konuşalım.</em>",
   "Let’s talk about <em>what’s next.</em>",
-  "Давайте обсудим <em>следующий шаг.</em>"
+  "Давайте обсудим <em>следующий шаг.</em>",
+  "Sprechen wir über <em>den nächsten Schritt.</em>",
+  "Hablemos de <em>lo que viene.</em>",
+  "لنتحدث عن <em>الخطوة التالية.</em>"
  ],
  "contact.fast": [
   "En hızlı yanıt",
   "Fastest reply",
-  "Самый быстрый ответ"
+  "Самый быстрый ответ",
+  "Schnellste Antwort",
+  "Respuesta más rápida",
+  "أسرع رد"
  ],
  "contact.fast.t": [
   "Bana WhatsApp’tan yazın.",
   "Message me on WhatsApp.",
-  "Напишите мне в WhatsApp."
+  "Напишите мне в WhatsApp.",
+  "Schreiben Sie mir auf WhatsApp.",
+  "Escríbeme por WhatsApp.",
+  "راسلني على واتساب."
  ],
  "contact.fast.b": [
   "WhatsApp’ı aç",
   "Open WhatsApp",
-  "Открыть WhatsApp"
+  "Открыть WhatsApp",
+  "WhatsApp öffnen",
+  "Abrir WhatsApp",
+  "افتح واتساب"
  ],
  "contact.phone": [
   "Telefon / WhatsApp",
   "Phone / WhatsApp",
-  "Телефон / WhatsApp"
+  "Телефон / WhatsApp",
+  "Telefon / WhatsApp",
+  "Teléfono / WhatsApp",
+  "الهاتف / واتساب"
  ],
  "contact.email": [
   "E-posta",
   "Email",
-  "E-mail"
+  "E-mail",
+  "E-Mail",
+  "Email",
+  "البريد الإلكتروني"
  ],
  "contact.addr": [
   "Adres",
   "Address",
-  "Адрес"
+  "Адрес",
+  "Adresse",
+  "Dirección",
+  "العنوان"
  ],
  "tab.buy.s": [
   "Mülk arıyorum",
   "Looking for a property",
-  "Ищу недвижимость"
+  "Ищу недвижимость",
+  "Ich suche eine Immobilie",
+  "Busco una propiedad",
+  "أبحث عن عقار"
  ],
  "tab.sell.s": [
   "Mülkümü satıyorum",
   "Selling my property",
-  "Продаю недвижимость"
+  "Продаю недвижимость",
+  "Ich verkaufe meine Immobilie",
+  "Vendo mi propiedad",
+  "أبيع عقاري"
  ],
  "tab.rent.s": [
   "Kiralık arıyorum ya da kiraya veriyorum",
   "Renting, or renting out",
-  "Снять или сдать жильё"
+  "Снять или сдать жильё",
+  "Mieten oder vermieten",
+  "Alquilar o poner en alquiler",
+  "استئجار أو تأجير"
  ],
  "f.name": [
   "Ad soyad",
   "Name",
-  "Имя"
+  "Имя",
+  "Name",
+  "Nombre",
+  "الاسم"
  ],
  "f.contact": [
   "WhatsApp veya e-posta",
   "WhatsApp or email",
-  "WhatsApp или e-mail"
+  "WhatsApp или e-mail",
+  "WhatsApp oder E-Mail",
+  "WhatsApp o email",
+  "واتساب أو البريد الإلكتروني"
  ],
  "f.phone": [
   "Telefon",
   "Phone",
-  "Телефон"
+  "Телефон",
+  "Telefon",
+  "Teléfono",
+  "الهاتف"
  ],
  "f.email": [
   "E-posta",
   "Email",
-  "E-mail"
+  "E-mail",
+  "E-Mail",
+  "Email",
+  "البريد الإلكتروني"
  ],
  "f.budget": [
   "Bütçe",
   "Budget",
-  "Бюджет"
+  "Бюджет",
+  "Budget",
+  "Presupuesto",
+  "الميزانية"
  ],
  "f.purpose": [
   "Amaç",
   "Purpose",
-  "Цель"
+  "Цель",
+  "Zweck",
+  "Finalidad",
+  "الغرض"
  ],
  "f.live": [
   "Yaşamak için",
   "To live",
-  "Для жизни"
+  "Для жизни",
+  "Zum Wohnen",
+  "Para vivir",
+  "للسكن"
  ],
  "f.invest": [
   "Yatırım için",
   "To invest",
-  "Для инвестиций"
+  "Для инвестиций",
+  "Als Investition",
+  "Para invertir",
+  "للاستثمار"
  ],
  "f.both": [
   "İkisi de",
   "Both",
-  "И то, и другое"
+  "И то, и другое",
+  "Beides",
+  "Ambas",
+  "كلاهما"
  ],
  "f.when": [
   "Ne zaman almayı planlıyorsunuz?",
   "When are you planning to buy?",
-  "Когда планируете покупку?"
+  "Когда планируете покупку?",
+  "Wann planen Sie zu kaufen?",
+  "¿Cuándo piensas comprar?",
+  "متى تخطط للشراء؟"
  ],
  "f.when.1": [
   "3 ay içinde",
   "Within 3 months",
-  "В ближайшие 3 месяца"
+  "В ближайшие 3 месяца",
+  "Innerhalb von 3 Monaten",
+  "En 3 meses",
+  "خلال 3 أشهر"
  ],
  "f.when.2": [
   "3–6 ay",
   "3–6 months",
-  "3–6 месяцев"
+  "3–6 месяцев",
+  "3–6 Monate",
+  "3–6 meses",
+  "3–6 أشهر"
  ],
  "f.when.3": [
   "6–12 ay",
   "6–12 months",
-  "6–12 месяцев"
+  "6–12 месяцев",
+  "6–12 Monate",
+  "6–12 meses",
+  "6–12 شهراً"
  ],
  "f.when.4": [
   "Sadece araştırıyorum",
   "Just exploring",
-  "Пока присматриваюсь"
+  "Пока присматриваюсь",
+  "Ich schaue mich nur um",
+  "Solo estoy mirando",
+  "أستكشف فقط"
  ],
  "f.msg.opt": [
   "Eklemek istedikleriniz (isteğe bağlı)",
   "Anything else? (optional)",
-  "Что-то ещё? (необязательно)"
+  "Что-то ещё? (необязательно)",
+  "Sonst noch etwas? (optional)",
+  "¿Algo más? (opcional)",
+  "هل من شيء آخر؟ (اختياري)"
  ],
  "f.msg.ph": [
   "Bölge, oda sayısı, deniz manzarası…",
   "Area, bedrooms, sea view…",
-  "Район, спальни, вид на море…"
+  "Район, спальни, вид на море…",
+  "Gegend, Schlafzimmer, Meerblick…",
+  "Zona, dormitorios, vistas al mar…",
+  "المنطقة، غرف النوم، إطلالة على البحر…"
  ],
  "f.ptype": [
   "Mülk tipi",
   "Property type",
-  "Тип объекта"
+  "Тип объекта",
+  "Immobilientyp",
+  "Tipo de propiedad",
+  "نوع العقار"
  ],
  "f.loc": [
   "Konum",
   "Location",
-  "Локация"
+  "Локация",
+  "Lage",
+  "Ubicación",
+  "الموقع"
  ],
  "f.loc.ph": [
   "örn. İskele",
   "e.g. Iskele",
-  "например, Искеле"
+  "например, Искеле",
+  "z. B. Iskele",
+  "p. ej. Iskele",
+  "مثلاً إسكلة"
  ],
  "f.about": [
   "Biraz anlatın (isteğe bağlı)",
   "Tell me about it (optional)",
-  "Расскажите подробнее (необязательно)"
+  "Расскажите подробнее (необязательно)",
+  "Erzählen Sie mir davon (optional)",
+  "Cuéntame más (opcional)",
+  "أخبرني عنه (اختياري)"
  ],
  "f.about.ph": [
   "Büyüklük, oda sayısı, tapu, ne zaman satmak istediğiniz",
   "Size, bedrooms, title deed, when you’d like to sell",
-  "Площадь, спальни, титул, когда хотите продать"
+  "Площадь, спальни, титул, когда хотите продать",
+  "Größe, Schlafzimmer, Urkunde, gewünschter Verkaufszeitpunkt",
+  "Superficie, dormitorios, escritura, cuándo quieres vender",
+  "المساحة، غرف النوم، سند الملكية، متى تريد البيع"
  ],
  "f.dir": [
   "Talebim",
   "I want to",
-  "Я хочу"
+  "Я хочу",
+  "Ich möchte",
+  "Quiero",
+  "أريد"
  ],
  "f.dir.1": [
   "Kiralık arıyorum",
   "Rent a home",
-  "Снять жильё"
+  "Снять жильё",
+  "Eine Wohnung mieten",
+  "Alquilar una vivienda",
+  "استئجار منزل"
  ],
  "f.dir.2": [
   "Mülkümü kiraya vermek",
   "Rent out my property",
-  "Сдать своё жильё"
+  "Сдать своё жильё",
+  "Meine Immobilie vermieten",
+  "Alquilar mi propiedad",
+  "تأجير عقاري"
  ],
  "f.beds": [
   "Yatak odası",
   "Bedrooms",
-  "Спальни"
+  "Спальни",
+  "Schlafzimmer",
+  "Dormitorios",
+  "غرف النوم"
  ],
  "f.studio": [
   "Stüdyo",
   "Studio",
-  "Студия"
+  "Студия",
+  "Studio",
+  "Estudio",
+  "استوديو"
  ],
  "f.area": [
   "Tercih ettiğiniz bölge",
   "Preferred area",
-  "Желаемый район"
+  "Желаемый район",
+  "Bevorzugte Gegend",
+  "Zona preferida",
+  "المنطقة المفضلة"
  ],
  "f.area.ph": [
   "örn. Long Beach",
   "e.g. Long Beach",
-  "например, Лонг-Бич"
+  "например, Лонг-Бич",
+  "z. B. Long Beach",
+  "p. ej. Long Beach",
+  "مثلاً لونغ بيتش"
  ],
  "f.movein": [
   "Taşınma tarihi",
   "Move-in date",
-  "Дата заезда"
+  "Дата заезда",
+  "Einzugsdatum",
+  "Fecha de entrada",
+  "تاريخ الانتقال"
  ],
  "f.message": [
   "Mesaj",
   "Message",
-  "Сообщение"
+  "Сообщение",
+  "Nachricht",
+  "Mensaje",
+  "الرسالة"
  ],
  "f.send": [
   "Gönder →",
   "Send →",
-  "Отправить →"
+  "Отправить →",
+  "Senden →",
+  "Enviar →",
+  "إرسال ←"
  ],
  "f.sending": [
   "Gönderiliyor…",
   "Sending…",
-  "Отправка…"
+  "Отправка…",
+  "Wird gesendet…",
+  "Enviando…",
+  "جارٍ الإرسال…"
  ],
  "f.ok": [
   "Teşekkürler. En kısa sürede dönüş yapacağım.",
   "Thank you. I’ll be in touch soon.",
-  "Спасибо. Скоро свяжусь с вами."
+  "Спасибо. Скоро свяжусь с вами.",
+  "Danke. Ich melde mich in Kürze.",
+  "Gracias. Te escribiré pronto.",
+  "شكراً. سأتواصل معك قريباً."
  ],
  "f.ok.k": [
   "Alındı",
   "Received",
-  "Получено"
+  "Получено",
+  "Erhalten",
+  "Recibido",
+  "تم الاستلام"
  ],
  "f.ok.wa": [
   "WhatsApp’ı mı tercih edersiniz?",
   "Prefer WhatsApp?",
-  "Удобнее в WhatsApp?"
+  "Удобнее в WhatsApp?",
+  "Lieber WhatsApp?",
+  "¿Prefieres WhatsApp?",
+  "تفضّل واتساب؟"
  ],
  "f.err": [
   "Mesaj gönderilemedi. Lütfen WhatsApp’tan yazın.",
   "Your message couldn’t be sent. Please message me on WhatsApp.",
-  "Не удалось отправить. Пожалуйста, напишите в WhatsApp."
+  "Не удалось отправить. Пожалуйста, напишите в WhatsApp.",
+  "Ihre Nachricht konnte nicht gesendet werden. Bitte schreiben Sie mir auf WhatsApp.",
+  "No se pudo enviar tu mensaje. Escríbeme por WhatsApp, por favor.",
+  "تعذّر إرسال رسالتك. يُرجى مراسلتي على واتساب."
  ],
  "f.consent": [
   "Bilgileriniz yalnızca size dönüş yapmak için kullanılır.",
   "Your details are used only to get back to you.",
-  "Ваши данные используются только для ответа вам."
+  "Ваши данные используются только для ответа вам.",
+  "Ihre Daten werden nur verwendet, um Ihnen zu antworten.",
+  "Tus datos solo se usan para responderte.",
+  "تُستخدم بياناتك للرد عليك فقط."
  ],
  "f.reply": [
   "Kişisel olarak, genellikle aynı gün yanıtlarım.",
   "I reply personally, usually the same day.",
-  "Отвечаю лично, обычно в тот же день."
+  "Отвечаю лично, обычно в тот же день.",
+  "Ich antworte persönlich, meist am selben Tag.",
+  "Respondo personalmente, normalmente el mismo día.",
+  "أرد شخصياً، عادةً في اليوم نفسه."
  ],
  "ncp.lead": [
   "Mülkün ardındaki ada: nasıl yaşadığı ve orayı ev bilmenin nasıl bir şey olduğu.",
   "The island behind the property: how it lives, and what it’s like to call it home.",
-  "Остров за объектом: как он живёт и каково называть его домом."
+  "Остров за объектом: как он живёт и каково называть его домом.",
+  "Die Insel hinter der Immobilie: wie sie lebt und wie es ist, sie Zuhause zu nennen.",
+  "La isla detrás de la propiedad: cómo se vive y cómo es llamarla hogar.",
+  "الجزيرة خلف العقار: كيف تعيش، وكيف يكون الشعور بأنها وطنك."
  ],
  "ncp.explore.t": [
   "Adayı tanıyın.",
   "Get to know the island.",
-  "Узнайте остров."
+  "Узнайте остров.",
+  "Lernen Sie die Insel kennen.",
+  "Conoce la isla.",
+  "تعرّف على الجزيرة."
  ],
  "ncp.explore.p": [
   "Doğu kıyısının uzun kumsallarından Girne’nin limanına, dağ köylerinden Gazimağusa’nın surlarına. Her bölgenin temposu ve kitlesi farklı.",
   "From the long beaches of the east coast to Kyrenia’s harbour, from mountain villages to the walls of Famagusta. Every area has its own pace and its own people.",
-  "От длинных пляжей восточного побережья до гавани Кирении, от горных деревень до стен Фамагусты. У каждого района свой ритм и свои люди."
+  "От длинных пляжей восточного побережья до гавани Кирении, от горных деревень до стен Фамагусты. У каждого района свой ритм и свои люди.",
+  "Von den langen Stränden der Ostküste bis zum Hafen von Kyrenia, von Bergdörfern bis zu den Mauern von Famagusta. Jede Gegend hat ihr eigenes Tempo und ihre eigenen Menschen.",
+  "De las largas playas de la costa este al puerto de Kyrenia, de los pueblos de montaña a las murallas de Famagusta. Cada zona tiene su propio ritmo y su propia gente.",
+  "من الشواطئ الطويلة على الساحل الشرقي إلى ميناء كيرينيا، ومن قرى الجبال إلى أسوار فاماغوستا. لكل منطقة إيقاعها وناسها."
  ],
  "ncp.invest.t": [
   "Yatırım kararı sorularla başlar.",
   "An investment decision starts with questions.",
-  "Инвестиция начинается с вопросов."
+  "Инвестиция начинается с вопросов.",
+  "Eine Investitionsentscheidung beginnt mit Fragen.",
+  "Una decisión de inversión empieza con preguntas.",
+  "قرار الاستثمار يبدأ بالأسئلة."
  ],
  "ncp.invest.p": [
   "Manşet rakamlar yayınlamıyor, getiri vaat etmiyorum. Her alıcının durumu farklı; bunları birebir konuşuyoruz:",
   "I don’t publish headline numbers or promise returns. Every buyer’s situation is different, so we go through these one to one:",
-  "Я не публикую громких цифр и не обещаю доходность. Ситуация каждого покупателя индивидуальна, поэтому мы разбираем это лично:"
+  "Я не публикую громких цифр и не обещаю доходность. Ситуация каждого покупателя индивидуальна, поэтому мы разбираем это лично:",
+  "Ich veröffentliche keine Schlagzeilenzahlen und verspreche keine Renditen. Jede Käufersituation ist anders, deshalb gehen wir diese Punkte persönlich durch:",
+  "No publico cifras llamativas ni prometo rentabilidades. Cada comprador es diferente, así que revisamos estos puntos uno a uno:",
+  "لا أنشر أرقاماً لافتة ولا أعد بعوائد. وضع كل مشترٍ مختلف، لذا نراجع هذه النقاط معاً بشكل فردي:"
  ],
  "ncp.i1": [
   "Tapu türleri ve tapunun hazır olup olmadığı",
   "Title deed types, and whether the deed is ready",
-  "Типы титулов и готовность титула"
+  "Типы титулов и готовность титула",
+  "Urkundenarten und ob die Urkunde bereit ist",
+  "Tipos de escritura y si está lista",
+  "أنواع سندات الملكية وهل السند جاهز"
  ],
  "ncp.i2": [
   "Projeden mi, ikinci el mi",
   "Off-plan or re-sale",
-  "Новостройка или вторичка"
+  "Новостройка или вторичка",
+  "Neubau oder Bestand",
+  "Obra nueva o segunda mano",
+  "قيد الإنشاء أم جاهز"
  ],
  "ncp.i3": [
   "Ödeme planları",
   "Payment plans",
-  "Планы рассрочки"
+  "Планы рассрочки",
+  "Zahlungspläne",
+  "Planes de pago",
+  "خطط الدفع"
  ],
  "ncp.i4": [
   "Satın alma masrafları ve vergiler",
   "Purchase costs and taxes",
-  "Расходы и налоги при покупке"
+  "Расходы и налоги при покупке",
+  "Kaufnebenkosten und Steuern",
+  "Costes de compra e impuestos",
+  "تكاليف الشراء والضرائب"
  ],
  "ncp.i5": [
   "Bölgelere göre kira talebi",
   "Rental demand by area",
-  "Спрос на аренду по районам"
+  "Спрос на аренду по районам",
+  "Mietnachfrage nach Gegend",
+  "Demanda de alquiler por zona",
+  "الطلب على الإيجار حسب المنطقة"
  ],
  "ncp.i6": [
   "Avukatla çalışmak",
   "Working with a lawyer",
-  "Работа с юристом"
+  "Работа с юристом",
+  "Zusammenarbeit mit einem Anwalt",
+  "Trabajar con un abogado",
+  "العمل مع محامٍ"
  ],
  "ncp.move.t": [
   "Taşınmak, bir evden fazlasını gerektirir.",
   "Relocating takes more than a home.",
-  "Переезд — это больше, чем дом."
+  "Переезд — это больше, чем дом.",
+  "Ein Umzug braucht mehr als ein Zuhause.",
+  "Mudarse requiere más que una casa.",
+  "الانتقال يحتاج أكثر من منزل."
  ],
  "ncp.move.p": [
   "Avukatımla birlikte bu adımlarda yol gösteriyorum:",
   "With my lawyer, I guide you through these steps:",
-  "Вместе с юристом я помогаю пройти эти шаги:"
+  "Вместе с юристом я помогаю пройти эти шаги:",
+  "Gemeinsam mit meinem Anwalt begleite ich Sie durch diese Schritte:",
+  "Con mi abogado, te guío en estos pasos:",
+  "مع محاميّ، أرشدك عبر هذه الخطوات:"
  ],
  "ncp.m1": [
   "Mülk üzerinden oturum izni",
   "Residency through property",
-  "ВНЖ через недвижимость"
+  "ВНЖ через недвижимость",
+  "Aufenthalt über Immobilienbesitz",
+  "Residencia mediante propiedad",
+  "الإقامة عبر التملّك"
  ],
  "ncp.m2": [
   "Okul kaydı",
   "School enrolment",
-  "Запись в школу"
+  "Запись в школу",
+  "Schulanmeldung",
+  "Matrícula escolar",
+  "التسجيل في المدرسة"
  ],
  "ncp.m3": [
   "Sigorta",
   "Insurance",
-  "Страхование"
+  "Страхование",
+  "Versicherung",
+  "Seguros",
+  "التأمين"
  ],
  "ncp.m4": [
   "Araç alımı",
   "Buying a car",
-  "Покупка автомобиля"
+  "Покупка автомобиля",
+  "Autokauf",
+  "Comprar un coche",
+  "شراء سيارة"
  ],
  "ncp.areas": [
   "Bölgeler",
   "Areas",
-  "Районы"
+  "Районы",
+  "Gegenden",
+  "Zonas",
+  "المناطق"
  ],
  "area.iskele": [
   "İskele",
   "Iskele",
-  "Искеле"
+  "Искеле",
+  "Iskele",
+  "Iskele",
+  "إسكلة"
  ],
  "area.iskele.d": [
   "Doğu kıyısı, Long Beach. İşimin çoğu burada.",
   "East coast, Long Beach. Where most of my work is.",
-  "Восточное побережье, Лонг-Бич. Здесь основная часть моей работы."
+  "Восточное побережье, Лонг-Бич. Здесь основная часть моей работы.",
+  "Ostküste, Long Beach. Hier liegt der Großteil meiner Arbeit.",
+  "Costa este, Long Beach. Donde hago la mayor parte de mi trabajo.",
+  "الساحل الشرقي، لونغ بيتش. حيث يتركز معظم عملي."
  ],
  "area.bafra": [
   "Bafra",
   "Bafra",
-  "Бафра"
+  "Бафра",
+  "Bafra",
+  "Bafra",
+  "بافرا"
  ],
  "area.bafra.d": [
   "İskele’nin güneyinde, daha sakin doğu kıyısı.",
   "The quieter east coast, south of Iskele.",
-  "Более спокойное побережье к югу от Искеле."
+  "Более спокойное побережье к югу от Искеле.",
+  "Die ruhigere Ostküste, südlich von Iskele.",
+  "La costa este más tranquila, al sur de Iskele.",
+  "الساحل الشرقي الأهدأ، جنوب إسكلة."
  ],
  "area.girne": [
   "Girne",
   "Kyrenia",
-  "Кирения"
+  "Кирения",
+  "Kyrenia",
+  "Kyrenia",
+  "كيرينيا"
  ],
  "area.girne.d": [
   "Kuzey kıyısındaki tarihi liman şehri.",
   "The historic harbour town on the north coast.",
-  "Исторический портовый город на севере."
+  "Исторический портовый город на севере.",
+  "Die historische Hafenstadt an der Nordküste.",
+  "La histórica ciudad portuaria de la costa norte.",
+  "مدينة الميناء التاريخية على الساحل الشمالي."
  ],
  "area.esentepe": [
   "Esentepe",
   "Esentepe",
-  "Эсентепе"
+  "Эсентепе",
+  "Esentepe",
+  "Esentepe",
+  "إسنتبه"
  ],
  "area.esentepe.d": [
   "Girne’nin doğusunda, dağla deniz arasında.",
   "East of Kyrenia, between mountains and sea.",
-  "К востоку от Кирении, между горами и морем."
+  "К востоку от Кирении, между горами и морем.",
+  "Östlich von Kyrenia, zwischen Bergen und Meer.",
+  "Al este de Kyrenia, entre montañas y mar.",
+  "شرق كيرينيا، بين الجبال والبحر."
  ],
  "area.magusa": [
   "Gazimağusa",
   "Famagusta",
-  "Фамагуста"
+  "Фамагуста",
+  "Famagusta",
+  "Famagusta",
+  "فاماغوستا"
  ],
  "area.magusa.d": [
   "Surlarla çevrili eski şehir ve üniversite kenti.",
   "Walled old city and university town.",
-  "Старый город в стенах и университетский центр."
+  "Старый город в стенах и университетский центр.",
+  "Ummauerte Altstadt und Universitätsstadt.",
+  "Ciudad amurallada y universitaria.",
+  "مدينة قديمة مسوّرة ومدينة جامعية."
  ],
  "area.lefkosa": [
   "Lefkoşa",
   "Nicosia",
-  "Никосия"
+  "Никосия",
+  "Nikosia",
+  "Nicosia",
+  "نيقوسيا"
  ],
  "area.lefkosa.d": [
   "İç kesimdeki başkent.",
   "The capital, inland.",
-  "Столица, в глубине острова."
+  "Столица, в глубине острова.",
+  "Die Hauptstadt im Landesinneren.",
+  "La capital, en el interior.",
+  "العاصمة، في الداخل."
  ],
  "ncp.cta.t": [
   "Kuzey Kıbrıs’ı mı <em>düşünüyorsunuz?</em>",
   "Thinking about <em>North Cyprus?</em>",
-  "Думаете о <em>Северном Кипре?</em>"
+  "Думаете о <em>Северном Кипре?</em>",
+  "Denken Sie an <em>Nordzypern?</em>",
+  "¿Piensas en el <em>norte de Chipre?</em>",
+  "تفكّر في <em>شمال قبرص؟</em>"
  ],
  "ncp.cta.p": [
   "Bir sohbetle başlayın.",
   "Start with a conversation.",
-  "Начните с разговора."
+  "Начните с разговора.",
+  "Beginnen Sie mit einem Gespräch.",
+  "Empieza con una conversación.",
+  "ابدأ بمحادثة."
  ],
  "legal.title": [
   "Gizlilik",
   "Privacy",
-  "Конфиденциальность"
+  "Конфиденциальность",
+  "Datenschutz",
+  "Privacidad",
+  "الخصوصية"
  ],
  "legal.p1": [
   "Bu sitedeki formlarla paylaştığınız ad, telefon, e-posta ve mesaj bilgileri yalnızca size dönüş yapmak, talebinizle ilgili mülkleri göndermek ve abone olduysanız bülten iletmek için kullanılır.",
   "The name, phone, email and message you share through the forms on this site are used only to get back to you, send you properties related to your request and, if you subscribed, send the newsletter.",
-  "Имя, телефон, e-mail и сообщение, которые вы оставляете в формах на сайте, используются только для ответа вам, подбора объектов по вашему запросу и, если вы подписались, для рассылки."
+  "Имя, телефон, e-mail и сообщение, которые вы оставляете в формах на сайте, используются только для ответа вам, подбора объектов по вашему запросу и, если вы подписались, для рассылки.",
+  "Name, Telefonnummer, E-Mail und Nachricht, die Sie über die Formulare dieser Website übermitteln, werden nur verwendet, um Ihnen zu antworten, Ihnen passende Immobilien zu senden und, falls Sie sich angemeldet haben, den Newsletter zuzustellen.",
+  "El nombre, teléfono, email y mensaje que compartes en los formularios de este sitio solo se usan para responderte, enviarte propiedades relacionadas con tu solicitud y, si te suscribiste, enviarte el boletín.",
+  "يُستخدم الاسم ورقم الهاتف والبريد الإلكتروني والرسالة التي تشاركها عبر نماذج هذا الموقع للرد عليك فقط، ولإرسال عقارات تتعلق بطلبك، وإرسال النشرة إن كنت مشتركاً."
  ],
  "legal.p2": [
   "Bilgileriniz üçüncü kişilerle satılmaz veya paylaşılmaz. Kayıtlar Atakan Terzili tarafından tutulan bir müşteri listesinde saklanır.",
   "Your details are never sold or shared with third parties. Records are kept in a client list maintained by Atakan Terzili.",
-  "Ваши данные не продаются и не передаются третьим лицам. Записи хранятся в клиентском списке, который ведёт Атакан Терзили."
+  "Ваши данные не продаются и не передаются третьим лицам. Записи хранятся в клиентском списке, который ведёт Атакан Терзили.",
+  "Ihre Daten werden niemals verkauft oder an Dritte weitergegeben. Die Daten werden in einer Kundenliste geführt, die von Atakan Terzili verwaltet wird.",
+  "Tus datos nunca se venden ni se comparten con terceros. Se guardan en una lista de clientes gestionada por Atakan Terzili.",
+  "لا تُباع بياناتك ولا تُشارك مع أي طرف ثالث. تُحفظ السجلات في قائمة عملاء يديرها أتاكان ترزيلي."
  ],
  "legal.p3": [
   "Bilgilerinizin silinmesini veya bültenden çıkmayı istediğinizde aşağıdaki e-posta adresine yazmanız yeterli.",
   "To have your details deleted or to unsubscribe, just email the address below.",
-  "Чтобы удалить свои данные или отписаться, напишите на адрес ниже."
+  "Чтобы удалить свои данные или отписаться, напишите на адрес ниже.",
+  "Um Ihre Daten löschen zu lassen oder sich abzumelden, schreiben Sie einfach eine E-Mail an die unten stehende Adresse.",
+  "Para borrar tus datos o darte de baja, basta con escribir al email de abajo.",
+  "لحذف بياناتك أو إلغاء الاشتراك، يكفي أن تراسل البريد أدناه."
  ],
  "f.offline": [
   "Form şu an bakımda. Lütfen bana WhatsApp’tan yazın; hemen dönüş yapayım.",
   "This form is being set up. Please message me on WhatsApp and I’ll reply right away.",
-  "Форма пока настраивается. Пожалуйста, напишите мне в WhatsApp — я сразу отвечу."
+  "Форма пока настраивается. Пожалуйста, напишите мне в WhatsApp — я сразу отвечу.",
+  "Dieses Formular wird gerade eingerichtet. Bitte schreiben Sie mir auf WhatsApp, ich antworte sofort.",
+  "Este formulario se está configurando. Escríbeme por WhatsApp y te responderé enseguida.",
+  "هذا النموذج قيد الإعداد. يُرجى مراسلتي على واتساب وسأرد فوراً."
  ],
  "f.phone.wa": [
   "Telefon / WhatsApp",
   "Phone / WhatsApp",
-  "Телефон / WhatsApp"
+  "Телефон / WhatsApp",
+  "Telefon / WhatsApp",
+  "Teléfono / WhatsApp",
+  "الهاتف / واتساب"
  ],
  "f.one.hint": [
   "Telefon ya da e-postadan birini yazmanız yeterli.",
   "Phone or email: one is enough.",
-  "Достаточно телефона или e-mail."
+  "Достаточно телефона или e-mail.",
+  "Telefon oder E-Mail: eines genügt.",
+  "Teléfono o email: con uno basta.",
+  "الهاتف أو البريد: يكفي أحدهما."
  ],
  "f.one.err": [
   "Size ulaşabilmem için telefon ya da e-posta yazar mısınız?",
   "Please add a phone number or an email so I can reach you.",
-  "Пожалуйста, укажите телефон или e-mail, чтобы я мог с вами связаться."
+  "Пожалуйста, укажите телефон или e-mail, чтобы я мог с вами связаться.",
+  "Bitte geben Sie eine Telefonnummer oder E-Mail an, damit ich Sie erreichen kann.",
+  "Añade un teléfono o un email para que pueda contactarte.",
+  "يُرجى إضافة رقم هاتف أو بريد إلكتروني لأتمكن من التواصل معك."
  ],
  "f.pkind": [
   "Başvuru türü",
   "Applying as",
-  "Вы обращаетесь как"
+  "Вы обращаетесь как",
+  "Bewerbung als",
+  "Solicito como",
+  "التقديم بصفة"
  ],
  "f.pkind.co": [
   "Şirket",
   "Company",
-  "Компания"
+  "Компания",
+  "Unternehmen",
+  "Empresa",
+  "شركة"
  ],
  "f.pkind.ind": [
   "Bireysel",
   "Individual",
-  "Частное лицо"
+  "Частное лицо",
+  "Privatperson",
+  "Particular",
+  "فرد"
  ],
  "f.company": [
   "Şirket adı",
   "Company name",
-  "Название компании"
+  "Название компании",
+  "Firmenname",
+  "Nombre de la empresa",
+  "اسم الشركة"
  ],
  "hb.kicker": [
   "Ücretsiz el kitapçıkları",
   "Free handbooks",
-  "Бесплатные гиды"
+  "Бесплатные гиды",
+  "Kostenlose Ratgeber",
+  "Guías gratuitas",
+  "أدلة مجانية"
  ],
  "hb.lead": [
   "İstediklerinizi seçin, e-postanıza göndereyim.",
   "Choose the ones you’d like and I’ll email them to you.",
-  "Выберите нужные, и я пришлю их на e-mail."
+  "Выберите нужные, и я пришлю их на e-mail.",
+  "Wählen Sie die gewünschten aus, und ich schicke sie Ihnen per E-Mail.",
+  "Elige las que quieras y te las envío por email.",
+  "اختر ما تريد وسأرسلها إلى بريدك."
  ],
  "hb.tapu": [
   "Kuzey Kıbrıs Tapu Türleri",
   "North Cyprus Title Deed Types",
-  "Типы титулов на Северном Кипре"
+  "Типы титулов на Северном Кипре",
+  "Nordzypern: Arten von Eigentumsurkunden",
+  "Norte de Chipre: tipos de escrituras",
+  "شمال قبرص: أنواع سندات الملكية"
  ],
  "hb.tapu.d": [
   "Tapu türleri arasındaki farklar, sade bir dille.",
   "The differences between title deed types, in plain language.",
-  "Разница между типами титулов простыми словами."
+  "Разница между типами титулов простыми словами.",
+  "Die Unterschiede zwischen den Urkundenarten, verständlich erklärt.",
+  "Las diferencias entre los tipos de escritura, en lenguaje sencillo.",
+  "الفروق بين أنواع سندات الملكية بلغة بسيطة."
  ],
  "hb.tapu.cover": [
   "Tapu<br><em>Türleri</em>",
   "Title<br><em>Deeds</em>",
-  "Типы<br><em>титулов</em>"
+  "Типы<br><em>титулов</em>",
+  "Eigentums-<br><em>urkunden</em>",
+  "<em>Escrituras</em>",
+  "سندات<br><em>الملكية</em>"
  ],
  "hb.yatirim": [
   "Kuzey Kıbrıs Yatırım Rehberi",
   "North Cyprus Investment Guide",
-  "Инвестиционный гид по Северному Кипру"
+  "Инвестиционный гид по Северному Кипру",
+  "Investitionsratgeber Nordzypern",
+  "Guía de inversión en el norte de Chipre",
+  "دليل الاستثمار في شمال قبرص"
  ],
  "hb.yatirim.d": [
   "Bölgeler, ödeme planları, masraflar ve sorulacak sorular.",
   "Areas, payment plans, costs and the questions to ask.",
-  "Районы, рассрочка, расходы и вопросы, которые стоит задать."
+  "Районы, рассрочка, расходы и вопросы, которые стоит задать.",
+  "Gegenden, Zahlungspläne, Kosten und die richtigen Fragen.",
+  "Zonas, planes de pago, costes y las preguntas que hay que hacer.",
+  "المناطق وخطط الدفع والتكاليف والأسئلة التي يجب طرحها."
  ],
  "hb.yatirim.cover": [
   "Yatırım<br><em>Rehberi</em>",
   "Investment<br><em>Guide</em>",
-  "Гид<br><em>инвестора</em>"
+  "Гид<br><em>инвестора</em>",
+  "Investitions-<br><em>ratgeber</em>",
+  "Guía de<br><em>inversión</em>",
+  "دليل<br><em>الاستثمار</em>"
  ],
  "hb.hafta": [
   "Kuzey Kıbrıs’ta 1 Hafta Geçirmek",
   "A Week in North Cyprus",
-  "Неделя на Северном Кипре"
+  "Неделя на Северном Кипре",
+  "Eine Woche in Nordzypern",
+  "Una semana en el norte de Chipre",
+  "أسبوع في شمال قبرص"
  ],
  "hb.hafta.d": [
   "Keşif gezisi için gün gün bir hafta planı.",
   "A day-by-day plan for a week-long visit.",
-  "План поездки на неделю, день за днём."
+  "План поездки на неделю, день за днём.",
+  "Ein Tagesplan für einen einwöchigen Besuch.",
+  "Un plan día a día para una visita de una semana.",
+  "خطة يومية لزيارة مدتها أسبوع."
  ],
  "hb.hafta.cover": [
   "1 Hafta<br><em>K. Kıbrıs</em>",
   "A Week in<br><em>N. Cyprus</em>",
-  "Неделя<br><em>на Кипре</em>"
+  "Неделя<br><em>на Кипре</em>",
+  "Eine Woche in<br><em>Nordzypern</em>",
+  "Una semana en<br><em>el norte de Chipre</em>",
+  "أسبوع في<br><em>شمال قبرص</em>"
  ],
  "hb.cta": [
   "Gönder →",
   "Send →",
-  "Получить →"
+  "Получить →",
+  "Senden →",
+  "Enviar →",
+  "إرسال ←"
  ],
  "hb.pick": [
   "En az bir kitapçık seçer misiniz?",
   "Please choose at least one handbook.",
-  "Пожалуйста, выберите хотя бы один гид."
+  "Пожалуйста, выберите хотя бы один гид.",
+  "Bitte wählen Sie mindestens einen Ratgeber.",
+  "Elige al menos una guía.",
+  "يُرجى اختيار دليل واحد على الأقل."
  ],
  "hb.done": [
   "Teşekkürler. İndirebilirsiniz:",
   "Thank you. You can download:",
-  "Спасибо. Можно скачать:"
+  "Спасибо. Можно скачать:",
+  "Danke. Sie können herunterladen:",
+  "Gracias. Puedes descargar:",
+  "شكراً. يمكنك التحميل:"
  ],
  "hb.later": [
   "Diğerleri hazır olunca e-postanıza gelecek.",
   "The others will arrive in your inbox when they’re ready.",
-  "Остальные придут на e-mail, как только будут готовы."
+  "Остальные придут на e-mail, как только будут готовы.",
+  "Die anderen kommen in Ihr Postfach, sobald sie fertig sind.",
+  "Las demás llegarán a tu bandeja de entrada cuando estén listas.",
+  "ستصلك البقية إلى بريدك عندما تكون جاهزة."
  ],
  "hb.later.all": [
   "Teşekkürler. Seçtiğiniz kitapçıklar e-postanıza gelecek.",
   "Thank you. Your handbooks will arrive in your inbox.",
-  "Спасибо. Выбранные гиды придут на ваш e-mail."
+  "Спасибо. Выбранные гиды придут на ваш e-mail.",
+  "Danke. Ihre Ratgeber kommen in Ihr Postfach.",
+  "Gracias. Tus guías llegarán a tu bandeja de entrada.",
+  "شكراً. ستصلك الأدلة إلى بريدك."
  ],
  "svc.7": [
   "Kiralama.",
   "Rentals.",
-  "Аренда."
+  "Аренда.",
+  "Vermietung.",
+  "Alquileres.",
+  "الإيجار."
  ],
  "svc.7.d": [
   "Sizin için kiralık ev buluyorum ya da evinize kiracı buluyorum.",
   "I find you a home to rent, or tenants for yours.",
-  "Найду вам жильё в аренду или арендаторов для вашего."
+  "Найду вам жильё в аренду или арендаторов для вашего.",
+  "Ich finde eine Mietwohnung für Sie oder Mieter für Ihre Immobilie.",
+  "Te encuentro una casa en alquiler o inquilinos para la tuya.",
+  "أجد لك منزلاً للإيجار أو مستأجرين لمنزلك."
  ],
  "svc.8": [
   "Taşınma ve sonrası.",
   "Relocation and after.",
-  "Переезд и после."
+  "Переезд и после.",
+  "Umzug und danach.",
+  "Mudanza y después.",
+  "الانتقال وما بعده."
  ],
  "svc.8.d": [
   "Kontrat kaydı ve bağlantılar, oturum, okul, sigorta, araç: avukatımla birlikte yol gösteriyorum.",
   "Contract registration and utility connections, residency, schools, insurance, a car: I guide you together with my lawyer.",
-  "Регистрация договора и подключение услуг, ВНЖ, школа, страховка, автомобиль: помогаю вместе с юристом."
+  "Регистрация договора и подключение услуг, ВНЖ, школа, страховка, автомобиль: помогаю вместе с юристом.",
+  "Vertragsregistrierung und Anschlüsse, Aufenthalt, Schulen, Versicherung, Auto: Ich begleite Sie gemeinsam mit meinem Anwalt.",
+  "Registro del contrato y suministros, residencia, colegios, seguros, coche: te guío junto con mi abogado.",
+  "تسجيل العقد وتوصيل الخدمات، الإقامة، المدارس، التأمين، السيارة: أرشدك بالتعاون مع محاميّ."
  ],
  "menu.social": [
   "Sosyal Medya",
   "Social Media",
-  "Соцсети"
+  "Соцсети",
+  "Soziale Medien",
+  "Redes sociales",
+  "وسائل التواصل"
  ],
  "me.more": [
   "Daha fazlası",
   "More",
-  "Подробнее"
+  "Подробнее",
+  "Mehr",
+  "Más",
+  "المزيد"
  ],
  "about.title": [
   "Hakkımda",
   "About me",
-  "Обо мне"
+  "Обо мне",
+  "Über mich",
+  "Sobre mí",
+  "عنّي"
  ],
  "about.bio.t": [
   "Hikâyem",
   "My story",
-  "Моя история"
+  "Моя история",
+  "Meine Geschichte",
+  "Mi historia",
+  "قصتي"
  ],
  "about.vision.t": [
   "Vizyonum",
   "My vision",
-  "Моё видение"
+  "Моё видение",
+  "Meine Vision",
+  "Mi visión",
+  "رؤيتي"
  ],
  "about.mission.t": [
   "Misyonum",
   "My mission",
-  "Моя миссия"
+  "Моя миссия",
+  "Meine Mission",
+  "Mi misión",
+  "رسالتي"
  ],
  "about.bio": [
+  "",
+  "",
+  "",
   "",
   "",
   ""
@@ -1382,9 +2210,15 @@
  "about.vision": [
   "",
   "",
+  "",
+  "",
+  "",
   ""
  ],
  "about.mission": [
+  "",
+  "",
+  "",
   "",
   "",
   ""
@@ -1392,16 +2226,25 @@
  "type.loft": [
   "Loft",
   "Loft",
-  "Лофт"
+  "Лофт",
+  "Loft",
+  "Loft",
+  "لوفت"
  ],
  "type.rezidans": [
   "Rezidans",
   "Residence",
-  "Резиденция"
+  "Резиденция",
+  "Residenz",
+  "Residencia",
+  "ريزيدنس"
  ],
  "type.mustakil": [
   "Müstakil ev",
   "Detached house",
-  "Отдельный дом"
+  "Отдельный дом",
+  "Einfamilienhaus",
+  "Casa independiente",
+  "منزل مستقل"
  ]
 }

@@ -12,7 +12,7 @@ import { readListings, readPosts, hash, translationPath, readTranslation } from 
 const KEY = process.env.DEEPL_API_KEY || "";
 if (!KEY) { console.log("DEEPL_API_KEY yok: çeviri atlandı (site Türkçe metinle yayınlanır)."); process.exit(0); }
 const HOST = KEY.endsWith(":fx") ? "https://api-free.deepl.com" : "https://api.deepl.com";
-const TARGETS = { en: "EN-GB", ru: "RU" };
+const TARGETS = { en: "EN-GB", ru: "RU", de: "DE", es: "ES", ar: "AR" };
 
 async function deepl(texts, target, html) {
   const body = { text: texts.map((t) => t || " "), source_lang: "TR", target_lang: target, preserve_formatting: true };
@@ -37,9 +37,11 @@ async function run(kind, items, plain, rich) {
     const src = Object.fromEntries([...plain, ...rich].map((f) => [f, it[f] || ""]));
     const h = hash(src);
     const prev = readTranslation(kind, it.slug);
-    if (prev && prev.hash === h) continue;
-    const out = { hash: h, source: "tr" };
+    const same = prev && prev.hash === h;
+    if (same && Object.keys(TARGETS).every((l) => prev[l])) continue;
+    const out = same ? prev : { hash: h, source: "tr" };
     for (const [lang, code] of Object.entries(TARGETS)) {
+      if (same && prev[lang]) continue;
       const a = await deepl(plain.map((f) => src[f]), code, false);
       const b = rich.length ? await deepl(rich.map((f) => src[f]), code, true) : [];
       out[lang] = Object.fromEntries([...plain.map((f, i) => [f, a[i]]), ...rich.map((f, i) => [f, b[i]])]);

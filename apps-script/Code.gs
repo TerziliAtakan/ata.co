@@ -33,7 +33,7 @@ const LABELS = {
   location: 'Konum', bedrooms: 'Oda', area: 'Bölge', move_in: 'Taşınma tarihi', message: 'Mesaj'
 };
 const SKIP = ['type', 'name', 'contact', 'email', 'phone', 'lang', 'page', 'website', 'delivered'];
-const LANGS = { tr: 'Türkçe', en: 'İngilizce', ru: 'Rusça' };
+const LANGS = { tr: 'Türkçe', en: 'İngilizce', ru: 'Rusça', de: 'Almanca', es: 'İspanyolca', ar: 'Arapça' };
 
 function doPost(e) {
   const p = (e && e.parameter) || {};

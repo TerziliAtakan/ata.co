@@ -1,14 +1,14 @@
 <!--HEAD-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..700;1,300..600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..700;1,300..600&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap">
 <style>
 /* Layout: one full-screen "slide" per sub-section, horizontal swipe where Ata asked for it; warm white + near black, logo burgundy as the only accent. */
 :root{
   --bg:#F5F3EF; --bg-2:#EAE6DF; --fg:#161513; --muted:#6A655D; --line:rgba(22,21,19,.14);
   --accent:#5E0B10; --panel:#151412; --on-panel:#F1EDE6; --on-panel-muted:rgba(241,237,230,.64); --field:#FFFFFF;
-  --display:"Montserrat","Helvetica Neue",Arial,sans-serif;
-  --sans:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --display:"Montserrat","IBM Plex Sans Arabic","Helvetica Neue",Arial,sans-serif;
+  --sans:"Montserrat","IBM Plex Sans Arabic","Helvetica Neue",Arial,sans-serif;
   --logo-font:"Montserrat",Arial,sans-serif;
   --gut:clamp(18px,4.5vw,56px); --max:1320px; --bar:68px;
   --ease:cubic-bezier(.2,.7,.1,1);
@@ -81,11 +81,11 @@ p{margin:0}
 .lang-btn{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 10px;font-size:12px;letter-spacing:.16em;font-weight:600;font-variation-settings:"wdth" 112}
 .lang-btn svg{width:10px;height:10px;transition:transform .25s}
 .lang-btn[aria-expanded="true"] svg{transform:rotate(180deg)}
-.lang-list{position:absolute;right:0;top:calc(100% + 6px);min-width:150px;background:var(--bg);color:var(--fg);border:1px solid var(--line);box-shadow:0 18px 40px -20px rgba(0,0,0,.35);padding:6px;display:grid;margin:0;list-style:none}
-.lang-list button{width:100%;text-align:left;display:flex;justify-content:space-between;gap:16px;padding:11px 12px;font-size:14px}
+.lang-list{position:absolute;right:0;top:calc(100% + 6px);min-width:170px;background:var(--bg);color:var(--fg);border:1px solid var(--line);box-shadow:0 18px 40px -20px rgba(0,0,0,.35);padding:6px;display:grid;margin:0;list-style:none}
+.lang-list button{width:100%;text-align:start;display:flex;align-items:center;gap:12px;padding:10px 12px;font-size:14px;letter-spacing:0}
+.lang-list .flag{width:21px;height:14px;flex:none;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.14);overflow:hidden}
 .lang-list button:hover{background:var(--bg-2)}
 .lang-list button[aria-current="true"]{font-weight:600}
-.lang-list button span{color:var(--muted);font-size:11px;letter-spacing:.16em}
 .wa-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border:1px solid currentColor;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;font-variation-settings:"wdth" 115}
 .menu-btn{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 4px 0 8px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;font-variation-settings:"wdth" 115}
 .bars{position:relative;width:24px;height:12px;display:block}
@@ -227,7 +227,7 @@ p{margin:0}
 .poster .k{color:rgba(255,255,255,.85);margin-bottom:10px}
 .poster h2{font-size:clamp(64px,15vw,210px);line-height:.86}
 .poster .ph{top:calc(var(--bar) + 12px);bottom:auto}
-.trio{display:grid;grid-template-columns:repeat(3,1fr)}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
 .trio a{display:grid;gap:6px;padding:22px 14px 26px;border-right:1px solid rgba(241,237,230,.14);transition:background .3s}
 .trio a:last-child{border-right:0}
 .trio a:hover{background:rgba(241,237,230,.05)}
@@ -418,7 +418,7 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 .seg span{display:inline-flex;align-items:center;min-height:42px;padding:0 14px;border:1px solid var(--line);font-size:12.5px;letter-spacing:.08em;cursor:pointer}
 .seg input:checked+span{background:var(--fg);color:var(--bg);border-color:var(--fg)}
 .seg input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
-.hp{position:absolute;left:-9999px}
+.hp{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);pointer-events:none}
 .form .btn{justify-self:start}
 @media (max-width:620px){.two{grid-template-columns:1fr}.form .btn{justify-self:stretch}}
 .tabs{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line);margin-bottom:32px}
@@ -493,6 +493,50 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 /* headings in bold */
 .dsp,.menu nav a,.me-head .name,.num b,.card .nm,.card .pr,.q .tx b,.path b,.strip b,.trio b,.why-list b,.svc-list b,.chan a,.bk-t b,.tabs button b,.keys dd,.dhero .pr,.prose h2,.prose h3,.book .bt{font-weight:600}
 .dsp em,.strip b em{font-weight:600}
+
+/* burgundy accents */
+.me-head .name,#me-h{color:var(--accent)}
+.path:hover .go{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* hero headline: soft sparkle on first load */
+.hero h1.sparkle{animation:h1in 1.5s var(--ease) both}
+.hero h1.sparkle.glint{background:linear-gradient(105deg,transparent 43%,rgba(238,206,150,.6) 48.5%,rgba(255,250,236,.95) 50%,rgba(238,206,150,.6) 51.5%,transparent 57%) 120% 0/260% 100% no-repeat,linear-gradient(currentColor,currentColor);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:h1in 1.5s var(--ease) both,glint 2.4s .5s var(--ease) both}
+@keyframes h1in{from{opacity:0;filter:blur(8px);transform:translateY(10px)}to{opacity:1;filter:none;transform:none}}
+@keyframes glint{from{background-position:120% 0,0 0}to{background-position:-20% 0,0 0}}
+.sparks{position:absolute;pointer-events:none;z-index:3}
+.sparks i{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;opacity:0;animation:twinkle 1.5s var(--ease) both}
+.sparks i::before,.sparks i::after{content:"";position:absolute;inset:0;background:radial-gradient(closest-side,#fff,rgba(255,243,214,.6) 40%,transparent);clip-path:polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%)}
+.sparks i::after{transform:rotate(45deg) scale(.55)}
+@keyframes twinkle{0%{opacity:0;transform:scale(.2) rotate(0)}45%{opacity:.95;transform:scale(1) rotate(45deg)}100%{opacity:0;transform:scale(.3) rotate(90deg)}}
+@media (prefers-reduced-motion:reduce){.hero h1.sparkle,.hero h1.sparkle.glint{animation:none;-webkit-text-fill-color:currentColor;background:none}.sparks{display:none}}
+
+.trio b{hyphens:auto;-webkit-hyphens:auto}
+@media (max-width:480px){.trio a{padding-inline:10px}:lang(de) .trio b,:lang(es) .trio b{font-size:20px}}
+
+/* Arabic / right-to-left */
+
+[dir=rtl] .trio a{border-right:0;border-left:1px solid rgba(241,237,230,.14)}
+[dir=rtl] .trio a:last-child{border-left:0}
+:lang(ar) *{letter-spacing:0!important}
+:lang(ar) em,:lang(ar) .dsp em{font-style:normal}
+:lang(ar) .dsp{line-height:1.25}
+@media (min-width:900px){[dir=rtl] .hero::after{background:linear-gradient(180deg,rgba(8,8,10,.45) 0%,rgba(8,8,10,0) 30%,rgba(8,8,10,.08) 55%,rgba(8,8,10,.78) 100%),linear-gradient(270deg,rgba(8,8,10,.42) 0%,rgba(8,8,10,0) 60%)}}
+[dir=rtl] .bar-right{margin-left:0;margin-right:auto}
+[dir=rtl] .lang-list{right:auto;left:0}
+[dir=rtl] [data-hs]{direction:ltr}
+[dir=rtl] [data-hs]>*{direction:rtl}
+[dir=rtl] .arrow i,[dir=rtl] .path .go,[dir=rtl] .strip .go{transform:scaleX(-1)}
+[dir=rtl] .arrow:hover i{transform:scaleX(-1) translateX(5px)}
+[dir=rtl] .q .go{right:auto;left:14px;transform:scaleX(-1)}
+[dir=rtl] .q:hover .go{transform:scaleX(-1) translate(3px,-3px)}
+[dir=rtl] .card .facts span+span{padding-left:0;border-left:0;padding-right:18px;border-right:1px solid var(--line)}
+[dir=rtl] .keys div{padding:22px 0 22px 14px}
+[dir=rtl] .keys div+div{padding-left:0;padding-right:14px;border-left:0;border-right:1px solid var(--line)}
+[dir=rtl] .prose blockquote,[dir=rtl] .mt-note{border-left:0;border-right:2px solid var(--accent);padding-left:0;padding-right:14px}
+[dir=rtl] .badge{left:auto;right:12px}
+[dir=rtl] .cat-tag{right:auto;left:12px}
+@media (min-width:900px){[dir=rtl] .path{padding-right:0;padding-left:28px}}
+@media (max-width:620px){[dir=rtl] .keys div{border-right:0!important}[dir=rtl] .keys div:nth-child(even){padding-left:0!important;padding-right:12px!important;border-left:0!important;border-right:1px solid var(--line)!important}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -511,9 +555,12 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
       <div class="lang" translate="no">
         <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" data-ia="aria-label:nav.lang"><span id="langCur">TR</span><svg aria-hidden="true"><use href="#i-chev"/></svg></button>
         <ul class="lang-list" id="langList" hidden>
-          <li><button data-lang="tr">Türkçe <span>TR</span></button></li>
-          <li><button data-lang="en">English <span>EN</span></button></li>
-          <li><button data-lang="ru">Русский <span>RU</span></button></li>
+          <li><button data-lang="tr" lang="tr"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#E30A17"/><circle cx="11" cy="10" r="5" fill="#fff"/><circle cx="12.3" cy="10" r="4" fill="#E30A17"/><polygon fill="#fff" points="14.80,10.00 16.55,9.38 16.60,7.53 17.72,9.00 19.50,8.47 18.45,10.00 19.50,11.53 17.72,11.00 16.60,12.47 16.55,10.62"/></svg><span class="ln">Türkçe</span></button></li>
+          <li><button data-lang="en" lang="en"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="4"/><path d="M0 0 30 20M30 0 0 20" stroke="#C8102E" stroke-width="1.4"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="3.4"/></svg><span class="ln">English</span></button></li>
+          <li><button data-lang="ru" lang="ru"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#0039A6"/><rect y="13.33" width="30" height="6.67" fill="#D52B1E"/></svg><span class="ln">Русский</span></button></li>
+          <li><button data-lang="de" lang="de"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#000"/><rect y="6.67" width="30" height="6.67" fill="#DD0000"/><rect y="13.33" width="30" height="6.67" fill="#FFCE00"/></svg><span class="ln">Deutsch</span></button></li>
+          <li><button data-lang="es" lang="es"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></svg><span class="ln">Español</span></button></li>
+          <li><button data-lang="ar" lang="ar"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><rect width="30" height="6.67" fill="#00732F"/><rect y="13.33" width="30" height="6.67" fill="#000"/><rect width="8" height="20" fill="#FF0000"/></svg><span class="ln">العربية</span></button></li>
         </ul>
       </div>
       <a class="wa-btn wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span class="t">WhatsApp</span></a>
@@ -846,7 +893,7 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 /* ============ data & i18n ============ */
 const DATA = JSON.parse(document.getElementById("site-data").textContent);
 const I18N = DATA.i18n, S = DATA.site, PREVIEW = !!DATA.preview;
-const LANGS = ["tr","en","ru"], LI = {tr:0,en:1,ru:2};
+const LANGS = ["tr","en","ru","de","es","ar"], LI = {tr:0,en:1,ru:2,de:3,es:4,ar:5};
 let LANG = DATA.lang || "tr";
 const $ = (s,r=document)=>r.querySelector(s), $$ = (s,r=document)=>[...r.querySelectorAll(s)];
 const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -855,13 +902,14 @@ function applyStatic(root=document){
   $$("[data-i]",root).forEach(el=>{ const v=t(el.dataset.i); if(el.innerHTML!==v) el.innerHTML=v; });
   $$("[data-ia]",root).forEach(el=>el.dataset.ia.split("|").forEach(p=>{const [a,k]=p.split(":");el.setAttribute(a,t(k))}));
 }
-const PLACES = {en:{"İskele":"Iskele","Girne":"Kyrenia","Gazimağusa":"Famagusta","Lefkoşa":"Nicosia","Boğaz":"Bogaz","Tatlısu":"Tatlisu","Güzelyurt":"Morphou","Alsancak":"Alsancak","Çatalköy":"Catalkoy","Karşıyaka":"Karsiyaka","Yeni Boğaziçi":"Yeni Bogazici","Mehmetçik":"Mehmetcik","Ötüken":"Otuken"},
+const PLACES_EN = {"İskele":"Iskele","Girne":"Kyrenia","Gazimağusa":"Famagusta","Lefkoşa":"Nicosia","Boğaz":"Bogaz","Tatlısu":"Tatlisu","Güzelyurt":"Morphou","Alsancak":"Alsancak","Çatalköy":"Catalkoy","Karşıyaka":"Karsiyaka","Yeni Boğaziçi":"Yeni Bogazici","Mehmetçik":"Mehmetcik","Ötüken":"Otuken"};
+const PLACES = {en:PLACES_EN, de:{...PLACES_EN,"Lefkoşa":"Nikosia","KKTC":"Nordzypern"}, es:{...PLACES_EN,"KKTC":"norte de Chipre"}, ar:{"İskele":"إسكلة","Long Beach":"لونغ بيتش","Bafra":"بافرا","Girne":"كيرينيا","Esentepe":"إسنتبه","Gazimağusa":"فاماغوستا","Lefkoşa":"نيقوسيا","Boğaz":"بوغاز","Tatlısu":"تاتليسو","Güzelyurt":"مورفو","Alsancak":"ألسنجاك","Lapta":"لابتا","Çatalköy":"تشاتالكوي","Karşıyaka":"كارشياكا","Yeni Boğaziçi":"يني بوغازيتشي","Kumyalı":"كوميالي","Mehmetçik":"محمدجيك","Ötüken":"أوتوكن","KKTC":"شمال قبرص"},
   ru:{"İskele":"Искеле","Long Beach":"Лонг-Бич","Bafra":"Бафра","Girne":"Кирения","Esentepe":"Эсентепе","Gazimağusa":"Фамагуста","Lefkoşa":"Никосия","Boğaz":"Богаз","Tatlısu":"Татлысу","Güzelyurt":"Гюзельюрт","Alsancak":"Алсанджак","Lapta":"Лапта","Çatalköy":"Чаталкёй","Karşıyaka":"Каршияка","Yeni Boğaziçi":"Ени-Богазичи","Kumyalı":"Кумьялы","Mehmetçik":"Мехметчик","Ötüken":"Отюкен","KKTC":"Северный Кипр"}};
 function place(s){ const m=PLACES[LANG]; if(!m||!s) return s||""; return Object.keys(m).sort((a,b)=>b.length-a.length).reduce((acc,k)=>acc.split(k).join(m[k]),s); }
-function loc(item,f){ const tr=item.i18n && item.i18n[LANG]; return (LANG!=="tr" && tr && tr[f]) ? tr[f] : item[f]; }
-const isMT = item => LANG!=="tr" && item.i18n && item.i18n[LANG];
+function loc(item,f){ const tr=item.i18n && (item.i18n[LANG] || (LANG!=="ru" && item.i18n.en)); return (LANG!=="tr" && tr && tr[f]) ? tr[f] : item[f]; }
+const isMT = item => LANG!=="tr" && item.i18n && (item.i18n[LANG] || (LANG!=="ru" && item.i18n.en));
 const waURL = (msg)=>`https://wa.me/${S.whatsapp}?text=${encodeURIComponent(msg||t("wa.general"))}`;
-const fmtLocale = {tr:"tr-TR",en:"en-GB",ru:"ru-RU"};
+const fmtLocale = {tr:"tr-TR",en:"en-GB",ru:"ru-RU",de:"de-DE",es:"es-ES",ar:"ar-u-nu-latn"};
 function price(l){
   if(l.sample) return "£XXX.XXX";
   if(l.price_on_request || !l.price) return t("price.req");
@@ -1146,10 +1194,24 @@ function route(keep){
 }
 addEventListener("hashchange",()=>route());
 
+
+/* hero headline appears with a soft sparkle, once per page load */
+function sparkleHero(){
+  const h=$("#h1"); if(!h || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  h.classList.add("sparkle","glint");
+  setTimeout(()=>h.classList.remove("glint"),3200);
+  const host=h.offsetParent; if(!host) return;
+  const box=document.createElement("span"); box.className="sparks"; box.setAttribute("aria-hidden","true");
+  Object.assign(box.style,{left:h.offsetLeft+"px",top:h.offsetTop+"px",width:h.offsetWidth+"px",height:h.offsetHeight+"px"});
+  for(let i=0;i<7;i++){ const s=document.createElement("i"); const sz=7+Math.random()*9;
+    Object.assign(s.style,{left:(6+Math.random()*88)+"%",top:(8+Math.random()*84)+"%",width:sz+"px",height:sz+"px",margin:(-sz/2)+"px 0 0 "+(-sz/2)+"px",animationDelay:(.45+i*.28+Math.random()*.2)+"s"});
+    box.appendChild(s); }
+  host.appendChild(box); setTimeout(()=>box.remove(),4800);
+}
 /* ============ language ============ */
 function setLang(l, initial){
   if(!LANGS.includes(l)) l="tr"; LANG=l;
-  document.documentElement.lang=l; $("#langCur").textContent=l.toUpperCase();
+  document.documentElement.lang=l; document.documentElement.dir = l==="ar" ? "rtl" : "ltr"; $("#langCur").textContent=l.toUpperCase();
   $$("#langList button").forEach(b=>b.setAttribute("aria-current",String(b.dataset.lang===l)));
   try{ localStorage.setItem("ataco-lang",l) }catch(e){}
   if(!PREVIEW && DATA.paths && !initial){ const p=DATA.paths[l]; if(p && location.pathname!==p) history.replaceState(null,"",p+location.hash); }
@@ -1210,6 +1272,7 @@ addEventListener("resize",()=>document.documentElement.classList.toggle("snap", 
   if(DATA.fixedLang) l = DATA.lang;
   setLang(l,true); initHS(); fillMedia(document);
   if(!location.hash) window.scrollTo(0,0);
+  sparkleHero();
   /* the scroll cue moves down without leaving #me in the address bar */
   const cue=$(".hero .cue"); if(cue) cue.addEventListener("click",e=>{ e.preventDefault(); $("#me").scrollIntoView({behavior:"smooth"}); });
 })();

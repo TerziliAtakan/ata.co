@@ -8,7 +8,8 @@ import { rel, readSite, readListings, readPosts, readTranslation } from "./lib.m
 const PREVIEW = process.argv.includes("--preview");
 const OUT = rel(PREVIEW ? "dist-preview" : "dist");
 const I18N = JSON.parse(fs.readFileSync(rel("src/i18n.json"), "utf8"));
-const LANGS = ["tr", "en", "ru"];
+const LANGS = ["tr", "en", "ru", "de", "es", "ar"];
+const OTHER = LANGS.slice(1);
 const site = readSite();
 const domain = String(site.domain || "").replace(/^https?:\/\//, "").replace(/\/.*$/, "");
 const repo = process.env.REPO_NAME || "";
@@ -58,16 +59,16 @@ for (const l of listings) {
   l.photos = (await Promise.all(l.photos.map(image))).filter(Boolean);
   l.description_html = fixInlineSrc(l.description_html);
   const t = readTranslation("listings", l.slug);
-  if (t) l.i18n = { en: t.en, ru: t.ru };
-  if (l.i18n) for (const k of ["en", "ru"]) if (l.i18n[k]?.description_html) l.i18n[k].description_html = fixInlineSrc(l.i18n[k].description_html);
+  if (t) l.i18n = Object.fromEntries(OTHER.filter((k) => t[k]).map((k) => [k, t[k]]));
+  if (l.i18n) for (const k of OTHER) if (l.i18n[k]?.description_html) l.i18n[k].description_html = fixInlineSrc(l.i18n[k].description_html);
 }
 const posts = readPosts({ includeSamples: PREVIEW });
 for (const p of posts) {
   p.cover = await image(p.cover);
   p.body_html = fixInlineSrc(p.body_html);
   const t = readTranslation("blog", p.slug);
-  if (t) p.i18n = { en: t.en, ru: t.ru };
-  if (p.i18n) for (const k of ["en", "ru"]) if (p.i18n[k]?.body_html) p.i18n[k].body_html = fixInlineSrc(p.i18n[k].body_html);
+  if (t) p.i18n = Object.fromEntries(OTHER.filter((k) => t[k]).map((k) => [k, t[k]]));
+  if (p.i18n) for (const k of OTHER) if (p.i18n[k]?.body_html) p.i18n[k].body_html = fixInlineSrc(p.i18n[k].body_html);
 }
 const S = { ...site };
 for (const k of ["hero_image", "portrait_image", "intro_video_cover", "nc_image"]) S[k] = await image(site[k]);
@@ -92,7 +93,7 @@ let tpl = fs.readFileSync(rel("src/template.html"), "utf8");
 tpl = tpl.replace("/*SCENES*/", () => fs.readFileSync(rel("src/scenes.js"), "utf8"));
 tpl = tpl.replace(/\{\{A:([a-z0-9-]+)\}\}/g, (m, n) => asset(n));
 
-const paths = { tr: BASE, en: BASE + "en/", ru: BASE + "ru/" };
+const paths = Object.fromEntries(LANGS.map((l) => [l, l === "tr" ? BASE : BASE + l + "/"]));
 const escAttr = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 
 function head(lang) {
@@ -107,7 +108,7 @@ function head(lang) {
     for (const l of LANGS) h += `<link rel="alternate" hreflang="${l}" href="${ORIGIN + paths[l]}">\n`;
     h += `<link rel="alternate" hreflang="x-default" href="${ORIGIN + paths.tr}">\n`;
   }
-  h += `<meta property="og:type" content="website">\n<meta property="og:title" content="${escAttr(title)}">\n<meta property="og:description" content="${escAttr(desc)}">\n<meta property="og:locale" content="${{ tr: "tr_TR", en: "en_GB", ru: "ru_RU" }[lang]}">\n`;
+  h += `<meta property="og:type" content="website">\n<meta property="og:title" content="${escAttr(title)}">\n<meta property="og:description" content="${escAttr(desc)}">\n<meta property="og:locale" content="${{ tr: "tr_TR", en: "en_GB", ru: "ru_RU", de: "de_DE", es: "es_ES", ar: "ar_AE" }[lang]}">\n`;
   if (url) h += `<meta property="og:url" content="${url}">\n`;
   if (og) h += `<meta property="og:image" content="${og}">\n<meta name="twitter:card" content="summary_large_image">\n`;
   const ld = { "@context": "https://schema.org", "@type": "RealEstateAgent", name: "ata.co — Atakan Terzili", telephone: "+" + site.whatsapp, email: site.email,
@@ -125,7 +126,7 @@ function render(lang, fixedLang) {
   const data = { preview: PREVIEW, lang, fixedLang, paths: PREVIEW ? null : paths, i18n: I18N, site: S, listings, posts };
   const json = JSON.stringify(data).replace(/</g, "\\u003c");
   html = html.replace("<!--DATA-->", `<script id="site-data" type="application/json">${json}</script>`);
-  if (!PREVIEW) html = `<!doctype html>\n<html lang="${lang}">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n` +
+  if (!PREVIEW) html = `<!doctype html>\n<html lang="${lang}"${lang === "ar" ? ' dir="rtl"' : ""}>\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n` +
     html.replace(/(<\/style>)/, "$1\n</head>\n<body>") + "\n</body>\n</html>\n";
   return html;
 }
@@ -134,7 +135,7 @@ if (PREVIEW) {
   fs.writeFileSync(path.join(OUT, "index.html"), render("tr", false));
 } else {
   fs.writeFileSync(path.join(OUT, "index.html"), render("tr", false));
-  for (const l of ["en", "ru"]) { fs.mkdirSync(path.join(OUT, l), { recursive: true }); fs.writeFileSync(path.join(OUT, l, "index.html"), render(l, true)); }
+  for (const l of OTHER) { fs.mkdirSync(path.join(OUT, l), { recursive: true }); fs.writeFileSync(path.join(OUT, l, "index.html"), render(l, true)); }
   fs.copyFileSync(path.join(OUT, "index.html"), path.join(OUT, "404.html"));
   fs.writeFileSync(path.join(OUT, ".nojekyll"), "");
   if (domain) fs.writeFileSync(path.join(OUT, "CNAME"), domain + "\n");
