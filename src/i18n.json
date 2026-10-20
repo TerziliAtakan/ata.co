@@ -1416,28 +1416,28 @@
   "متى تخطط للشراء؟"
  ],
  "f.when.1": [
-  "3 ay içinde",
-  "Within 3 months",
-  "В ближайшие 3 месяца",
-  "Innerhalb von 3 Monaten",
-  "En 3 meses",
-  "خلال 3 أشهر"
+  "1 ay içinde",
+  "Within 1 month",
+  "В течение 1 месяца",
+  "Innerhalb von 1 Monat",
+  "En 1 mes",
+  "خلال شهر واحد"
  ],
  "f.when.2": [
-  "3–6 ay",
-  "3–6 months",
-  "3–6 месяцев",
-  "3–6 Monate",
-  "3–6 meses",
-  "3–6 أشهر"
+  "1–3 ay içinde",
+  "Within 1–3 months",
+  "В течение 1–3 месяцев",
+  "Innerhalb von 1–3 Monaten",
+  "En 1–3 meses",
+  "خلال 1–3 أشهر"
  ],
  "f.when.3": [
-  "6–12 ay",
-  "6–12 months",
-  "6–12 месяцев",
-  "6–12 Monate",
-  "6–12 meses",
-  "6–12 شهراً"
+  "3–6 ay içinde",
+  "Within 3–6 months",
+  "В течение 3–6 месяцев",
+  "Innerhalb von 3–6 Monaten",
+  "En 3–6 meses",
+  "خلال 3–6 أشهر"
  ],
  "f.when.4": [
   "Sadece araştırıyorum",
