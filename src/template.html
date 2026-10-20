@@ -499,16 +499,17 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 .path:hover .go{background:var(--accent);color:#fff;border-color:var(--accent)}
 
 /* hero headline: soft sparkle on first load */
-.hero h1.sparkle{animation:h1in 1.5s var(--ease) both}
-.hero h1.sparkle.glint{background:linear-gradient(105deg,transparent 43%,rgba(238,206,150,.6) 48.5%,rgba(255,250,236,.95) 50%,rgba(238,206,150,.6) 51.5%,transparent 57%) 120% 0/260% 100% no-repeat,linear-gradient(currentColor,currentColor);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:h1in 1.5s var(--ease) both,glint 2.4s .5s var(--ease) both}
+.hero h1.pre{opacity:0}
+.hero h1.sparkle{animation:h1in 2.25s var(--ease) both}
+.hero h1.sparkle.glint{background:linear-gradient(105deg,transparent 43%,rgba(238,206,150,.6) 48.5%,rgba(255,250,236,.95) 50%,rgba(238,206,150,.6) 51.5%,transparent 57%) 120% 0/260% 100% no-repeat,linear-gradient(currentColor,currentColor);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:h1in 2.25s var(--ease) both,glint 3.6s .75s var(--ease) both}
 @keyframes h1in{from{opacity:0;filter:blur(8px);transform:translateY(10px)}to{opacity:1;filter:none;transform:none}}
 @keyframes glint{from{background-position:120% 0,0 0}to{background-position:-20% 0,0 0}}
 .sparks{position:absolute;pointer-events:none;z-index:3}
-.sparks i{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;opacity:0;animation:twinkle 1.5s var(--ease) both}
+.sparks i{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;opacity:0;animation:twinkle 2.25s var(--ease) both}
 .sparks i::before,.sparks i::after{content:"";position:absolute;inset:0;background:radial-gradient(closest-side,#fff,rgba(255,243,214,.6) 40%,transparent);clip-path:polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%)}
 .sparks i::after{transform:rotate(45deg) scale(.55)}
 @keyframes twinkle{0%{opacity:0;transform:scale(.2) rotate(0)}45%{opacity:.95;transform:scale(1) rotate(45deg)}100%{opacity:0;transform:scale(.3) rotate(90deg)}}
-@media (prefers-reduced-motion:reduce){.hero h1.sparkle,.hero h1.sparkle.glint{animation:none;-webkit-text-fill-color:currentColor;background:none}.sparks{display:none}}
+@media (prefers-reduced-motion:reduce){.hero h1.pre{opacity:1}.hero h1.sparkle,.hero h1.sparkle.glint{animation:none;-webkit-text-fill-color:currentColor;background:none}.sparks{display:none}}
 
 .trio b{hyphens:auto;-webkit-hyphens:auto}
 @media (max-width:480px){.trio a{padding-inline:10px}:lang(de) .trio b,:lang(es) .trio b{font-size:20px}}
@@ -594,7 +595,7 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
     <span class="ph pv"><b>Fotoğraf</b> · Atakan, Kuzey Kıbrıs’ta bir manzarada. Yatay, yüksek çözünürlük</span>
     <div class="wrap">
       <p class="k" data-i="hero.kicker"></p>
-      <h1 class="dsp h1" id="h1" data-i="hero.title"></h1>
+      <h1 class="dsp h1 pre" id="h1" data-i="hero.title"></h1>
       <a class="cue" href="#me"><i></i><span data-i="hero.scroll"></span></a>
     </div>
   </section>
@@ -1196,17 +1197,22 @@ addEventListener("hashchange",()=>route());
 
 
 /* hero headline appears with a soft sparkle, once per page load */
-function sparkleHero(){
-  const h=$("#h1"); if(!h || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  h.classList.add("sparkle","glint");
-  setTimeout(()=>h.classList.remove("glint"),3200);
+async function sparkleHero(){
+  const h=$("#h1"); if(!h) return;
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){ h.classList.remove("pre"); return; }
+  /* wait until every letter of the headline (ş, ç, italic…) has its font, so nothing pops in late */
+  try{ const txt=h.textContent, f=document.fonts;
+    if(f && f.load) await Promise.race([Promise.all([f.load("600 64px Montserrat",txt),f.load("italic 600 64px Montserrat",txt),f.ready]),new Promise(r=>setTimeout(r,2500))]);
+  }catch(e){}
+  h.classList.remove("pre"); h.classList.add("sparkle","glint");
+  setTimeout(()=>h.classList.remove("glint"),4800);
   const host=h.offsetParent; if(!host) return;
   const box=document.createElement("span"); box.className="sparks"; box.setAttribute("aria-hidden","true");
   Object.assign(box.style,{left:h.offsetLeft+"px",top:h.offsetTop+"px",width:h.offsetWidth+"px",height:h.offsetHeight+"px"});
   for(let i=0;i<7;i++){ const s=document.createElement("i"); const sz=7+Math.random()*9;
-    Object.assign(s.style,{left:(6+Math.random()*88)+"%",top:(8+Math.random()*84)+"%",width:sz+"px",height:sz+"px",margin:(-sz/2)+"px 0 0 "+(-sz/2)+"px",animationDelay:(.45+i*.28+Math.random()*.2)+"s"});
+    Object.assign(s.style,{left:(6+Math.random()*88)+"%",top:(8+Math.random()*84)+"%",width:sz+"px",height:sz+"px",margin:(-sz/2)+"px 0 0 "+(-sz/2)+"px",animationDelay:(.7+i*.42+Math.random()*.3)+"s"});
     box.appendChild(s); }
-  host.appendChild(box); setTimeout(()=>box.remove(),4800);
+  host.appendChild(box); setTimeout(()=>box.remove(),7200);
 }
 /* ============ language ============ */
 function setLang(l, initial){
