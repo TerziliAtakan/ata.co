@@ -10,7 +10,13 @@ import path from "node:path";
 import { readListings, readPosts, hash, translationPath, readTranslation } from "./lib.mjs";
 
 const KEY = process.env.DEEPL_API_KEY || "";
-if (!KEY) { console.log("DEEPL_API_KEY yok: çeviri atlandı (site Türkçe metinle yayınlanır)."); process.exit(0); }
+const STATUS = "content/translations/deepl-durum.txt";
+function writeStatus(line) {
+  const txt = "DeepL anahtarı: " + line + "\n";
+  fs.mkdirSync(path.dirname(STATUS), { recursive: true });
+  if (!fs.existsSync(STATUS) || fs.readFileSync(STATUS, "utf8") !== txt) fs.writeFileSync(STATUS, txt);
+}
+if (!KEY) { writeStatus("bulunamadı (DEEPL_API_KEY gizli anahtarı yok)"); console.log("DEEPL_API_KEY yok: çeviri atlandı (site Türkçe metinle yayınlanır)."); process.exit(0); }
 const HOST = KEY.endsWith(":fx") ? "https://api-free.deepl.com" : "https://api.deepl.com";
 const TARGETS = { en: "EN-GB", ru: "RU", de: "DE", es: "ES", ar: "AR" };
 
@@ -63,9 +69,7 @@ async function keyStatus() {
     if (r.ok) { const u = await r.json(); line = `geçerli · plan: ${KEY.endsWith(":fx") ? "ücretsiz" : "ücretli"} · aylık limit: ${u.character_limit}`; console.log(`DeepL bağlantısı tamam: ${u.character_count} / ${u.character_limit} karakter kullanıldı.`); }
     else line = r.status === 403 ? "geçersiz anahtar (403)" : "hata " + r.status;
   } catch (e) { line = "bağlantı hatası"; }
-  const f = "content/translations/deepl-durum.txt", txt = "DeepL anahtarı: " + line + "\n";
-  fs.mkdirSync(path.dirname(f), { recursive: true });
-  if (!fs.existsSync(f) || fs.readFileSync(f, "utf8") !== txt) fs.writeFileSync(f, txt);
+  writeStatus(line);
 }
 await keyStatus();
 
