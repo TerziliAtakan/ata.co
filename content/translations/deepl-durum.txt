@@ -1,1 +1,1 @@
-DeepL anahtarı: bulunamadı (DEEPL_API_KEY gizli anahtarı yok)
+DeepL anahtarı: geçerli · plan: ücretsiz · aylık limit: 1000000
