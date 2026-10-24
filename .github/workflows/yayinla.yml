@@ -27,7 +27,7 @@ jobs:
       - name: Görsel sıkıştırma aracını kur
         run: npm install --no-audit --no-fund --no-save sharp@0.33.5 || echo "sharp kurulamadı, görseller sıkıştırılmadan yayınlanır"
 
-      - name: Yeni içerikleri çevir (TR → EN, RU)
+      - name: Yeni içerikleri çevir (TR → EN, RU, DE, ES, AR)
         env:
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
         run: node scripts/translate.mjs

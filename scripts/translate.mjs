@@ -55,6 +55,20 @@ async function run(kind, items, plain, rich) {
   return n;
 }
 
+// Record whether the key works (no secrets, no counts) so the setup can be checked from the repo.
+async function keyStatus() {
+  let line;
+  try {
+    const r = await fetch(HOST + "/v2/usage", { headers: { Authorization: "DeepL-Auth-Key " + KEY } });
+    if (r.ok) { const u = await r.json(); line = `geçerli · plan: ${KEY.endsWith(":fx") ? "ücretsiz" : "ücretli"} · aylık limit: ${u.character_limit}`; console.log(`DeepL bağlantısı tamam: ${u.character_count} / ${u.character_limit} karakter kullanıldı.`); }
+    else line = r.status === 403 ? "geçersiz anahtar (403)" : "hata " + r.status;
+  } catch (e) { line = "bağlantı hatası"; }
+  const f = "content/translations/deepl-durum.txt", txt = "DeepL anahtarı: " + line + "\n";
+  fs.mkdirSync(path.dirname(f), { recursive: true });
+  if (!fs.existsSync(f) || fs.readFileSync(f, "utf8") !== txt) fs.writeFileSync(f, txt);
+}
+await keyStatus();
+
 try {
   const a = await run("listings", readListings(), ["title", "summary"], ["description_html"]);
   const b = await run("blog", readPosts(), ["title", "excerpt"], ["body_html"]);
