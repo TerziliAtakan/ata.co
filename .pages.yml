@@ -108,7 +108,7 @@ content:
       - name: description
         label: Açıklama
         type: rich-text
-        description: "Türkçe yazın. İngilizce ve Rusça otomatik çevrilir."
+        description: "Türkçe yazın. İngilizce, Rusça, Almanca, İspanyolca ve Arapça otomatik çevrilir."
       - name: photos
         label: Fotoğraflar
         type: image
