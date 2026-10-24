@@ -1,0 +1,1 @@
+DeepL anahtarı: bulunamadı (DEEPL_API_KEY gizli anahtarı yok)
