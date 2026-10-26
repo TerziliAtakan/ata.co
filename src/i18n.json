@@ -2248,11 +2248,11 @@
   "منزل مستقل"
  ],
  "meet.strip": [
-  "Görüşme ayarlayın",
-  "Book a meeting",
-  "Назначить встречу",
+  "Randevu oluşturun",
+  "Book an appointment",
+  "Записаться на встречу",
   "Termin vereinbaren",
-  "Concierta una reunión",
+  "Pide una cita",
   "احجز موعداً"
  ],
  "meet.strip.d": [
@@ -2272,8 +2272,8 @@
   "واتساب"
  ],
  "wa.meet": [
-  "Merhaba Atakan, ata.co üzerinden ulaşıyorum. Bir görüşme ayarlamak istiyorum.",
-  "Hi Atakan, I found you through ata.co. I’d like to book a meeting.",
+  "Merhaba Atakan, ata.co üzerinden ulaşıyorum. Bir randevu oluşturmak istiyorum.",
+  "Hi Atakan, I found you through ata.co. I’d like to book an appointment.",
   "Здравствуйте, Атакан! Я нашёл вас через ata.co и хотел бы назначить встречу.",
   "Hallo Atakan, ich habe Sie über ata.co gefunden und möchte einen Termin vereinbaren.",
   "Hola Atakan, te encontré a través de ata.co. Me gustaría concertar una reunión.",
