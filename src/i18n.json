@@ -2246,5 +2246,37 @@
   "Einfamilienhaus",
   "Casa independiente",
   "منزل مستقل"
+ ],
+ "meet.strip": [
+  "Görüşme ayarlayın",
+  "Book a meeting",
+  "Назначить встречу",
+  "Termin vereinbaren",
+  "Concierta una reunión",
+  "احجز موعداً"
+ ],
+ "meet.strip.d": [
+  "Ofiste, telefonda ya da görüntülü arama ile; size uygun bir zamanda.",
+  "At the office, by phone or on a video call, at a time that suits you.",
+  "В офисе, по телефону или по видеосвязи — в удобное для вас время.",
+  "Im Büro, telefonisch oder per Videoanruf, zu einer Zeit, die Ihnen passt.",
+  "En la oficina, por teléfono o por videollamada, cuando mejor te venga.",
+  "في المكتب أو عبر الهاتف أو بمكالمة فيديو، في الوقت الذي يناسبك."
+ ],
+ "meet.wa": [
+  "WhatsApp",
+  "WhatsApp",
+  "WhatsApp",
+  "WhatsApp",
+  "WhatsApp",
+  "واتساب"
+ ],
+ "wa.meet": [
+  "Merhaba Atakan, ata.co üzerinden ulaşıyorum. Bir görüşme ayarlamak istiyorum.",
+  "Hi Atakan, I found you through ata.co. I’d like to book a meeting.",
+  "Здравствуйте, Атакан! Я нашёл вас через ata.co и хотел бы назначить встречу.",
+  "Hallo Atakan, ich habe Sie über ata.co gefunden und möchte einen Termin vereinbaren.",
+  "Hola Atakan, te encontré a través de ata.co. Me gustaría concertar una reunión.",
+  "مرحباً أتاكان، وجدتك عبر ata.co وأرغب في حجز موعد."
  ]
 }

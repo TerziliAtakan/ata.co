@@ -471,7 +471,7 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 .about-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
 @media (min-width:900px){.about-grid{grid-template-columns:.9fr 1.1fr;align-items:start;gap:clamp(40px,6vw,90px)}}
 /* 1.3 numbers split the screen in three */
-.nums-slide .wrap{flex:1;display:flex;flex-direction:column;width:100%}
+.nums-slide > .wrap{flex:1;display:flex;flex-direction:column;width:100%}
 .nums-slide .nums{flex:1;grid-template-rows:repeat(3,1fr)}
 .nums-slide .num{align-items:center;align-content:center}
 @media (min-width:900px){.nums-slide .nums{grid-template-rows:1fr;grid-template-columns:repeat(3,1fr)}.nums-slide .num{align-content:center}}
@@ -484,6 +484,13 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
 .card .pr{color:var(--price);font-size:clamp(28px,3vw,40px)}
 /* partner strip title in capitals */
 .strip:not(.nl-strip) b{text-transform:uppercase;letter-spacing:.01em}
+/* "Görüşme ayarlayın" strip under the numbers */
+.meet-link{display:block;min-width:0;flex:1}
+.meet-link:hover b{opacity:.85}
+.meet-wa{display:inline-flex;align-items:center;gap:10px;flex:none;min-height:52px;padding:0 20px;border:1px solid rgba(241,237,230,.4);border-radius:999px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;transition:background .3s,color .3s,border-color .3s}
+.meet-wa .ico{width:20px;height:20px}
+.meet-wa:hover{background:#25D366;border-color:#25D366;color:#0B2E17}
+@media (max-width:560px){.meet-wa{width:52px;padding:0;justify-content:center}.meet-wa span{display:none}}
 /* typewriter */
 [data-tw]{position:relative}
 .tw-ghost{visibility:hidden}
@@ -611,7 +618,7 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
   </section>
 
   <!-- 1.3 -->
-  <section class="slide band nums-slide" aria-labelledby="num-h">
+  <section class="slide band nums-slide has-strip" aria-labelledby="num-h">
     <div class="wrap">
       <div class="shead"><div><p class="k" data-i="num.kicker"></p><h2 class="dsp h3" id="num-h" data-i="num.title"></h2></div></div>
       <div class="nums">
@@ -620,6 +627,10 @@ html.snap footer .fwrap{flex:1;display:flex;flex-direction:column;justify-conten
         <div class="num"><b class="s-closed"></b><span data-i="num.props"></span></div>
       </div>
     </div>
+    <div class="strip on-dark meet-strip"><div class="wrap">
+      <a class="meet-link" href="#iletisim"><b data-tw="meet.strip"></b><small data-i="meet.strip.d"></small></a>
+      <a class="meet-wa" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-i="meet.wa"></span></a>
+    </div></div>
   </section>
 
   <!-- 2.1 -->
@@ -1138,7 +1149,7 @@ function applySite(){
   $$(".s-phone-link").forEach(a=>a.href="tel:+"+S.whatsapp);
   $$(".s-years").forEach(e=>e.dataset.v=S.years); $$(".s-clients").forEach(e=>e.dataset.v=S.clients); $$(".s-closed").forEach(e=>e.dataset.v=S.properties_closed);
   countUp();
-  $$("a.wa").forEach(a=>a.href=waURL()); $$("a.ig").forEach(a=>a.href=S.instagram||"#");
+  $$("a.wa").forEach(a=>a.href=waURL()); $$("a.meet-wa").forEach(a=>{a.href=waURL(t("wa.meet")); a.setAttribute("aria-label",t("meet.wa"));}); $$("a.ig").forEach(a=>a.href=S.instagram||"#");
   const v=$("#introVid"); if(S.intro_video_url){ v.href=S.intro_video_url; } else { v.removeAttribute("href"); v.removeAttribute("target"); $("#introLbl").dataset.i="me.video.soon"; $(".play",v).hidden=true; }
   const ch=[["Facebook",S.facebook,"i-fb"],["Instagram",S.instagram,"i-ig"],["WhatsApp",waURL(),"i-wa"],["Telegram",S.telegram,"i-tg"]].filter(x=>x[1]);
   $("#chan").innerHTML = ch.map(([n,u,i])=>`<a href="${esc(u)}" target="_blank" rel="noopener"><svg class="ch-ico" aria-hidden="true"><use href="#${i}"/></svg>${n}</a>`).join("");
